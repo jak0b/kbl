@@ -23,24 +23,55 @@
 
     keymap {
         compatible = "zmk,keymap";
+  //  ┌─────────┬───┬───┬───┬───┬───┐      ┌───┬───┬───┬───┬───┬────────┐
+  //  │   TAB   │ Q │ W │ E │ R │ T │      │ Y │ U │ I │ O │ P │ <--    │
+  //  ├─────────┼───┼───┼───┼───┼───┤      ├───┼───┼───┼───┼───┼────────┤
+  //  │   ESC   │ A │ S │ D │ F │ G │      │ H │ J │ K │ L │ ; │ QUOTE  │
+  //  ├─────────┼───┼───┼───┼───┼───┤      ├───┼───┼───┼───┼───┼────────┤
+  //  │ L_SHIFT │ Z │ X │ C │ V │ B │      │ N │ M │ , │ . │ / │R_SHIFT │
+  //  └─────────┴┬──┴──┬┴───┴─┬─┴───┴──┐ ┌─┴───┼───┴──┬┴───┴─┬─┴────────┘
+  //             │ CMD │ LOW  │CTRL/SPC│ │ENTER│ HIGH │ R ALT│
+  //             └─────┴──────┴────────┘ └─────┴──────┴──────┘
+
 
         default_layer {
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T                        &kp Y      &kp U  &kp I          &kp O    &kp P     &kp BSPC
 &kp ESC    &kp A  &kp S  &kp D     &kp F  &kp G                        &kp H      &kp J  &kp K          &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B                        &kp N      &kp M  &kp COMMA      &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B                        &kp N      &kp M  &kp COMMA      &kp DOT  &kp FSLH  &kp RSHIFT
                          &kp LGUI  &mo 1  &mt LCTRL SPACE              &kp ENTER  &mo 2  &kp RIGHT_ALT
             >;
         };
+
+  //  ┌─────────┬───┬───┬───┬───┬───┐      ┌───┬───┬───┬───┬───┬────────┐
+  //  │         │   │ + │ - │ = │ _ │      │   │   │   │ [ │ ] │DELETE  │
+  //  ├─────────┼───┼───┼───┼───┼───┤      ├───┼───┼───┼───┼───┼────────┤
+  //  │   `     │ ! │ @ │ # │ $ │ % │      │ ^ │ & │ * │ ( │ ) │   \    │
+  //  ├─────────┼───┼───┼───┼───┼───┤      ├───┼───┼───┼───┼───┼────────┤
+  //  │ L_SHIFT │ 1 │ 2 │ 3 │ 4 │ 5 │      │ 6 │ 7 │ 8 │ 9 │ 0 │R_SHIFT │
+  //  └─────────┴┬──┴──┬┴───┴─┬─┴───┴──┐ ┌─┴───┼───┴──┬┴───┴─┬─┴────────┘
+  //             │ CMD │ LOW  │CTRL/SPC│ │ENTER│ HIGH │ R ALT│
+  //             └─────┴──────┴────────┘ └─────┴──────┴──────┘
+
 
         lower_layer {
             bindings = <
 &trans     &none     &kp PLUS &kp MINUS &kp EQUAL &kp UNDER            &trans     &trans    &kp BACKSPACE    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp DELETE
 &kp GRAVE  &kp EXCL  &kp AT   &kp HASH  &kp DLLR  &kp PRCNT            &kp CARET  &kp AMPS  &kp KP_MULTIPLY  &kp LPAR          &kp RPAR           &kp BACKSLASH
-&trans     &kp N1    &kp N2   &kp N3    &kp N4    &kp N5               &kp N6     &kp N7    &kp N8           &kp N9            &kp N0             &kp &none
+&kp LSHFT     &kp N1    &kp N2   &kp N3    &kp N4    &kp N5               &kp N6     &kp N7    &kp N8           &kp N9            &kp N0          &kp RSHIFT
                               &trans    &trans    &trans               &trans     &trans     &trans
             >;
         };
+
+  //  ┌─────────┬───┬───┬───┬───┬───┐      ┌───┬───┬───┬───┬───┬────────┐
+  //  │         │   │   │ ⏭️ │🔆 │🔊 │      │   │   │   │   │   │  HOME  │
+  //  ├─────────┼───┼───┼───┼───┼───┤      ├───┼───┼───┼───┼───┼────────┤
+  //  │         │   │   │ ⏯️ │   │🔇 │      │←  │ ↓ │↑  │ → │   │PAGE UP │
+  //  ├─────────┼───┼───┼───┼───┼───┤      ├───┼───┼───┼───┼───┼────────┤
+  //  │ L_SHIFT │   │   │ ⏮️ │🔆 │🔉 │      │   │   │   │   │END│PAGE DN │
+  //  └─────────┴┬──┴──┬┴───┴─┬─┴───┴──┐ ┌─┴───┼───┴──┬┴───┴─┬─┴────────┘
+  //             │ CMD │ LOW  │CTRL/SPC│ │ENTER│ HIGH │ R ALT│
+  //             └─────┴──────┴────────┘ └─────┴──────┴──────┘
 
         raise_layer {
             bindings = <
