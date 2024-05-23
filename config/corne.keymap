@@ -6,6 +6,18 @@
 #define LTH LCTRL SPACE
 #define RTH LMETA RET
 
+#define VOL_UP C_VOL_UP
+#define VOL_DN C_VOL_DN
+#define MUTE  C_MUTE
+
+#define BRI_UP C_BRI_UP
+#define BRI_DN C_BRI_DN
+
+#define PLPA C_PP
+#define NEXT   C_NEXT
+#define PREV   C_PREV
+
+
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -21,10 +33,10 @@
 
         lower_layer {
             bindings = <
-              &none     &none   &kp C_NEXT &kp C_BRI_UP   &kp C_VOL_UP &kp HOME    &kp PG_UP &kp N7     &kp N8   &kp N9   &none    &none
-              &none     &none   &kp C_PP   &none          &kp C_MUTE   &none       &kp N0    &kp N4     &kp N5   &kp N6   &kp LBKT &kp RBKT 
-              &none     &none   &kp C_PREV &kp C_BRI_DN   &kp C_VOL_DN &kp END     &kp PG_DN &kp N1     &kp N2   &kp N3   &none    &none
-                                           &mo 3          &mo 1        &mt LTH     &mt RTH   &mo 2      &kp RALT
+              &kp NEXT  &kp VOL_UP &kp N7   &kp N8   &kp N9  &kp HOME       &kp PG_UP &none    &none      &kp MINUS &kp PLUS   &none
+              &kp PLPA  &kp N0     &kp N4   &kp N5   &kp N6  &none          &none     &none    &none      &none     &none      &none
+              &kp PREV  &kp VOL_DN &kp N1   &kp N2   &kp N3  &kp END        &kp PG_DN &none    &kp COMMA  &kp DOT   &none      &none
+                                            &mo 3    &mo 1   &mt LTH        &mt RTH   &mo 2    &kp RALT
               >;
         };
 
