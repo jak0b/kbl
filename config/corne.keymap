@@ -66,6 +66,7 @@
               &kp TILDE &kp LT    &kp LBRC  &kp LBKT  &kp LPAR  &kp PIPE            &kp LEFT   &kp DOWN   &kp UP           &kp RIGHT  &kp UNDER   &kp BACKSLASH
               &none     &kp GT    &kp RBRC  &kp RBKT  &kp RPAR  &kp GRAVE           &kp EQUAL  &kp MINUS  &kp PLUS         &kp PSCRN  &none       &none
                                             &trans    &trans    &trans              &trans     &trans     &trans
+              >;
         };
 
         tool_layer {
