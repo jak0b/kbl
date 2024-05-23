@@ -1,0 +1,174 @@
+layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
+layers:
+  default:
+  - TAB
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - BSPC
+  - ESC
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - ''''
+  - LSHFT
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - RSHIFT
+  - tool
+  - lower
+  - {t: SPACE, h: LCTRL}
+  - {t: RET, h: LMETA}
+  - raise
+  - RALT
+  lower:
+  - ''
+  - ''
+  - NEXT
+  - BRI UP
+  - VOL UP
+  - HOME
+  - PG UP
+  - '7'
+  - '8'
+  - '9'
+  - ''
+  - ''
+  - ''
+  - ''
+  - PP
+  - ''
+  - MUTE
+  - ''
+  - '0'
+  - '4'
+  - '5'
+  - '6'
+  - '['
+  - ']'
+  - ''
+  - ''
+  - PREV
+  - BRI DN
+  - VOL DN
+  - END
+  - PG DN
+  - '1'
+  - '2'
+  - '3'
+  - ''
+  - ''
+  - tool
+  - {t: lower, type: held}
+  - {t: SPACE, h: LCTRL}
+  - {t: RET, h: LMETA}
+  - raise
+  - RALT
+  raise:
+  - ''
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - '&'
+  - '*'
+  - ''
+  - ''
+  - DEL
+  - '~'
+  - <
+  - '{'
+  - '['
+  - (
+  - '|'
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - _
+  - \
+  - ''
+  - '>'
+  - '}'
+  - ']'
+  - )
+  - '`'
+  - '='
+  - '-'
+  - +
+  - PSCRN
+  - ''
+  - ''
+  - tool
+  - lower
+  - {t: SPACE, h: LCTRL}
+  - {t: RET, h: LMETA}
+  - {t: raise, type: held}
+  - RALT
+  tool:
+  - '&sys_reset'
+  - '&bootloader'
+  - EP TOG
+  - ''
+  - ''
+  - ''
+  - ''
+  - F7
+  - F8
+  - F9
+  - F10
+  - ''
+  - BT CLR
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - BSPC
+  - DEL
+  - ''
+  - F4
+  - F5
+  - F6
+  - F11
+  - ''
+  - ''
+  - {t: BT DISC, h: '0'}
+  - {t: BT DISC, h: '1'}
+  - {t: BT DISC, h: '2'}
+  - ''
+  - ''
+  - ''
+  - F1
+  - F2
+  - F3
+  - F12
+  - ''
+  - {t: tool, type: held}
+  - lower
+  - {t: SPACE, h: LCTRL}
+  - {t: RET, h: LMETA}
+  - raise
+  - RALT
