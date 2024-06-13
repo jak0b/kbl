@@ -184,7 +184,7 @@ layers:
   - ''
   - ''
   - ''
-  - sys reset
+  - '&sys_reset'
   - ''
   - ''
   - {t: BT, h: '2'}
@@ -196,7 +196,7 @@ layers:
   - {t: BT DISC, h: '1'}
   - {t: BT DISC, h: '2'}
   - ''
-  - bootloader
+  - '&bootloader'
   - ''
   - ''
   - ''
@@ -208,7 +208,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - EP TOG
   - tool
   - {t: lower, type: held}
   - {t: SPACE, h: LCTRL}
