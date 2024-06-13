@@ -202,13 +202,13 @@ layers:
   - ''
   - ''
   - ''
+  - ''
   - BT CLR
-  - BT CLR
   - ''
   - ''
   - ''
   - ''
-  - ext power EP TOG
+  - ''
   - tool
   - {t: lower, type: held}
   - {t: SPACE, h: LCTRL}
