@@ -60,10 +60,10 @@
 
       control_layer {
           bindings = <
-            &sys_reset  &bootloader    &ext_power EP_TOG  &none            &none     &none     &none     &none    &none   &none     &none    &none
-            &bt BT_CLR  &bt BT_SEL 0   &bt BT_SEL 1       &bt BT_SEL 2     &none     &none     &none     &none    &none   &none     &none    &none
-            &none       &bt BT_DISC 0  &bt BT_DISC 1      &bt BT_DISC 2    &none     &none     &none     &none    &none   &none     &none    &none
-                                                          &mo 3            &mo 1     &mt LTH   &mt RTH   &mo 2    &kp RALT
+            &none  &none   &none        &none         &none         &none           &none         &none          &none          &none          &none    &kp sys_reset
+            &none  &none   &bt BT_SEL 2 &bt BT_SEL 1  &bt BT_SEL 0  &out OUT_BLE    &out OUT_USB  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &none    &kp bootloader
+            &none  &none   &none        &none         &none         &bt BT_CLR      &bt BT_CLR    &none          &none          &none          &none    &kp ext_power EP_TOG
+                                        &mo 3         &mo 1         &mt LTH         &mt RTH       &mo 2          &kp RALT
             >;
       };
 
@@ -73,7 +73,7 @@
         compatible = "zmk,conditional-layers";
 
         Adjust {
-            if-layers = <2 3>;
+            if-layers = <1 2>;
             then-layer = <4>;
         };
     };
