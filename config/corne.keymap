@@ -51,10 +51,10 @@
 
       tool_layer {
           bindings = <
-            &none   &none    &kp F7     &kp F8     &kp F9   &kp F10       &none     &kp NEXT  &kp VOL_UP  &kp BRI_UP  &none    &none
-            &none   &none    &kp F4     &kp F5     &kp F6   &kp F11       &none     &kp PLPA  &kp MUTE    &none       &none    &none
-            &none   &none    &kp F1     &kp F2     &kp F3   &kp F12       &none     &kp PREV  &kp VOL_DN  &kp BRI_DN  &none    &none
-                                        &mo 3      &mo 1    &mt LTH       &mt RTH   &mo 2     &kp RALT
+            &none     &kp NEXT  &kp F7   &kp F8     &kp F9   &kp F10       &none     &none  &none  &none  &none    &none
+            &kp CAPS  &kp PLPA  &kp F4   &kp F5     &kp F6   &kp F11       &none     &none  &none  &none  &none    &none
+            &none     &kp PREV  &kp F1   &kp F2     &kp F3   &kp F12       &none     &none  &none  &none  &none    &none
+                                         &mo 3      &mo 1    &mt LTH       &mt RTH   &mo 2  &kp RALT
             >;
       };
 
