@@ -30,7 +30,7 @@
       default_layer {
           label = "DEFAULT";
           bindings = <
-            &kp TAB    &kp Q  &kp W  &kp E  &kp R  &kp T        &kp Y      &kp U  &kp I          &kp O    &kp P     &kp TAB
+            &kp TAB    &kp Q  &kp W  &kp E  &kp R  &kp T        &kp Y      &kp U  &kp I          &kp O    &kp P     &kp BSPC
             &kp ESC    &kp A  &kp S  &kp D  &kp F  &kp G        &kp H      &kp J  &kp K          &kp L    &kp SEMI  &kp SQT
             &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B        &kp N      &kp M  &kp COMMA      &kp DOT  &kp FSLH  &kp RSHIFT
                                      &mo 3  &mo 1  &mt LTH      &mt RTH    &mo 2  &kp RALT
@@ -52,8 +52,8 @@
       raise_layer {
           label = "RAISE";
           bindings = <
-            &none     &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT       &kp CARET  &kp AMPS   &kp ASTRK  &none      &none    &none
-            &kp TILDE &kp LT    &kp LBRC  &kp LBKT  &kp LPAR  &kp PIPE        &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp BSPC &none
+            &none     &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT       &kp CARET  &kp AMPS   &kp ASTRK  &none      &none    &DEL
+            &kp TILDE &kp LT    &kp LBRC  &kp LBKT  &kp LPAR  &kp PIPE        &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &none    &none
             &none     &kp GT    &kp RBRC  &kp RBKT  &kp RPAR  &kp GRAVE       &none      &none      &none      &none      &none    &none
                                           &mo 3     &mo 1     &mt LTH         &mt RTH    &mo 2      &kp RALT
             >;
