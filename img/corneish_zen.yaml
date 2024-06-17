@@ -184,19 +184,19 @@ layers:
   - ''
   - ''
   - ''
-  - '&sys_reset'
+  - ''
   - ''
   - ''
   - {t: BT, h: '2'}
   - {t: BT, h: '1'}
   - {t: BT, h: '0'}
-  - OUT BLE
-  - OUT USB
+  - ''
+  - ''
   - {t: BT DISC, h: '0'}
   - {t: BT DISC, h: '1'}
   - {t: BT DISC, h: '2'}
   - ''
-  - '&bootloader'
+  - ''
   - ''
   - ''
   - ''
@@ -208,7 +208,7 @@ layers:
   - ''
   - ''
   - ''
-  - EP TOG
+  - ''
   - tool
   - {t: lower, type: held}
   - {t: SPACE, h: LCTRL}
