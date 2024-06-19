@@ -7,12 +7,12 @@
 
 #define VOL_UP C_VOL_UP
 #define VOL_DN C_VOL_DN
-#define MUTE  C_MUTE
+#define MUTE   C_MUTE
 
 #define BRI_UP C_BRI_UP
 #define BRI_DN C_BRI_DN
 
-#define PLPA C_PP
+#define PLPA   C_PP
 #define NEXT   C_NEXT
 #define PREV   C_PREV
 
@@ -51,7 +51,7 @@
       raise_layer {
           label = "RAISE";
           bindings = <
-            &none     &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT       &kp CARET  &kp AMPS   &kp ASTRK  &none      &none     &DEL
+            &none     &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT       &kp CARET  &kp AMPS   &kp ASTRK  &none      &none     &kp DEL
             &kp TILDE &kp LT    &kp LBRC  &kp LBKT  &kp LPAR  &kp PIPE        &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp UNDER &none
             &none     &kp GT    &kp RBRC  &kp RBKT  &kp RPAR  &kp GRAVE       &kp EQUAL  &kp MINUS  &kp PLUS   &none      &none     &none
                                           &mo 3     &mo 1     &mt LTH         &mt RTH    &mo 2      &kp RALT
@@ -61,10 +61,10 @@
       tool_layer {
           label = "TOOL";
           bindings = <
-            &none     &kp NEXT  &kp F7   &kp F8     &kp F9   &kp F10       &none     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none  &bt BT_CLR
-            &kp CAPS  &kp PLPA  &kp F4   &kp F5     &kp F6   &kp F11       &none     &none         &none         &none         &none  &none
-            &none     &kp PREV  &kp F1   &kp F2     &kp F3   &kp F12       &none     &none         &none         &none         &none  &none
-                                         &mo 3      &mo 1    &mt LTH       &mt RTH   &mo 2  &kp RALT
+            &none     &kp NEXT  &kp F7   &kp F8     &kp F9   &kp F10       &none     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none    &bt BT_CLR
+            &kp CAPS  &kp PLPA  &kp F4   &kp F5     &kp F6   &kp F11       &none     &none         &none         &none         &none    &none
+            &none     &kp PREV  &kp F1   &kp F2     &kp F3   &kp F12       &none     &none         &none         &none         &none    &none
+                                         &mo 3      &mo 1    &mt LTH       &mt RTH   &mo 2         &kp RALT
             >;
       };
 
