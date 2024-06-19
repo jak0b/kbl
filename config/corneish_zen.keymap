@@ -4,6 +4,7 @@
 
 #define LTH LCTRL SPACE
 #define RTH LMETA RET
+#define RTHR RALT BSPC
 
 #define VOL_UP C_VOL_UP
 #define VOL_DN C_VOL_DN
@@ -32,7 +33,7 @@
             &kp TAB    &kp Q  &kp W  &kp E  &kp R  &kp T        &kp Y      &kp U  &kp I          &kp O    &kp P     &kp BSPC
             &kp ESC    &kp A  &kp S  &kp D  &kp F  &kp G        &kp H      &kp J  &kp K          &kp L    &kp SEMI  &kp SQT
             &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B        &kp N      &kp M  &kp COMMA      &kp DOT  &kp FSLH  &kp RSHIFT
-                                     &mo 3  &mo 1  &mt LTH      &mt RTH    &mo 2  &kp RALT
+                                     &mo 3  &mo 1  &mt LTH      &mt RTH    &mo 2  &mt RTHR
             >;
       };
 
@@ -43,7 +44,7 @@
             &kp BRI_UP &kp VOL_UP &kp N7   &kp N8   &kp N9  &kp HOME    &kp PG_UP &none      &none      &none    &none   &kp BSPC
             &kp MUTE   &kp N0     &kp N4   &kp N5   &kp N6  &none       &none     &none      &none      &none    &none   &none
             &kp BRI_DN &kp VOL_DN &kp N1   &kp N2   &kp N3  &kp END     &kp PG_DN &none      &none      &none    &none   &none
-                                           &mo 3    &mo 1   &mt LTH     &mt RTH   &mo 2      &kp RALT
+                                           &mo 3    &mo 1   &mt LTH     &mt RTH   &mo 2      &mt RTHR
             >;
       };
 
@@ -54,7 +55,7 @@
             &none     &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT       &kp CARET  &kp AMPS   &kp ASTRK  &none      &none     &kp DEL
             &kp TILDE &kp LT    &kp LBRC  &kp LBKT  &kp LPAR  &kp PIPE        &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp UNDER &none
             &none     &kp GT    &kp RBRC  &kp RBKT  &kp RPAR  &kp GRAVE       &kp EQUAL  &kp MINUS  &kp PLUS   &none      &none     &none
-                                          &mo 3     &mo 1     &mt LTH         &mt RTH    &mo 2      &kp RALT
+                                          &mo 3     &mo 1     &mt LTH         &mt RTH    &mo 2      &mt RTHR
             >;
       };
 
@@ -64,7 +65,7 @@
             &none     &kp NEXT  &kp F7   &kp F8     &kp F9   &kp F10       &none     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none    &bt BT_CLR
             &kp CAPS  &kp PLPA  &kp F4   &kp F5     &kp F6   &kp F11       &none     &none         &none         &none         &none    &none
             &none     &kp PREV  &kp F1   &kp F2     &kp F3   &kp F12       &none     &none         &none         &none         &none    &none
-                                         &mo 3      &mo 1    &mt LTH       &mt RTH   &mo 2         &kp RALT
+                                         &mo 3      &mo 1    &mt LTH       &mt RTH   &mo 2         &mt RTHR
             >;
       };
 
