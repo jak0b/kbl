@@ -1,6 +1,4 @@
 ### Corne Choc Low Profile Layout
-![Corne layout](https://raw.githubusercontent.com/jak0b/kbl/main/img/corne.svg)
+![Corne layout](https://raw.githubusercontent.com/jak0b/kbl/main/img/corneish_zen.svg)
 
-[Board](https://github.com/foostan/crkbd)
-
-[Case](https://www.printables.com/model/137791-corne-lp-mechanical-keyboard-minimal-case)
+[Board](https://lowprokb.ca/products/corne-ish-zen-pcb)
