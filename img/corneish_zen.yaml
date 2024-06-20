@@ -42,7 +42,7 @@ layers:
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - raise
-  - {t: BSPC, h: RALT}
+  - RALT
   lower:
   - BRI UP
   - VOL UP
@@ -85,7 +85,7 @@ layers:
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - raise
-  - {t: BSPC, h: RALT}
+  - RALT
   raise:
   - ''
   - '!'
@@ -128,7 +128,7 @@ layers:
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - {t: raise, type: held}
-  - {t: BSPC, h: RALT}
+  - RALT
   tool:
   - ''
   - NEXT
@@ -171,4 +171,4 @@ layers:
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - raise
-  - {t: BSPC, h: RALT}
+  - RALT
