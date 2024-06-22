@@ -2,7 +2,6 @@
 
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/ext_power.h>
 
 #define LTH LCTRL SPACE
 #define RTH LMETA RET
@@ -60,7 +59,7 @@
 
     tool_layer {
       bindings = <
-        &none     &kp NEXT  &kp F7   &kp F8     &kp F9   &kp F10       &out OUT_TOG   &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &none    &bt BT_CLR
+        &none     &kp NEXT  &kp F7   &kp F8     &kp F9   &kp F10       &none          &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &none    &bt BT_CLR
         &kp CAPS  &kp PLPA  &kp F4   &kp F5     &kp F6   &kp F11       &none          &none          &none          &none          &none    &none
         &none     &kp PREV  &kp F1   &kp F2     &kp F3   &kp F12       &none          &none          &none          &none          &none    &none
                                      &mo 3      &mo 1    &mt LTH       &mt RTH        &mo 2          &kp RALT
