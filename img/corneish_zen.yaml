@@ -64,10 +64,10 @@ layers:
   - '~'
   - '|'
   - '='
-  - '-'
   - +
-  - _
-  - \
+  - ''
+  - ''
+  - ''
   - BRI DN
   - VOL DN
   - '1'
@@ -75,10 +75,10 @@ layers:
   - '3'
   - END
   - PG DN
+  - _
+  - '-'
   - ''
-  - ''
-  - ''
-  - ''
+  - \
   - ''
   - tool
   - {t: lower, type: held}
@@ -87,7 +87,7 @@ layers:
   - raise
   - RALT
   raise:
-  - ''
+  - NEXT
   - '!'
   - '@'
   - '#'
@@ -99,7 +99,7 @@ layers:
   - '-'
   - '='
   - DEL
-  - ''
+  - PP
   - <
   - '{'
   - '['
@@ -111,7 +111,7 @@ layers:
   - RIGHT
   - ''
   - ''
-  - ''
+  - PREV
   - '>'
   - '}'
   - ']'
@@ -131,7 +131,7 @@ layers:
   - RALT
   tool:
   - ''
-  - NEXT
+  - ''
   - F7
   - F8
   - F9
@@ -143,7 +143,7 @@ layers:
   - ''
   - BT CLR
   - CAPS
-  - PP
+  - ''
   - F4
   - F5
   - F6
@@ -155,7 +155,7 @@ layers:
   - ''
   - ''
   - ''
-  - PREV
+  - ''
   - F1
   - F2
   - F3
