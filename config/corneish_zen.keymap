@@ -43,20 +43,20 @@
     default_layer {
       label = " ";
       bindings = <
-        &kp TAB    &kp Q  &kp W  &kp E  &kp R    &kp T                        &kp Y      &kp U  &kp I          &kp O    &kp P     &kp DEL
-        &kp ESC    &kp A  &kp S  &kp D  &kp F    &kp G                        &kp H      &kp J  &kp K          &kp L    &kp SEMI  &kp BSPC
-        &kp LSHFT  &kp Z  &kp X  &kp C  &kp V    &kp B                        &kp N      &kp M  &kp COMMA      &kp DOT  &kp FSLH  &kp RSHIFT
-                                        &kp LALT &mo 1  &mt LTH      &mt RTH  &mo 2  &kp RALT
+        &kp TAB    &kp Q  &kp W  &kp E  &kp R    &kp T                        &kp Y   &kp U  &kp I          &kp O    &kp P     &kp DEL
+        &kp ESC    &kp A  &kp S  &kp D  &kp F    &kp G                        &kp H   &kp J  &kp K          &kp L    &kp SEMI  &kp BSPC
+        &kp LSHFT  &kp Z  &kp X  &kp C  &kp V    &kp B                        &kp N   &kp M  &kp COMMA      &kp DOT  &kp FSLH  &kp RSHIFT
+                                        &kp LALT &mo 1  &mt LTH      &mt RTH  &mo 2   &kp RALT
       >;
     };
 
 
     lower_layer {
       bindings = <
-        &kp BRI_UP &kp VOL_UP &kp N7   &kp N8   &kp N9   &kp HOME                      &kp PG_UP &kp PLUS   &none      &none    &none     &kp DEL
-        &kp MUTE   &kp N0     &kp N4   &kp N5   &kp N6   &kp TILDE                     &kp PIPE  &kp MINUS  &kp EQUAL  &none    &none     &kp BSPC
-        &kp BRI_DN &kp VOL_DN &kp N1   &kp N2   &kp N3   &kp END                       &kp PG_DN &kp UNDER  &none      &none    &kp BSLH  &none
-                                                &kp LALT &mo 1    &mt LTH     &mt RTH  &mo 2      &kp RALT
+        &kp BRI_UP &kp VOL_UP &kp N7   &kp N8   &kp N9   &kp HOME                     &kp PG_UP  &kp PLUS   &none      &none    &none     &kp DEL
+        &kp MUTE   &kp N0     &kp N4   &kp N5   &kp N6   &none                        &kp PIPE   &kp MINUS  &kp EQUAL  &none    &none     &kp BSPC
+        &kp BRI_DN &kp VOL_DN &kp N1   &kp N2   &kp N3   &kp END                      &kp PG_DN  &kp UNDER  &none      &none    &kp BSLH  &none
+                                                &kp LALT &mo 1    &mt LTH   &kp TILDE &mo 2      &kp RALT
       >;
     };
 
