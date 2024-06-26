@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - LALT
+  - DEL
   - ESC
   - A
   - S
@@ -37,7 +37,7 @@ layers:
   - .
   - /
   - RSHIFT
-  - tool
+  - LALT
   - lower
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
@@ -55,7 +55,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - DEL
   - MUTE
   - '0'
   - '4'
@@ -80,7 +80,7 @@ layers:
   - ''
   - \
   - ''
-  - tool
+  - LALT
   - {t: lower, type: held}
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
@@ -110,7 +110,7 @@ layers:
   - UP
   - RIGHT
   - ''
-  - DEL
+  - ''
   - PREV
   - '>'
   - '}'
@@ -123,9 +123,9 @@ layers:
   - ''
   - ''
   - ''
-  - tool
+  - LALT
+  - lower
   - '`'
-  - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - {t: raise, type: held}
   - RALT
@@ -166,9 +166,9 @@ layers:
   - ''
   - BT CLR
   - ''
-  - {t: tool, type: held}
-  - lower
+  - LALT
+  - {t: lower, type: held}
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
-  - raise
+  - {t: raise, type: held}
   - RALT
