@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - CAPS
+  - LALT
   - ESC
   - A
   - S
@@ -142,7 +142,7 @@ layers:
   - {t: BT, h: '2'}
   - ''
   - ''
-  - ''
+  - CAPS
   - ''
   - F4
   - F5
