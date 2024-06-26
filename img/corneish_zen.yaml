@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - BSPC
+  - CAPS
   - ESC
   - A
   - S
@@ -24,7 +24,7 @@ layers:
   - K
   - L
   - ;
-  - '`'
+  - BSPC
   - LSHFT
   - Z
   - X
@@ -55,7 +55,7 @@ layers:
   - ''
   - ''
   - ''
-  - BSPC
+  - ''
   - MUTE
   - '0'
   - '4'
@@ -67,7 +67,7 @@ layers:
   - '='
   - ''
   - ''
-  - ''
+  - BSPC
   - BRI DN
   - VOL DN
   - '1'
@@ -96,9 +96,9 @@ layers:
   - ^
   - '&'
   - '*'
-  - '-'
-  - '='
-  - DEL
+  - ''
+  - ''
+  - ''
   - PP
   - <
   - '{'
@@ -110,7 +110,7 @@ layers:
   - UP
   - RIGHT
   - ''
-  - ''
+  - DEL
   - PREV
   - '>'
   - '}'
@@ -124,7 +124,7 @@ layers:
   - ''
   - ''
   - tool
-  - lower
+  - '`'
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - {t: raise, type: held}
@@ -141,8 +141,8 @@ layers:
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - ''
-  - BT CLR
-  - CAPS
+  - ''
+  - ''
   - ''
   - F4
   - F5
@@ -164,7 +164,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - BT CLR
   - ''
   - {t: tool, type: held}
   - lower
