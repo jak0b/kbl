@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - BSPC
+  - TAB
   - ESC
   - A
   - S
@@ -24,7 +24,7 @@ layers:
   - K
   - L
   - ;
-  - ''''
+  - BSPC
   - LSHFT
   - Z
   - X
@@ -37,7 +37,7 @@ layers:
   - .
   - /
   - RSHIFT
-  - tool
+  - LALT
   - lower
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
@@ -51,23 +51,23 @@ layers:
   - '9'
   - HOME
   - PG UP
+  - +
   - ''
   - ''
   - ''
   - ''
-  - BSPC
   - MUTE
   - '0'
   - '4'
   - '5'
   - '6'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - '`'
+  - '|'
+  - '-'
+  - '='
+  - _
+  - '~'
+  - BSPC
   - BRI DN
   - VOL DN
   - '1'
@@ -78,16 +78,16 @@ layers:
   - ''
   - ''
   - ''
+  - \
   - ''
-  - ''
-  - tool
+  - LALT
   - {t: lower, type: held}
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - raise
   - RALT
   raise:
-  - ''
+  - NEXT
   - '!'
   - '@'
   - '#'
@@ -98,32 +98,32 @@ layers:
   - '*'
   - ''
   - ''
-  - DEL
-  - '~'
+  - ''
+  - PP
   - <
   - '{'
   - '['
   - (
-  - '|'
+  - ''''
   - LEFT
   - DOWN
   - UP
   - RIGHT
-  - _
   - ''
-  - ''
+  - DEL
+  - PREV
   - '>'
   - '}'
   - ']'
   - )
-  - '`'
-  - '='
-  - '-'
-  - +
+  - '"'
   - ''
   - ''
   - ''
-  - tool
+  - ''
+  - ''
+  - ''
+  - LALT
   - lower
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
@@ -131,19 +131,19 @@ layers:
   - RALT
   tool:
   - ''
-  - NEXT
+  - ''
   - F7
   - F8
   - F9
   - F10
-  - OUT TOG
+  - ''
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - ''
-  - BT CLR
+  - ''
   - CAPS
-  - PP
+  - ''
   - F4
   - F5
   - F6
@@ -155,7 +155,7 @@ layers:
   - ''
   - ''
   - ''
-  - PREV
+  - ''
   - F1
   - F2
   - F3
@@ -164,11 +164,11 @@ layers:
   - ''
   - ''
   - ''
+  - BT CLR
   - ''
-  - ''
-  - {t: tool, type: held}
-  - lower
+  - LALT
+  - {t: lower, type: held}
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
-  - raise
+  - {t: raise, type: held}
   - RALT
