@@ -82,6 +82,10 @@ text.shifted {
     dominant-baseline: hanging;
 }
 
+text.layer-activator {
+    text-decoration: underline;
+}
+
 /* styling for hold/shifted label text in combo box */
 text.combo.hold, text.combo.shifted {
     font-size: 8px;
@@ -122,7 +126,7 @@ text.trans { fill: #7e8184; }
 path.combo { stroke: #7f7f7f; }
 </style>
 <g transform="translate(30, 0)" class="layer-default">
-<text x="0" y="28" class="label">default:</text>
+<text x="0" y="28" class="label" id="default">default:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(34, 60)" class="key keypos-0">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
@@ -274,8 +278,9 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(347, 259) rotate(15.0)" class="key keypos-37">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
-<text x="0" y="0" class="key tap">lower</text>
-</g>
+<a href="#lower">
+<text x="0" y="0" class="key tap layer-activator">lower</text>
+</a></g>
 <g transform="translate(426, 272) rotate(30.0)" class="key keypos-38">
 <rect rx="6" ry="6" x="-32" y="-49" width="64" height="98" class="key"/>
 <text x="0" y="0" class="key tap">SPACE</text>
@@ -288,8 +293,9 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(673, 259) rotate(-15.0)" class="key keypos-40">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
-<text x="0" y="0" class="key tap">raise</text>
-</g>
+<a href="#raise">
+<text x="0" y="0" class="key tap layer-activator">raise</text>
+</a></g>
 <g transform="translate(748, 249)" class="key keypos-41">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
 <text x="0" y="0" class="key tap">RALT</text>
@@ -297,7 +303,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 </g>
 <g transform="translate(30, 390)" class="layer-lower">
-<text x="0" y="28" class="label">lower:</text>
+<text x="0" y="28" class="label" id="lower">lower:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(34, 60)" class="key keypos-0">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
@@ -453,8 +459,9 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(347, 259) rotate(15.0)" class="key held keypos-37">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key held"/>
-<text x="0" y="0" class="key held tap">lower</text>
-</g>
+<a href="#lower">
+<text x="0" y="0" class="key held tap layer-activator">lower</text>
+</a></g>
 <g transform="translate(426, 272) rotate(30.0)" class="key keypos-38">
 <rect rx="6" ry="6" x="-32" y="-49" width="64" height="98" class="key"/>
 <text x="0" y="0" class="key tap">SPACE</text>
@@ -467,8 +474,9 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(673, 259) rotate(-15.0)" class="key keypos-40">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
-<text x="0" y="0" class="key tap">raise</text>
-</g>
+<a href="#raise">
+<text x="0" y="0" class="key tap layer-activator">raise</text>
+</a></g>
 <g transform="translate(748, 249)" class="key keypos-41">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
 <text x="0" y="0" class="key tap">RALT</text>
@@ -476,7 +484,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 </g>
 <g transform="translate(30, 779)" class="layer-raise">
-<text x="0" y="28" class="label">raise:</text>
+<text x="0" y="28" class="label" id="raise">raise:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(34, 60)" class="key keypos-0">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
@@ -618,8 +626,9 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(347, 259) rotate(15.0)" class="key keypos-37">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
-<text x="0" y="0" class="key tap">lower</text>
-</g>
+<a href="#lower">
+<text x="0" y="0" class="key tap layer-activator">lower</text>
+</a></g>
 <g transform="translate(426, 272) rotate(30.0)" class="key keypos-38">
 <rect rx="6" ry="6" x="-32" y="-49" width="64" height="98" class="key"/>
 <text x="0" y="0" class="key tap">SPACE</text>
@@ -632,8 +641,9 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(673, 259) rotate(-15.0)" class="key held keypos-40">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key held"/>
-<text x="0" y="0" class="key held tap">raise</text>
-</g>
+<a href="#raise">
+<text x="0" y="0" class="key held tap layer-activator">raise</text>
+</a></g>
 <g transform="translate(748, 249)" class="key keypos-41">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
 <text x="0" y="0" class="key tap">RALT</text>
@@ -641,7 +651,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 </g>
 <g transform="translate(30, 1169)" class="layer-tool">
-<text x="0" y="28" class="label">tool:</text>
+<text x="0" y="28" class="label" id="tool">tool:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(34, 60)" class="key keypos-0">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
@@ -779,8 +789,9 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(347, 259) rotate(15.0)" class="key held keypos-37">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key held"/>
-<text x="0" y="0" class="key held tap">lower</text>
-</g>
+<a href="#lower">
+<text x="0" y="0" class="key held tap layer-activator">lower</text>
+</a></g>
 <g transform="translate(426, 272) rotate(30.0)" class="key keypos-38">
 <rect rx="6" ry="6" x="-32" y="-49" width="64" height="98" class="key"/>
 <text x="0" y="0" class="key tap">SPACE</text>
@@ -793,8 +804,9 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(673, 259) rotate(-15.0)" class="key held keypos-40">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key held"/>
-<text x="0" y="0" class="key held tap">raise</text>
-</g>
+<a href="#raise">
+<text x="0" y="0" class="key held tap layer-activator">raise</text>
+</a></g>
 <g transform="translate(748, 249)" class="key keypos-41">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
 <text x="0" y="0" class="key tap">RALT</text>
