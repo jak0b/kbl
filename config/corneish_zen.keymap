@@ -27,6 +27,10 @@
   tapping-term-ms = <177>;
 };
 
+&caps_word {
+    mods = <(MOD_LSFT | MOD_LALT)>;
+};
+
 / {
   conditional_layers {
     compatible = "zmk,conditional-layers";
