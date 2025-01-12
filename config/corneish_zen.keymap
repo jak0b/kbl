@@ -33,7 +33,7 @@
 
     lower_temp {
       if-layers = <1 2>;
-      then-layer = <3>;
+      then-layer = <4>;
     };
   };
 
@@ -62,7 +62,7 @@
         &kp TAB    &kp Q  &kp W  &kp E  &kp R    &kp T                        &kp Y   &kp U  &kp I          &kp O    &kp P     &kp TAB
         &kp ESC    &kp A  &kp S  &kp D  &kp F    &kp G                        &kp H   &kp J  &kp K          &kp L    &kp SEMI  &kp BSPC
         &kp LSHFT  &kp Z  &kp X  &kp C  &kp V    &kp B                        &kp N   &kp M  &kp COMMA      &kp DOT  &kp FSLH  &kp RSHIFT
-                                        &kp LALT &mo 1  &mt LTH      &mt RTH  &mo 2   &kp RALT
+                                        &mo 3 &mo 1  &mt LTH      &mt RTH  &mo 2   &kp RALT
       >;
     };
 
@@ -72,26 +72,35 @@
         &kp BRI_UP &kp VOL_UP &kp N7   &kp N8   &kp N9   &kp HOME                     &kp PG_UP  &kp PLUS   &none     &none     &none     &none
         &kp MUTE   &kp N0     &kp N4   &kp N5   &kp N6   &none                        &kp PIPE   &kp MINUS  &kp EQUAL &kp UNDER &kp TILDE &kp BSPC
         &kp BRI_DN &kp VOL_DN &kp N1   &kp N2   &kp N3   &kp END                      &kp PG_DN  &none      &none     &none     &kp BSLH  &none
-                                                &kp LALT &mo 1    &mt LTH   &mt RTH   &mo 2      &kp RALT
+                                                &mo 3 &mo 1    &mt LTH   &mt RTH   &mo 2      &kp RALT
       >;
     };
 
     raise_layer {
       bindings = <
-        &kp NEXT  &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp GRAVE                   &kp CARET  &kp AMPS   &kp ASTRK  &kp PRCNT  &none     &none
-        &kp PLPA  &kp LT    &kp LBRC  &kp LBKT  &kp LPAR  &kp SQT                     &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &none     &kp DEL
-        &kp PREV  &kp GT    &kp RBRC  &kp RBKT  &kp RPAR  &kp DQT                     &none      &none      &none      &none      &none     &none
-                                                &kp LALT  &mo 1  &mt LTH     &mt RTH  &mo 2      &kp RALT
+        &kp NEXT  &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT                   &kp CARET  &kp AMPS   &kp ASTRK  &none      &none     &none
+        &none     &none     &kp GRAVE &kp DQT   &kp SQT   &none                       &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &none     &kp DEL
+        &none     &none     &none     &none     &none     &none                       &none      &none      &none      &none      &none     &none
+                                                &mo 3  &mo 1  &mt LTH     &mt RTH  &mo 2      &kp RALT
+      >;
+    };
+
+    function_layer {
+      bindings = <
+        &none   &none  &kp F7   &kp F8     &kp F9   &kp F10                      &none      &none      &none      &none      &none     &none
+        &none   &none  &kp F4   &kp F5     &kp F6   &kp F11                      &none      &kp LPAR   &kp LBKT   &kp LBRC   &kp LT    &none  
+        &none   &none  &kp F1   &kp F2     &kp F3   &kp F12                      &none      &kp RPAR   &kp RBKT   &kp RBRC   &kp GT    &none
+                                                &mo 3  &mo 1  &mt LTH     &mt RTH  &mo 2      &kp RALT
       >;
     };
 
 
     tool_layer {
       bindings = <
-        &none     &none  &kp F7   &kp F8     &kp F9   &kp F10                      &none  &bt BT_SEL  0  &bt BT_SEL  1  &bt BT_SEL  2  &bt BT_SEL  3  &bt BT_SEL  4
-        &kp CAPS  &none  &kp F4   &kp F5     &kp F6   &kp F11                      &none  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4
-        &none     &none  &kp F1   &kp F2     &kp F3   &kp F12                      &none  &none          &none          &none          &bt BT_CLR     &none
-                                             &kp LALT &mo 1    &mt LTH    &mt RTH  &mo 2  &kp RALT
+        &none   &none  &none    &none      &none    &none                         &none  &bt BT_SEL  0  &bt BT_SEL  1  &bt BT_SEL  2  &bt BT_SEL  3  &bt BT_SEL  4
+        &none   &none  &none    &none      &none    &none                         &none  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4
+        &none   &none  &none    &none      &none    &none                         &none  &none          &none          &none          &bt BT_CLR     &none
+                                             &mo 3 &mo 1    &mt LTH    &mt RTH  &mo 2  &kp RALT
       >;
     };
   };
