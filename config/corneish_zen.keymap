@@ -36,22 +36,6 @@
     };
   };
 
-  combos {
-    compatible = "zmk,combos";
-
-    combo_left_thumb_meta {
-      timeout-ms = <40>;
-      key-positions = <13 38>;
-      bindings = <&kp LMETA>;
-    };
-
-    combo_right_thumb_ctrl {
-      timeout-ms = <40>;
-      key-positions = <22 39>;
-      bindings = <&kp LCTRL>;
-    };
-  };
-
   keymap {
     compatible = "zmk,keymap";
 
