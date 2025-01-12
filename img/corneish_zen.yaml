@@ -1,6 +1,6 @@
-layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
+layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
 layers:
-  default:
+  ' ':
   - TAB
   - Q
   - W
@@ -172,3 +172,8 @@ layers:
   - {t: RET, h: LMETA}
   - {t: raise, type: held}
   - RALT
+combos:
+- p: [7, 8]
+  k: +
+- p: [19, 20]
+  k: '-'
