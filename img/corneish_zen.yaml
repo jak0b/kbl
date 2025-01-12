@@ -87,7 +87,7 @@ layers:
   - raise
   - RALT
   raise:
-  - NEXT
+  - ''
   - '!'
   - '@'
   - '#'
@@ -132,10 +132,10 @@ layers:
   function:
   - BRI UP
   - VOL UP
-  - F7
-  - F8
-  - F9
-  - F10
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   - ''
@@ -144,10 +144,10 @@ layers:
   - ''
   - MUTE
   - ''
-  - F4
-  - F5
-  - F6
-  - F11
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - (
   - '['
@@ -156,10 +156,10 @@ layers:
   - BSPC
   - BRI DN
   - VOL DN
-  - F1
-  - F2
-  - F3
-  - F12
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - )
   - ']'
@@ -172,7 +172,50 @@ layers:
   - {t: RET, h: LMETA}
   - raise
   - RALT
-  tool:
+  f_key:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - F7
+  - F8
+  - F9
+  - F10
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - F4
+  - F5
+  - F6
+  - F11
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - F1
+  - F2
+  - F3
+  - F12
+  - ''
+  - function
+  - lower
+  - {t: SPACE, h: LCTRL}
+  - {t: RET, h: LMETA}
+  - raise
+  - RALT
+  bluetooth:
   - ''
   - ''
   - ''
@@ -209,8 +252,8 @@ layers:
   - ''
   - BT CLR
   - ''
-  - function
-  - {t: lower, type: held}
+  - {t: function, type: held}
+  - lower
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - {t: raise, type: held}
