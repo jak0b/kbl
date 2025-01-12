@@ -258,8 +258,3 @@ layers:
   - {t: RET, h: LMETA}
   - {t: raise, type: held}
   - RALT
-combos:
-- p: [13, 38]
-  k: LMETA
-- p: [22, 39]
-  k: LCTRL
