@@ -17,12 +17,6 @@
 #define NEXT   C_NEXT
 #define PREV   C_PREV
 
-/ {
-  chosen {
-    zmk,matrix_transform = &default_transform;
-  };
-};
-
 &mt {
   tapping-term-ms = <177>;
 };
