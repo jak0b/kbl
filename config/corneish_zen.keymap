@@ -51,6 +51,30 @@
       key-positions = <19 20>;
       bindings = <&kp MINUS>;
     };
+
+    combo_equal {
+      timeout-ms = <30>;
+      key-positions = <21 22>;
+      bindings = <&kp EQUAL>;
+    };
+
+    combo_under {
+      timeout-ms = <30>;
+      key-positions = <31 32>;
+      bindings = <&kp UNDER>;
+    };
+
+    combo_left_bracket {
+      timeout-ms = <30>;
+      key-positions = <13 14>;
+      bindings = <&kp LBRC>;
+    };
+
+    combo_right_bracket {
+      timeout-ms = <30>;
+      key-positions = <25 26>;
+      bindings = <&kp LBRC>;
+    };
   };
 
   keymap {
