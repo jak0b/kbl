@@ -31,9 +31,14 @@
   conditional_layers {
     compatible = "zmk,conditional-layers";
 
-    lower_temp {
+    bluetooth_layer {
       if-layers = <1 2>;
-      then-layer = <4>;
+      then-layer = <5>;
+    };
+
+    f_key_layer {
+      if-layers = <2 3>;
+      then-layer = <5>;
     };
   };
 
@@ -77,7 +82,7 @@
 
     raise_layer {
       bindings = <
-        &kp NEXT  &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT                   &kp CARET  &kp AMPS   &kp ASTRK  &none      &none     &none
+        &none     &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT                   &kp CARET  &kp AMPS   &kp ASTRK  &none      &none     &none
         &none     &none     &kp GRAVE &kp DQT   &kp SQT   &none                       &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &none     &kp DEL
         &none     &none     &none     &none     &none     &none                       &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &none     &none
                                                 &mo 3  &mo 1  &mt LTH     &mt RTH  &mo 2      &kp RALT
@@ -86,20 +91,28 @@
 
     function_layer {
       bindings = <
-        &kp BRI_UP &kp VOL_UP  &kp F7   &kp F8     &kp F9   &kp F10                      &none      &none      &none      &none      &none     &none
-        &kp MUTE   &none       &kp F4   &kp F5     &kp F6   &kp F11                      &none      &kp LPAR   &kp LBKT   &kp LBRC   &kp LT    &kp BSPC
-        &kp BRI_DN &kp VOL_DN  &kp F1   &kp F2     &kp F3   &kp F12                      &none      &kp RPAR   &kp RBKT   &kp RBRC   &kp GT    &none
+        &kp BRI_UP &kp VOL_UP  &none    &none      &none    &none                        &none      &none      &none      &none      &none     &none
+        &kp MUTE   &none       &none    &none      &none    &none                        &none      &kp LPAR   &kp LBKT   &kp LBRC   &kp LT    &kp BSPC
+        &kp BRI_DN &kp VOL_DN  &none    &none      &none    &none                        &none      &kp RPAR   &kp RBKT   &kp RBRC   &kp GT    &none
                                                    &mo 3    &mo 1  &mt LTH      &mt RTH  &mo 2      &kp RALT
       >;
     };
 
-
-    tool_layer {
+    f_key_layer {
       bindings = <
-        &none   &none  &none    &none      &none    &none                         &none  &bt BT_SEL  0  &bt BT_SEL  1  &bt BT_SEL  2  &bt BT_SEL  3  &bt BT_SEL  4
-        &none   &none  &none    &none      &none    &none                         &none  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4
-        &none   &none  &none    &none      &none    &none                         &none  &none          &none          &none          &bt BT_CLR     &none
-                                             &mo 3 &mo 1    &mt LTH    &mt RTH  &mo 2  &kp RALT
+        &none   &none    &none     &none   &none   &none                        &none      &kp F7     &kp F8    &kp F9    &kp F10   &none
+        &none   &none    &none     &none   &none   &none                        &none      &kp F4     &kp F5    &kp F6    &kp F11   &none   
+        &none   &none    &none     &none   &none   &none                        &none      &kp F1     &kp F2    &kp F3    &kp F12   &none
+                                           &mo 3   &mo 1    &mt LTH   &mt RTH   &mo 2      &kp RALT
+      >;
+    };
+
+    bluetooth_layer {
+      bindings = <
+        &none   &none  &none    &none      &none    &none                &none    &bt BT_SEL  0  &bt BT_SEL  1  &bt BT_SEL  2  &bt BT_SEL  3  &bt BT_SEL  4
+        &none   &none  &none    &none      &none    &none                &none    &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4
+        &none   &none  &none    &none      &none    &none                &none    &none          &none          &none          &bt BT_CLR     &none
+                                           &mo 3    &mo 1    &mt LTH     &mt RTH  &mo 2          &kp RALT
       >;
     };
   };
