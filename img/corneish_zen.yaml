@@ -209,11 +209,11 @@ layers:
   - F3
   - F12
   - ''
-  - function
+  - {t: function, type: held}
   - lower
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
-  - raise
+  - {t: raise, type: held}
   - RALT
   bluetooth:
   - ''
@@ -252,8 +252,8 @@ layers:
   - ''
   - BT CLR
   - ''
-  - {t: function, type: held}
-  - lower
+  - function
+  - {t: lower, type: held}
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - {t: raise, type: held}
