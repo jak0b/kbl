@@ -38,7 +38,7 @@
 
     f_key_layer {
       if-layers = <2 3>;
-      then-layer = <5>;
+      then-layer = <4>;
     };
   };
 
