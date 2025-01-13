@@ -497,21 +497,22 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(714, 42)" class="key keypos-7">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
-<text x="0" y="0" class="key tap">^</text>
+<text x="0" y="0" class="key tap">&amp;</text>
 </g>
 <g transform="translate(782, 34)" class="key keypos-8">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
-<text x="0" y="0" class="key tap">&amp;</text>
+<text x="0" y="0" class="key tap">*</text>
 </g>
 <g transform="translate(850, 42)" class="key keypos-9">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
-<text x="0" y="0" class="key tap">*</text>
+<text x="0" y="0" class="key tap">^</text>
 </g>
 <g transform="translate(918, 60)" class="key keypos-10">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
 </g>
 <g transform="translate(986, 60)" class="key keypos-11">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
+<text x="0" y="0" class="key tap">none</text>
 </g>
 <g transform="translate(34, 128)" class="key keypos-12">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
