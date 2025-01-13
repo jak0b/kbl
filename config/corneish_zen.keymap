@@ -55,36 +55,36 @@
 
     lower_layer {
       bindings = <
-        &none   &none     &none     &kp PLUS  &none     &none                        &none      &none      &none     &none     &none  &none
-        &none   &kp TILDE &kp UNDER &kp MINUS &kp EQUAL &kp PIPE                     &none      &kp LPAR   &kp LBKT  &kp LBRC  &kp LT &kp BSPC
-        &none   &none     &none     &none     &none     &none                        &none      &kp RPAR   &kp RBKT  &kp RBRC  &kp GT &none
-                                             &mo 3     &mo 1    &mt LTH   &mt RTH   &mo 2      &kp RALT
+        &none  &none   &kp N3    &kp PLUS  &kp N7    &kp N9                       &none     &none      &kp TILDE  &none     &none  &none
+        &none  &kp N1  &kp UNDER &kp MINUS &kp EQUAL &kp N5                       &kp PIPE  &kp LPAR   &kp LBKT   &kp LBRC  &kp LT &kp BSPC
+        &none  &kp N0  &kp N2    &kp N4    &kp N6    &kp N8                       &none     &kp RPAR   &kp RBKT   &kp RBRC  &kp GT &none
+                                              &mo 3     &mo 1    &mt LTH   &mt RTH   &mo 2      &kp RALT
       >;
     };
 
     raise_layer {
       bindings = <
-        &none     &none     &kp AT    &kp HASH  &kp DLLR  &none                       &none      &kp AMPS   &kp ASTRK  &kp CARET  &none     &none   
+        &none     &none     &kp AT    &kp HASH  &kp DLLR  &none                       &none      &kp AMPS   &kp ASTRK  &kp CARET  &none     &none
         &none     &kp EXCL  &kp GRAVE &kp DQT   &kp SQT   &kp PRCNT                   &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &none     &kp DEL
         &none     &none     &none     &none     &none     &none                       &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp BSLH  &none
-                                                &mo 3  &mo 1  &mt LTH     &mt RTH  &mo 2      &kp RALT
+                                                &mo 3  &mo 1  &mt LTH     &mt RTH     &mo 2      &kp RALT
       >;
     };
 
     opt_layer {
       bindings = <
-        &none   &kp BRI_UP  &kp N7   &kp N8     &kp N9   &kp VOL_UP                  &none          &mkp MB4        &none        &mkp MB5        &none   &none
-        &none   &kp N0      &kp N4   &kp N5     &kp N6   &kp MUTE                    &mmv MOVE_LEFT &mmv MOVE_DOWN  &mmv MOVE_UP &mmv MOVE_RIGHT &none   &kp BSPC
-        &none   &kp BRI_DN  &kp N1   &kp N2     &kp N3   &kp VOL_DN                  &msc SCRL_LEFT &msc SCRL_DOWN  &msc SCRL_UP &msc SCRL_RIGHT &none   &none
-                                                &mo 3    &mo 1  &mt LTH    &mkp LCLK &mkp MCLK      &mkp RCLK
+        &none   &none   &none    &none      &none       &none                          &none          &mkp MB4        &none        &mkp MB5        &none   &none
+        &none   &none   &kp MUTE &kp VOL_UP &kp VOL_DN  &none                          &mmv MOVE_LEFT &mmv MOVE_DOWN  &mmv MOVE_UP &mmv MOVE_RIGHT &none   &kp BSPC
+        &none   &none   &none    &kp BRI_UP &kp BRI_DN  &none                          &msc SCRL_LEFT &msc SCRL_DOWN  &msc SCRL_UP &msc SCRL_RIGHT &none   &none
+                                                &mo 3      &mo 1  &mt LTH    &mkp LCLK &mkp MCLK      &mkp RCLK
       >;
     };
 
     function_layer {
       bindings = <
-        &none   &none    &kp F7    &kp F8  &kp F9  &kp F10                      &none      &none      &none     &none     &none  &none
-        &none   &none    &kp F4    &kp F5  &kp F6  &kp F11                      &none      &none      &none     &none     &none  &none   
-        &none   &none    &kp F1    &kp F2  &kp F3  &kp F12                      &none      &none      &none     &none     &none  &none
+        &none   &none    &kp F3    &none   &kp F7  &kp F9                       &kp F11    &none      &none     &none     &none  &none
+        &none   &kp F1   &none     &none   &none   &kp F5                       &none      &none      &none     &none     &none  &none   
+        &none   &none    &kp F2    &kp F4  &kp F6  &kp F8                       &kp F10    &kp F12    &none     &none     &none  &none
                                            &mo 3   &mo 1    &mt LTH   &mt RTH   &mo 2      &kp RALT
       >;
     };
