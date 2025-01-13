@@ -2,6 +2,7 @@
 
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define LTH LCTRL SPACE
 #define RTH LMETA RET
@@ -16,6 +17,9 @@
 #define PLPA   C_PP
 #define NEXT   C_NEXT
 #define PREV   C_PREV
+
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1000  // default: 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 80    // default: 10
 
 &mt {
   tapping-term-ms = <177>;
@@ -69,10 +73,10 @@
 
     opt_layer {
       bindings = <
-        &none   &kp BRI_UP  &kp N7   &kp N8     &kp N9   &kp VOL_UP                   &none      &none    &none   &none   &none   &none
-        &none   &kp N0      &kp N4   &kp N5     &kp N6   &kp MUTE                     &none      &none    &none   &none   &none   &kp BSPC
-        &none   &kp BRI_DN  &kp N1   &kp N2     &kp N3   &kp VOL_DN                   &none      &none    &none   &none   &none   &none
-                                                &mo 3    &mo 1  &mt LTH      &mt RTH  &mo 2      &kp RALT
+        &none   &kp BRI_UP  &kp N7   &kp N8     &kp N9   &kp VOL_UP                  &none          &none           &none        &none           &none   &none
+        &none   &kp N0      &kp N4   &kp N5     &kp N6   &kp MUTE                    &mmv MOVE_LEFT &mmv MOVE_DOWN  &mmv MOVE_UP &mmv MOVE_RIGHT &none   &kp BSPC
+        &none   &kp BRI_DN  &kp N1   &kp N2     &kp N3   &kp VOL_DN                  &none          &none           &none        &none           &none   &none
+                                                &mo 3    &mo 1  &mt LTH    &mkp MCLK &mkp RCLK      &kp RALT
       >;
     };
 
