@@ -53,7 +53,7 @@
       bindings = <
         &none   &none     &none     &kp PLUS  &none     &none                        &none      &kp N7     &kp N8    &kp N9    &none     &none
         &none   &kp TILDE &kp UNDER &kp MINUS &kp EQUAL &kp PIPE                     &kp N0     &kp N4     &kp N5    &kp N6    &none     &kp BSPC
-        &none   &none     &none     &none     &none     &none                        &none      &kp N1     &kp N2    &kp N3    &kp BSLH  &none
+        &none   &none     &none     &none     &none     &none                        &none      &kp N1     &kp N2    &kp N3    &none     &none
                                              &mo 3     &mo 1    &mt LTH   &mt RTH   &mo 2      &kp RALT
       >;
     };
@@ -62,7 +62,7 @@
       bindings = <
         &none     &none     &kp AT    &kp HASH  &kp DLLR  &none                       &none      &kp CARET  &kp AMPS   &kp ASTRK  &none     &none
         &none     &kp EXCL  &kp GRAVE &kp DQT   &kp SQT   &kp PRCNT                   &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &none     &kp DEL
-        &none     &none     &none     &none     &none     &none                       &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &none     &none
+        &none     &none     &none     &none     &none     &none                       &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp BSLH  &none
                                                 &mo 3  &mo 1  &mt LTH     &mt RTH  &mo 2      &kp RALT
       >;
     };
