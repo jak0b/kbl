@@ -60,8 +60,8 @@
 
     raise_layer {
       bindings = <
-        &none     &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT                   &kp CARET  &kp AMPS   &kp ASTRK  &none      &none     &none
-        &none     &none     &kp GRAVE &kp DQT   &kp SQT   &none                       &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &none     &kp DEL
+        &none     &none     &kp AT    &kp HASH  &kp DLLR  &none                       &none      &kp CARET  &kp AMPS   &kp ASTRK  &none     &none
+        &none     &kp EXCL  &kp GRAVE &kp DQT   &kp SQT   &kp PRCNT                   &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &none     &kp DEL
         &none     &none     &none     &none     &none     &none                       &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &none     &none
                                                 &mo 3  &mo 1  &mt LTH     &mt RTH  &mo 2      &kp RALT
       >;
