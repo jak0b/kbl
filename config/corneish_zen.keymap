@@ -52,8 +52,8 @@
     lower_layer {
       bindings = <
         &none   &none     &none     &kp PLUS  &none     &none                        &none      &none      &none     &none     &none  &none
-        &none   &kp TILDE &kp UNDER &kp MINUS &kp EQUAL &kp PIPE                     &none      &kp LPAR   &kp LBKT  &kp LBRC  &none  &kp BSPC
-        &none   &none     &none     &none     &none     &none                        &none      &kp RPAR   &kp RBKT  &kp RBRC  &none  &none
+        &none   &kp TILDE &kp UNDER &kp MINUS &kp EQUAL &kp PIPE                     &none      &kp LPAR   &kp LBKT  &kp LBRC  &kp LT &kp BSPC
+        &none   &none     &none     &none     &none     &none                        &none      &kp RPAR   &kp RBKT  &kp RBRC  &kp GT &none
                                              &mo 3     &mo 1    &mt LTH   &mt RTH   &mo 2      &kp RALT
       >;
     };
