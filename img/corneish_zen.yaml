@@ -137,9 +137,9 @@ layers:
   - '9'
   - VOL UP
   - ''
-  - ''
-  - ''
-  - ''
+  - '&mkp MBT4'
+  - '&mkp MCLK'
+  - '&mkp MBT5'
   - ''
   - ''
   - ''
@@ -160,18 +160,18 @@ layers:
   - '2'
   - '3'
   - VOL DN
-  - ''
-  - ''
-  - ''
-  - ''
+  - '&msc SCRL_LEFT'
+  - '&msc SCRL_DOWN'
+  - '&msc SCRL_UP'
+  - '&msc SCRL_RIGHT'
   - ''
   - ''
   - {t: opt, type: held}
   - lower
   - {t: SPACE, h: LCTRL}
-  - '&mkp MCLK'
+  - '&mkp LCLK'
   - '&mkp RCLK'
-  - RALT
+  - ''
   function:
   - ''
   - ''
