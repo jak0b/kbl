@@ -25,11 +25,11 @@
 #define BS3 BT_SEL 3
 #define BS4 BT_SEL 4
 
-#define BD0 BT_SEL 0
-#define BD1 BT_SEL 1
-#define BD2 BT_SEL 2
-#define BD3 BT_SEL 3
-#define BD4 BT_SEL 4
+#define BD0 BT_DISC 0
+#define BD1 BT_DISC 1
+#define BD2 BT_DISC 2
+#define BD3 BT_DISC 3
+#define BD4 BT_DISC 4
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1000  // default: 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 25    // default: 10
