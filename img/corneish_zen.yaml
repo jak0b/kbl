@@ -46,34 +46,34 @@ layers:
   lower:
   - ''
   - ''
-  - ''
+  - '3'
   - +
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - '7'
+  - '9'
   - ''
   - ''
   - '~'
+  - ''
+  - ''
+  - ''
+  - ''
+  - '1'
   - _
   - '-'
   - '='
+  - '5'
   - '|'
-  - ''
   - (
   - '['
   - '{'
   - <
   - BSPC
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - '0'
+  - '2'
+  - '4'
+  - '6'
+  - '8'
   - ''
   - )
   - ']'
@@ -131,11 +131,11 @@ layers:
   - RALT
   opt:
   - ''
-  - BRI UP
-  - '7'
-  - '8'
-  - '9'
-  - VOL UP
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - '&mkp MB4'
   - ''
@@ -143,11 +143,11 @@ layers:
   - ''
   - ''
   - ''
-  - '0'
-  - '4'
-  - '5'
-  - '6'
+  - ''
   - MUTE
+  - VOL UP
+  - VOL DN
+  - ''
   - '&mmv MOVE_LEFT'
   - '&mmv MOVE_DOWN'
   - '&mmv MOVE_UP'
@@ -155,11 +155,11 @@ layers:
   - ''
   - BSPC
   - ''
+  - ''
+  - ''
+  - BRI UP
   - BRI DN
-  - '1'
-  - '2'
-  - '3'
-  - VOL DN
+  - ''
   - '&msc SCRL_LEFT'
   - '&msc SCRL_DOWN'
   - '&msc SCRL_UP'
@@ -175,21 +175,10 @@ layers:
   function:
   - ''
   - ''
+  - F3
+  - ''
   - F7
-  - F8
   - F9
-  - F10
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - F4
-  - F5
-  - F6
   - F11
   - ''
   - ''
@@ -197,20 +186,31 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
   - F1
+  - ''
+  - ''
+  - ''
+  - F5
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - F2
-  - F3
+  - F4
+  - F6
+  - F8
+  - F10
   - F12
   - ''
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - {t: opt, type: held}
-  - lower
+  - opt
+  - {t: lower, type: held}
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - {t: raise, type: held}
@@ -252,8 +252,8 @@ layers:
   - ''
   - BT CLR
   - ''
-  - opt
-  - {t: lower, type: held}
+  - {t: opt, type: held}
+  - lower
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - {t: raise, type: held}
