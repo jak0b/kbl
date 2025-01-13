@@ -37,7 +37,7 @@ layers:
   - .
   - /
   - RSHIFT
-  - function
+  - opt
   - lower
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
@@ -51,9 +51,9 @@ layers:
   - ''
   - ''
   - ''
-  - '7'
-  - '8'
-  - '9'
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   - ''
@@ -62,10 +62,10 @@ layers:
   - '-'
   - '='
   - '|'
-  - '0'
-  - '4'
-  - '5'
-  - '6'
+  - ''
+  - (
+  - '['
+  - '{'
   - ''
   - BSPC
   - ''
@@ -75,12 +75,12 @@ layers:
   - ''
   - ''
   - ''
-  - '1'
-  - '2'
-  - '3'
-  - \
+  - )
+  - ']'
+  - '}'
   - ''
-  - function
+  - ''
+  - opt
   - {t: lower, type: held}
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
@@ -121,16 +121,20 @@ layers:
   - PG DN
   - PG UP
   - END
+  - \
   - ''
-  - ''
-  - function
+  - opt
   - lower
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - {t: raise, type: held}
   - RALT
-  function:
+  opt:
+  - ''
   - BRI UP
+  - '7'
+  - '8'
+  - '9'
   - VOL UP
   - ''
   - ''
@@ -139,45 +143,36 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - '0'
+  - '4'
+  - '5'
+  - '6'
   - MUTE
   - ''
   - ''
   - ''
   - ''
   - ''
-  - (
-  - '['
-  - '{'
-  - <
   - BSPC
+  - ''
   - BRI DN
+  - '1'
+  - '2'
+  - '3'
   - VOL DN
   - ''
   - ''
   - ''
   - ''
   - ''
-  - )
-  - ']'
-  - '}'
-  - '>'
   - ''
-  - {t: function, type: held}
+  - {t: opt, type: held}
   - lower
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - raise
   - RALT
-  f_key:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  function:
   - ''
   - ''
   - F7
@@ -209,7 +204,12 @@ layers:
   - F3
   - F12
   - ''
-  - {t: function, type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: opt, type: held}
   - lower
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
@@ -252,7 +252,7 @@ layers:
   - ''
   - BT CLR
   - ''
-  - function
+  - opt
   - {t: lower, type: held}
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
