@@ -132,9 +132,9 @@ layers:
   opt:
   - ''
   - ''
-  - ''
-  - ''
-  - ''
+  - PREV
+  - PP
+  - NEXT
   - ''
   - ''
   - '&mkp MB4'
@@ -144,8 +144,8 @@ layers:
   - ''
   - ''
   - ''
-  - MUTE
   - VOL DN
+  - MUTE
   - VOL UP
   - ''
   - '&mmv MOVE_LEFT'
@@ -156,8 +156,8 @@ layers:
   - BSPC
   - ''
   - ''
-  - ''
   - BRI DN
+  - ''
   - BRI UP
   - ''
   - '&msc SCRL_LEFT'
