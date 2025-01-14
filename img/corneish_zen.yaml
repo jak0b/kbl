@@ -145,8 +145,8 @@ layers:
   - ''
   - ''
   - MUTE
-  - VOL UP
   - VOL DN
+  - VOL UP
   - ''
   - '&mmv MOVE_LEFT'
   - '&mmv MOVE_DOWN'
@@ -157,8 +157,8 @@ layers:
   - ''
   - ''
   - ''
-  - BRI UP
   - BRI DN
+  - BRI UP
   - ''
   - '&msc SCRL_LEFT'
   - '&msc SCRL_DOWN'
