@@ -42,7 +42,7 @@ layers:
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - raise
-  - RALT
+  - LALT
   lower:
   - ''
   - ''
@@ -85,7 +85,7 @@ layers:
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - raise
-  - RALT
+  - LALT
   raise:
   - ''
   - ''
@@ -128,7 +128,7 @@ layers:
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - {t: raise, type: held}
-  - RALT
+  - LALT
   opt:
   - ''
   - ''
@@ -214,7 +214,7 @@ layers:
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - {t: raise, type: held}
-  - RALT
+  - LALT
   bluetooth:
   - ''
   - {t: BT, h: '0'}
@@ -257,4 +257,4 @@ layers:
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - raise
-  - RALT
+  - LALT
