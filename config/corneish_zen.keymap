@@ -31,8 +31,8 @@
 #define BD3 BT_DISC 3
 #define BD4 BT_DISC 4
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1000  // default: 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 25    // default: 10
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1100
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 18
 
 &mt {
   tapping-term-ms = <177>;
