@@ -104,9 +104,9 @@
 
     bluetooth_layer {
       bindings = <
-        &none  &bt BS0 &bt BS1 &bt BS2 &bt BS3 &bt BS4                     &none   &none   &none   &none   &none   &none
-        &none  &bt BD0 &bt BD1 &bt BD2 &bt BD3 &bt BD4                     &none   &none   &none   &none   &none   &none   
-        &bt BC &none   &none   &none   &none   &none                       &none   &none   &none   &none   &none   &none
+        &none  &none   &none   &none   &none   &none                       &none   &none   &none   &none   &none   &none
+        &none  &bt BS0 &bt BS1 &bt BS2 &bt BS3 &bt BS4                     &none   &none   &none   &none   &none   &none   
+        &bt BC &bt BD0 &bt BD1 &bt BD2 &bt BD3 &bt BD4                     &none   &none   &none   &none   &none   &none
                                        &mo 3   &mo 1    &mt LTH   &mt RTH  &mo 2   &kp LALT
       >;
     };
