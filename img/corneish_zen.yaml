@@ -216,13 +216,13 @@ layers:
   - {t: raise, type: held}
   - LALT
 combos:
-- p: [14, 15]
+- p: [13, 14]
   k: ESC
-- p: [15, 16]
+- p: [14, 15]
   k: LSHFT
-- p: [16, 17]
+- p: [15, 16]
   k: TAB
 - p: [20, 21]
   k: RSHIFT
-- p: [22, 23]
+- p: [21, 22]
   k: BSPC
