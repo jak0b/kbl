@@ -54,34 +54,34 @@
       label = " ";
       bindings = <
         &kp TAB    &kp Q  &kp W  &kp E  &kp R   &kp T                        &kp Y   &kp U  &kp I      &kp O    &kp P     &kp TAB
-        &kp ESC    &kp A  &kp S  &kp D  &kp F   &kp G                        &kp H   &kp J  &kp K      &kp L    &kp SEMI  &kp BSPC
+        &kp ESC    &kp A  &kp S  &kp D  &kp F   &kp G                        &kp H   &kp J  &kp K      &kp L    &kp SEMI  &none
         &kp LSHFT  &kp Z  &kp X  &kp C  &kp V   &kp B                        &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHIFT
-                                        &mo 3   &mo 1   &mt LTH    &mt RTH   &mo 2   &kp LALT
+                                        &mo 3   &mo 1   &mt LTH    &mt RTH   &mo 2   &mt LALT BSPC
       >;
     };
 
     lower_layer {
       bindings = <
         &none  &none  &kp N2    &kp PLUS  &kp N4    &kp N6                       &none     &kp COLON  &kp TILDE  &kp PRCNT  &none   &none
-        &none  &kp N0 &kp UNDER &kp MINUS &kp EQUAL &kp N8                       &kp PIPE  &kp LPAR   &kp LBKT   &kp LBRC   &kp LT  &kp BSPC
+        &none  &kp N0 &kp UNDER &kp MINUS &kp EQUAL &kp N8                       &kp PIPE  &kp LPAR   &kp LBKT   &kp LBRC   &kp LT  &none
         &none  &kp N1 &kp N3    &kp N5    &kp N7    &kp N9                       &none     &kp RPAR   &kp RBKT   &kp RBRC   &kp GT  &none
-                                          &mo 3     &mo 1   &mt LTH    &mt RTH   &mo 2     &kp LALT
+                                          &mo 3     &mo 1   &mt LTH    &mt RTH   &mo 2     &kp DEL
       >;
     };
 
     raise_layer {
       bindings = <
         &none     &none     &kp AT    &kp HASH &kp DLLR &none                        &none      &kp AMPS   &kp ASTRK  &kp CARET  &none     &none
-        &none     &kp EXCL  &kp GRAVE &kp DQT  &kp SQT  &none                        &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp QMARK &kp DEL
+        &none     &kp EXCL  &kp GRAVE &kp DQT  &kp SQT  &none                        &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp QMARK &none
         &none     &none     &none     &none    &none    &none                        &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp BSLH  &none
-                                               &mo 3    &mo 1   &mt LTH    &mt RTH   &mo 2      &kp LALT
+                                               &mo 3    &mo 1   &mt LTH    &mt RTH   &mo 2      &mt LALT BSPC
       >;
     };
 
     opt_layer {
       bindings = <
         &none   &none   &kp PREV   &kp PLPA &kp NEXT    &none                          &none          &mkp MB4        &none        &mkp MB5        &none   &none
-        &none   &none   &kp VOL_DN &kp MUTE &kp VOL_UP  &none                          &mmv MOVE_LEFT &mmv MOVE_DOWN  &mmv MOVE_UP &mmv MOVE_RIGHT &none   &kp BSPC
+        &none   &none   &kp VOL_DN &kp MUTE &kp VOL_UP  &none                          &mmv MOVE_LEFT &mmv MOVE_DOWN  &mmv MOVE_UP &mmv MOVE_RIGHT &none   &none
         &none   &none   &kp BRI_DN &none    &kp BRI_UP  &none                          &msc SCRL_LEFT &msc SCRL_DOWN  &msc SCRL_UP &msc SCRL_RIGHT &none   &none
                                                 &mo 3   &mo 1   &mt LTH    &mkp LCLK   &mkp MCLK      &mkp RCLK
       >;
@@ -92,7 +92,7 @@
         &none  &none   &kp F2   &none   &kp F4  &kp F6                       &none        &none   &none   &none   &none   &bt BC
         &none  &none   &kp F10  &kp F11 &kp F12 &kp F8                       &out OUT_TOG &bt BS0 &bt BS1 &bt BS2 &bt BS3 &none     
         &none  &kp F1  &kp F3   &kp F5  &kp F7  &kp F9                       &none        &bt BD0 &bt BD1 &bt BD2 &bt BD3 &none
-                                         &mo 3   &mo 1   &mt LTH    &mt RTH  &mo 2        &kp LALT
+                                         &mo 3   &mo 1   &mt LTH    &mt RTH  &mo 2        &mt LALT BSPC
       >;
     };
   };
