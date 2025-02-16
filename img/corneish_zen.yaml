@@ -132,9 +132,9 @@ layers:
   opt:
   - ''
   - ''
-  - PREV
-  - PP
-  - NEXT
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   - '&mkp MB4'
@@ -156,9 +156,9 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
+  - PREV
+  - PP
+  - NEXT
   - ''
   - '&msc SCRL_LEFT'
   - '&msc SCRL_DOWN'
