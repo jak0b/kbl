@@ -24,7 +24,7 @@ layers:
   - K
   - L
   - ;
-  - BSPC
+  - ''
   - LSHFT
   - Z
   - X
@@ -42,7 +42,7 @@ layers:
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - raise
-  - LALT
+  - {t: BSPC, h: LALT}
   lower:
   - ''
   - ''
@@ -67,7 +67,7 @@ layers:
   - '['
   - '{'
   - <
-  - BSPC
+  - ''
   - ''
   - '1'
   - '3'
@@ -85,7 +85,7 @@ layers:
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - raise
-  - LALT
+  - DEL
   raise:
   - ''
   - ''
@@ -110,12 +110,12 @@ layers:
   - UP
   - RIGHT
   - '?'
-  - DEL
   - ''
   - ''
   - ''
+  - BRI DN
   - ''
-  - ''
+  - BRI DN
   - ''
   - HOME
   - PG DN
@@ -128,7 +128,7 @@ layers:
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - {t: raise, type: held}
-  - LALT
+  - {t: BSPC, h: LALT}
   opt:
   - ''
   - ''
@@ -153,12 +153,12 @@ layers:
   - '&mmv MOVE_UP'
   - '&mmv MOVE_RIGHT'
   - ''
-  - BSPC
   - ''
   - ''
-  - BRI DN
   - ''
-  - BRI UP
+  - ''
+  - ''
+  - ''
   - ''
   - '&msc SCRL_LEFT'
   - '&msc SCRL_DOWN'
@@ -214,4 +214,4 @@ layers:
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - {t: raise, type: held}
-  - LALT
+  - {t: BSPC, h: LALT}
