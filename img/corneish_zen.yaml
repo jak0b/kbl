@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - '&lock'
+  - TAB
   - ESC
   - A
   - S
