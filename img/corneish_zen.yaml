@@ -14,16 +14,16 @@ layers:
   - P
   - TAB
   - ESC
-  - {t: A, h: LSHFT}
-  - {t: S, h: LALT}
-  - {t: D, h: LCTRL}
-  - {t: F, h: LMETA}
+  - A
+  - S
+  - D
+  - F
   - G
   - H
-  - {t: J, h: RMETA}
-  - {t: K, h: RCTRL}
-  - {t: L, h: RALT}
-  - {t: ;, h: RSHIFT}
+  - J
+  - K
+  - L
+  - ;
   - BSPC
   - LSHFT
   - Z
