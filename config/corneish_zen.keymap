@@ -8,6 +8,16 @@
 #define LTH LCTRL SPACE
 #define RTH LMETA RET
 
+#define A_MT &mt LSHFT A
+#define S_MT &mt LALT S
+#define D_MT &mt LCTRL D
+#define F_MT &mt LMETA F
+
+#define J_MT &mt RMETA J
+#define K_MT &mt RCTRL K
+#define L_MT &mt RALT  L
+#define SEMI_MT &mt RSHIFT  SEMI
+
 #define VOL_UP C_VOL_UP
 #define VOL_DN C_VOL_DN
 #define MUTE   C_MUTE
@@ -54,7 +64,7 @@
       label = " ";
       bindings = <
         &kp TAB    &kp Q  &kp W  &kp E  &kp R   &kp T                        &kp Y   &kp U  &kp I      &kp O    &kp P     &kp TAB
-        &kp ESC    &kp A  &kp S  &kp D  &kp F   &kp G                        &kp H   &kp J  &kp K      &kp L    &kp SEMI  &kp BSPC
+        &kp ESC    A_MT   S_MT   D_MT   F_MT    &kp G                        &kp H   J_MT   K_MT       L_MT     SEMI_MT   &kp BSPC
         &kp LSHFT  &kp Z  &kp X  &kp C  &kp V   &kp B                        &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHIFT
                                         &mo 3   &mo 1   &mt LTH    &mt RTH   &mo 2   &kp LALT
       >;
