@@ -1,4 +1,4 @@
-layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
+layout: {zmk_keyboard: corneish_zen}
 layers:
   ' ':
   - TAB
@@ -14,16 +14,16 @@ layers:
   - P
   - TAB
   - ESC
-  - A
-  - S
-  - D
-  - F
+  - {t: A, h: LSHFT}
+  - {t: S, h: LALT}
+  - {t: D, h: LCTRL}
+  - {t: F, h: LMETA}
   - G
   - H
-  - J
-  - K
-  - L
-  - ;
+  - {t: J, h: RMETA}
+  - {t: K, h: RCTRL}
+  - {t: L, h: RALT}
+  - {t: ;, h: RSHIFT}
   - BSPC
   - LSHFT
   - Z
