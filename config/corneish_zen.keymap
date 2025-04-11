@@ -7,7 +7,6 @@
 
 #define LTH LCTRL SPACE
 #define RTH LMETA RET
-#define LPN LSHFT TAB
 
 #define VOL_UP C_VOL_UP
 #define VOL_DN C_VOL_DN
@@ -39,11 +38,6 @@
   quick-tap-ms = <150>;
 };
 
-&lt {
-  tapping-term-ms = <170>;
-  quick-tap-ms = <150>;
-};
-
 / {
   conditional_layers {
     compatible = "zmk,conditional-layers";
@@ -60,28 +54,28 @@
     default_layer {
       label = " ";
       bindings = <
-        &none    &kp Q  &kp W  &kp E  &kp R   &kp T                        &kp Y      &kp U  &kp I      &kp O    &kp P     &none
-        &none    &kp A  &kp S  &kp D  &kp F   &kp G                        &kp H      &kp J  &kp K      &kp L    &kp SEMI  &none   
-        &mt LPN  &kp Z  &kp X  &kp C  &kp V   &kp B                        &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHIFT
-                                      &mo 3   &lt 1 ESC  &mt LTH &mt RTH   &lt 2 BSPC &kp LALT
+        &kp TAB    &kp Q  &kp W  &kp E  &kp R   &kp T                        &kp Y   &kp U  &kp I      &kp O    &kp P     &kp TAB
+        &kp ESC    &kp A  &kp S  &kp D  &kp F   &kp G                        &kp H   &kp J  &kp K      &kp L    &kp SEMI  &kp BSPC
+        &kp LSHFT  &kp Z  &kp X  &kp C  &kp V   &kp B                        &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHIFT
+                                        &mo 3   &mo 1   &mt LTH    &mt RTH   &mo 2   &kp LALT
       >;
     };
 
     lower_layer {
       bindings = <
         &none  &none  &kp N2    &kp PLUS  &kp N4    &kp N6                       &none     &kp COLON  &kp TILDE  &kp PRCNT  &none   &none
-        &none  &kp N0 &kp UNDER &kp MINUS &kp EQUAL &kp N8                       &kp PIPE  &kp LPAR   &kp LBKT   &kp LBRC   &kp LT  &none
+        &none  &kp N0 &kp UNDER &kp MINUS &kp EQUAL &kp N8                       &kp PIPE  &kp LPAR   &kp LBKT   &kp LBRC   &kp LT  &kp BSPC
         &none  &kp N1 &kp N3    &kp N5    &kp N7    &kp N9                       &none     &kp RPAR   &kp RBKT   &kp RBRC   &kp GT  &none
-                                          &mo 3     &lt 1 ESC  &mt LTH &mt RTH  &lt 2 BSPC &kp LALT
+                                          &mo 3     &mo 1   &mt LTH    &mt RTH   &mo 2     &kp LALT
       >;
     };
 
     raise_layer {
       bindings = <
         &none     &none     &kp AT     &kp HASH &kp DLLR   &none                        &none      &kp AMPS   &kp ASTRK  &kp CARET  &none     &none
-        &none     &kp EXCL  &kp GRAVE  &kp DQT  &kp SQT    &none                        &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp QMARK &none
+        &none     &kp EXCL  &kp GRAVE  &kp DQT  &kp SQT    &none                        &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp QMARK &kp DEL
         &none     &none     &kp BRI_DN &none    &kp BRI_UP &none                        &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp BSLH  &none
-                                                &mo 3      &lt 1 ESC  &mt LTH &mt RTH   &lt 2 DEL  &kp LALT
+                                                &mo 3      &mo 1   &mt LTH    &mt RTH   &mo 2      &kp LALT 
       >;
     };
 
@@ -90,7 +84,7 @@
         &none   &none   &none      &none    &none      &none                          &none          &mkp MB4        &none        &mkp MB5        &none   &none
         &none   &none   &kp VOL_DN &kp MUTE &kp VOL_UP &none                          &mmv MOVE_LEFT &mmv MOVE_DOWN  &mmv MOVE_UP &mmv MOVE_RIGHT &none   &none
         &none   &none   &kp PREV   &kp PLPA &kp NEXT   &none                          &msc SCRL_LEFT &msc SCRL_DOWN  &msc SCRL_UP &msc SCRL_RIGHT &none   &none
-                                            &mo 3      &lt 1 ESC  &mt LTH &mkp LCLK   &mkp MCLK      &mkp RCLK
+                                                &mo 3  &mo 1   &mt LTH    &mkp LCLK   &mkp MCLK      &mkp RCLK
       >;
     };
 
@@ -99,7 +93,7 @@
         &none  &none   &kp F2   &none   &kp F4  &kp F6                       &none        &none   &none   &none   &none   &bt BC
         &none  &none   &kp F10  &kp F11 &kp F12 &kp F8                       &out OUT_TOG &bt BS0 &bt BS1 &bt BS2 &bt BS3 &none
         &none  &kp F1  &kp F3   &kp F5  &kp F7  &kp F9                       &none        &bt BD0 &bt BD1 &bt BD2 &bt BD3 &none
-                                        &mo 3   &lt 1 ESC  &mt LTH &mt RTH   &lt 2 BSPC   &kp LALT
+                                         &mo 3   &mo 1   &mt LTH    &mt RTH  &mo 2        &kp LALT
       >;
     };
   };
