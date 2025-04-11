@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: corneish_zen}
 layers:
   ' ':
-  - TAB
+  - ''
   - Q
   - W
   - E
@@ -12,8 +12,8 @@ layers:
   - I
   - O
   - P
-  - TAB
-  - ESC
+  - ''
+  - ''
   - A
   - S
   - D
@@ -24,8 +24,8 @@ layers:
   - K
   - L
   - ;
-  - BSPC
-  - LSHFT
+  - ''
+  - {t: TAB, h: LSHFT}
   - Z
   - X
   - C
@@ -38,10 +38,10 @@ layers:
   - /
   - RSHIFT
   - opt
-  - lower
+  - {t: ESC, h: lower}
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
-  - raise
+  - {t: BSPC, h: raise}
   - LALT
   lower:
   - ''
@@ -67,7 +67,7 @@ layers:
   - '['
   - '{'
   - <
-  - BSPC
+  - ''
   - ''
   - '1'
   - '3'
@@ -81,10 +81,10 @@ layers:
   - '>'
   - ''
   - opt
-  - {t: lower, type: held}
+  - {t: ESC, h: lower, type: held}
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
-  - raise
+  - {t: BSPC, h: raise}
   - LALT
   raise:
   - ''
@@ -110,7 +110,7 @@ layers:
   - UP
   - RIGHT
   - '?'
-  - DEL
+  - ''
   - ''
   - ''
   - BRI DN
@@ -124,10 +124,10 @@ layers:
   - \
   - ''
   - opt
-  - lower
+  - {t: ESC, h: lower}
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
-  - {t: raise, type: held}
+  - {t: DEL, h: raise, type: held}
   - LALT
   opt:
   - ''
@@ -167,7 +167,7 @@ layers:
   - ''
   - ''
   - {t: opt, type: held}
-  - lower
+  - {t: ESC, h: lower}
   - {t: SPACE, h: LCTRL}
   - '&mkp LCLK'
   - '&mkp MCLK'
@@ -210,8 +210,8 @@ layers:
   - {t: BT DISC, h: '3'}
   - ''
   - opt
-  - {t: lower, type: held}
+  - {t: ESC, h: lower, type: held}
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
-  - {t: raise, type: held}
+  - {t: BSPC, h: raise, type: held}
   - LALT
