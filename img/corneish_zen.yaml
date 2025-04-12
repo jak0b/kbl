@@ -222,13 +222,13 @@ combos:
 - p: [15, 16]
   k: TAB
   l: [' ', lower, raise]
-- p: [21, 22]
+- p: [20, 21]
   k: BSPC
   l: [' ', lower]
-- p: [21, 22]
+- p: [20, 21]
   k: DEL
   l: [raise]
-- p: [1, 2]
+- p: [2, 3]
   k: '&mac_ext_bri_dn'
   l: [opt]
 - p: [3, 4]
