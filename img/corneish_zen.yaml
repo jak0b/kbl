@@ -25,7 +25,7 @@ layers:
   - L
   - ;
   - ''
-  - LSHFT
+  - '&lcaps'
   - Z
   - X
   - C
@@ -36,7 +36,7 @@ layers:
   - ','
   - .
   - /
-  - RSHIFT
+  - '&rcaps'
   - opt
   - lower
   - {t: SPACE, h: LCTRL}
