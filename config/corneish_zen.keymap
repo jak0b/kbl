@@ -56,7 +56,7 @@
         <&macro_press &kp LCTRL>,
         <&macro_press &kp LMETA>,
         <&macro_tap &kp Q>,
-        <&macro_release &kp LMETA>;
+        <&macro_release &kp LMETA>,
         <&macro_release &kp LCTRL>;
     };
 
@@ -81,7 +81,7 @@
       key-positions = <13 14>;
       bindings = <&kp ESC>;
       require-prior-idle-ms = <90>;
-      layers = <0 1 2>
+      layers = <0 1 2>;
     };
 
     combo_tab {
@@ -89,7 +89,7 @@
       key-positions = <15 16>;
       bindings = <&kp TAB>;
       require-prior-idle-ms = <90>;
-      layers = <0 1 2>
+      layers = <0 1 2>;
     };
 
     combo_bspc {
@@ -97,7 +97,7 @@
       key-positions = <21 22>;
       bindings = <&kp BSPC>;
       require-prior-idle-ms = <90>;
-      layers = <0 1>
+      layers = <0 1>;
     };
 
     combo_del {
@@ -105,7 +105,7 @@
       key-positions = <21 22>;
       bindings = <&kp DEL>;
       require-prior-idle-ms = <90>;
-      layers = <2>
+      layers = <2>;
     };
 
     combo_mac_ext_bri_dn {
@@ -113,7 +113,7 @@
       key-positions = <1 2>;
       bindings = <&mac_ext_bri_dn>;
       require-prior-idle-ms = <90>;
-      layers = <3>
+      layers = <3>;
     };
 
     combo_mac_ext_bri_up {
@@ -121,7 +121,7 @@
       key-positions = <3 4>;
       bindings = <&mac_ext_bri_up>;
       require-prior-idle-ms = <90>;
-      layers = <3>
+      layers = <3>;
     };
   };
 
