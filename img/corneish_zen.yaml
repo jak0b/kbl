@@ -222,10 +222,10 @@ combos:
 - p: [15, 16]
   k: TAB
   l: [' ', lower, raise]
-- p: [20, 21]
+- p: [21, 22]
   k: BSPC
   l: [' ', lower]
-- p: [20, 21]
+- p: [21, 22]
   k: DEL
   l: [raise]
 - p: [2, 3]
