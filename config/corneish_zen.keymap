@@ -101,7 +101,7 @@
     lower_layer {
       bindings = <
         &none  &none  &kp N2    &kp PLUS  &kp N4    &kp N6                       &none     &kp COLON  &kp TILDE  &kp PRCNT  &none   &none
-        &none  &kp N0 &kp UNDER &kp MINUS &kp EQUAL &kp N8                       &kp PIPE  &kp LPAR   &kp LBKT   &kp LBRC   &kp LT  &kp BSPC
+        &none  &kp N0 &kp UNDER &kp MINUS &kp EQUAL &kp N8                       &kp PIPE  &kp LPAR   &kp LBKT   &kp LBRC   &kp LT  &none
         &none  &kp N1 &kp N3    &kp N5    &kp N7    &kp N9                       &none     &kp RPAR   &kp RBKT   &kp RBRC   &kp GT  &none
                                           &mo 3     &mo 1   &mt LTH    &mt RTH   &mo 2     &kp LALT
       >;
@@ -110,7 +110,7 @@
     raise_layer {
       bindings = <
         &none     &none     &kp AT     &kp HASH &kp DLLR   &none                        &none      &kp AMPS   &kp ASTRK  &kp CARET  &none     &none
-        &none     &kp EXCL  &kp GRAVE  &kp DQT  &kp SQT    &none                        &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp QMARK &kp DEL
+        &none     &kp EXCL  &kp GRAVE  &kp DQT  &kp SQT    &none                        &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp QMARK &none
         &none     &none     &kp BRI_DN &none    &kp BRI_UP &none                        &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp BSLH  &none
                                                 &mo 3      &mo 1   &mt LTH    &mt RTH   &mo 2      &kp LALT 
       >;
