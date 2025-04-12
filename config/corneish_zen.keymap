@@ -56,21 +56,32 @@
       timeout-ms = <50>;
       key-positions = <13 14>;
       bindings = <&kp ESC>;
-      require-prior-idle-ms = <120>;
+      require-prior-idle-ms = <90>;
+      layers = <0 1 2>
     };
 
     combo_tab {
       timeout-ms = <50>;
       key-positions = <15 16>;
       bindings = <&kp TAB>;
-      require-prior-idle-ms = <120>;
+      require-prior-idle-ms = <90>;
+      layers = <0 1 2>
     };
 
     combo_bspc {
       timeout-ms = <50>;
       key-positions = <21 22>;
       bindings = <&kp BSPC>;
-      require-prior-idle-ms = <120>;
+      require-prior-idle-ms = <90>;
+      layers = <0 1>
+    };
+
+    combo_del {
+      timeout-ms = <50>;
+      key-positions = <21 22>;
+      bindings = <&kp DEL>;
+      require-prior-idle-ms = <90>;
+      layers = <2>
     };
   };
 
