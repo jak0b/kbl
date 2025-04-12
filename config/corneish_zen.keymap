@@ -48,6 +48,30 @@
     };
   };
 
+  macros {
+    mac_scrlck: mac_scrlck {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings =
+        <&macro_press &kp LCTRL>,
+        <&macro_press &kp LMETA>,
+        <&macro_tap &kp Q>,
+        <&macro_release &kp LMETA>;
+        <&macro_release &kp LCTRL>;
+    };
+
+    mac_ext_bri_up: mac_ext_bri_up {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp BRI_UP>, <&macro_release &kp LCTRL>;
+    };
+
+    mac_ext_bri_dn: mac_ext_bri_dn {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp BRI_DN>, <&macro_release &kp LCTRL>;
+    };
+  };
 
   combos {
     compatible = "zmk,combos";
