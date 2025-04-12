@@ -142,7 +142,7 @@
       tapping-term-ms = <170>;
       bindings = <&kp RSHIFT>, <&caps_word>;
     };
-  }
+  };
 
   keymap {
     compatible = "zmk,keymap";
