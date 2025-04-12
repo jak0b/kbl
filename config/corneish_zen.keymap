@@ -151,17 +151,17 @@
       bindings = <
         &none     &none     &kp AT     &kp HASH &kp DLLR   &none                        &none      &kp AMPS   &kp ASTRK  &kp CARET  &none     &none
         &none     &kp EXCL  &kp GRAVE  &kp DQT  &kp SQT    &none                        &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp QMARK &none
-        &none     &none     &kp BRI_DN &none    &kp BRI_UP &none                        &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp BSLH  &none
+        &none     &none     &none      &none    &none      &none                        &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp BSLH  &none
                                                 &mo 3      &mo 1   &mt LTH    &mt RTH   &mo 2      &kp LALT 
       >;
     };
 
     opt_layer {
       bindings = <
-        &none   &none   &none      &none    &none      &none                          &none          &mkp MB4        &none        &mkp MB5        &none   &none
-        &none   &none   &kp VOL_DN &kp MUTE &kp VOL_UP &none                          &mmv MOVE_LEFT &mmv MOVE_DOWN  &mmv MOVE_UP &mmv MOVE_RIGHT &none   &none
-        &none   &none   &kp PREV   &kp PLPA &kp NEXT   &none                          &msc SCRL_LEFT &msc SCRL_DOWN  &msc SCRL_UP &msc SCRL_RIGHT &none   &none
-                                                &mo 3  &mo 1   &mt LTH    &mkp LCLK   &mkp MCLK      &mkp RCLK
+        &none   &mac_scrlck &kp BRI_DN &none    &kp BRI_UP &none                          &none          &mkp MB4        &none        &mkp MB5        &none   &none
+        &none   &none       &kp VOL_DN &kp MUTE &kp VOL_UP &none                          &mmv MOVE_LEFT &mmv MOVE_DOWN  &mmv MOVE_UP &mmv MOVE_RIGHT &none   &none
+        &none   &none       &kp PREV   &kp PLPA &kp NEXT   &none                          &msc SCRL_LEFT &msc SCRL_DOWN  &msc SCRL_UP &msc SCRL_RIGHT &none   &none
+                                                &mo 3      &mo 1   &mt LTH    &mkp LCLK   &mkp MCLK      &mkp RCLK
       >;
     };
 
