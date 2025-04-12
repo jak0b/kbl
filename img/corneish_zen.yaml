@@ -67,7 +67,7 @@ layers:
   - '['
   - '{'
   - <
-  - BSPC
+  - ''
   - ''
   - '1'
   - '3'
@@ -110,12 +110,12 @@ layers:
   - UP
   - RIGHT
   - '?'
-  - DEL
   - ''
   - ''
-  - BRI DN
   - ''
-  - BRI UP
+  - ''
+  - ''
+  - ''
   - ''
   - HOME
   - PG DN
@@ -131,10 +131,10 @@ layers:
   - LALT
   opt:
   - ''
+  - '&mac_scrlck'
+  - BRI DN
   - ''
-  - ''
-  - ''
-  - ''
+  - BRI UP
   - ''
   - ''
   - '&mkp MB4'
@@ -218,7 +218,19 @@ layers:
 combos:
 - p: [13, 14]
   k: ESC
+  l: [' ', lower, raise]
 - p: [15, 16]
   k: TAB
+  l: [' ', lower, raise]
 - p: [21, 22]
   k: BSPC
+  l: [' ', lower]
+- p: [21, 22]
+  k: DEL
+  l: [raise]
+- p: [1, 2]
+  k: '&mac_ext_bri_dn'
+  l: [opt]
+- p: [3, 4]
+  k: '&mac_ext_bri_up'
+  l: [opt]
