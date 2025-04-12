@@ -38,6 +38,11 @@
   quick-tap-ms = <150>;
 };
 
+&caps_word {
+  continue-list = <UNDERSCORE MINUS>;
+  mods = <(MOD_LSFT | MOD_LALT)>;
+};
+
 / {
   conditional_layers {
     compatible = "zmk,conditional-layers";
@@ -123,16 +128,32 @@
     };
   };
 
+  behaviors {
+    lcaps: left_shift_caps_words {
+      compatible = "zmk,behavior-tap-dance";
+      #binding-cells = <0>;
+      tapping-term-ms = <170>;
+      bindings = <&kp LSHIFT>, <&caps_word>;
+    };
+
+    rcaps: right_shift_caps_words {
+      compatible = "zmk,behavior-tap-dance";
+      #binding-cells = <0>;
+      tapping-term-ms = <170>;
+      bindings = <&kp RSHIFT>, <&caps_word>;
+    };
+  }
+
   keymap {
     compatible = "zmk,keymap";
 
     default_layer {
       label = " ";
       bindings = <
-        &none      &kp Q  &kp W  &kp E  &kp R   &kp T                        &kp Y   &kp U  &kp I      &kp O    &kp P     &none
-        &none      &kp A  &kp S  &kp D  &kp F   &kp G                        &kp H   &kp J  &kp K      &kp L    &kp SEMI  &none
-        &kp LSHFT  &kp Z  &kp X  &kp C  &kp V   &kp B                        &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHIFT
-                                        &mo 3   &mo 1   &mt LTH    &mt RTH   &mo 2   &kp LALT
+        &none   &kp Q  &kp W  &kp E  &kp R   &kp T                        &kp Y   &kp U  &kp I      &kp O    &kp P     &none
+        &none   &kp A  &kp S  &kp D  &kp F   &kp G                        &kp H   &kp J  &kp K      &kp L    &kp SEMI  &none
+        &lcaps  &kp Z  &kp X  &kp C  &kp V   &kp B                        &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH  &rcaps
+                                     &mo 3   &mo 1   &mt LTH    &mt RTH   &mo 2   &kp LALT
       >;
     };
 
