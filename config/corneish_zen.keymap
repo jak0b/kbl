@@ -107,6 +107,22 @@
       require-prior-idle-ms = <90>;
       layers = <2>
     };
+
+    combo_mac_ext_bri_dn {
+      timeout-ms = <50>;
+      key-positions = <1 2>;
+      bindings = <&mac_ext_bri_dn>;
+      require-prior-idle-ms = <90>;
+      layers = <3>
+    };
+
+    combo_mac_ext_bri_up {
+      timeout-ms = <50>;
+      key-positions = <3 4>;
+      bindings = <&mac_ext_bri_up>;
+      require-prior-idle-ms = <90>;
+      layers = <3>
+    };
   };
 
   keymap {
