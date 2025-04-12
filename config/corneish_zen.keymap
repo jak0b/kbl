@@ -77,7 +77,7 @@
     compatible = "zmk,combos";
 
     combo_esc {
-      timeout-ms = <50>;
+      timeout-ms = <47>;
       key-positions = <13 14>;
       bindings = <&kp ESC>;
       require-prior-idle-ms = <90>;
@@ -85,7 +85,7 @@
     };
 
     combo_tab {
-      timeout-ms = <50>;
+      timeout-ms = <47>;
       key-positions = <15 16>;
       bindings = <&kp TAB>;
       require-prior-idle-ms = <90>;
@@ -93,34 +93,32 @@
     };
 
     combo_bspc {
-      timeout-ms = <50>;
-      key-positions = <21 22>;
+      timeout-ms = <47>;
+      key-positions = <20 21>;
       bindings = <&kp BSPC>;
       require-prior-idle-ms = <90>;
       layers = <0 1>;
     };
 
     combo_del {
-      timeout-ms = <50>;
-      key-positions = <21 22>;
+      timeout-ms = <47>;
+      key-positions = <20 21>;
       bindings = <&kp DEL>;
       require-prior-idle-ms = <90>;
       layers = <2>;
     };
 
     combo_mac_ext_bri_dn {
-      timeout-ms = <50>;
-      key-positions = <1 2>;
+      timeout-ms = <70>;
+      key-positions = <2 3>;
       bindings = <&mac_ext_bri_dn>;
-      require-prior-idle-ms = <90>;
       layers = <3>;
     };
 
     combo_mac_ext_bri_up {
-      timeout-ms = <50>;
+      timeout-ms = <70>;
       key-positions = <3 4>;
       bindings = <&mac_ext_bri_up>;
-      require-prior-idle-ms = <90>;
       layers = <3>;
     };
   };
