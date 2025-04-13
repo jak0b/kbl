@@ -23,9 +23,9 @@ layers:
   - J
   - K
   - L
-  - BSPC
+  - ;
   - ''
-  - {t: ESC, h: LSHFT}
+  - LSHFT
   - Z
   - X
   - C
@@ -38,10 +38,10 @@ layers:
   - /
   - {t: TAB, h: RSHFT}
   - opt
-  - lower
+  - {t: ESC, h: lower}
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
-  - raise
+  - {t: BSPC, h: raise}
   - LALT
   lower:
   - ''
@@ -81,10 +81,10 @@ layers:
   - '>'
   - ''
   - opt
-  - {t: lower, type: held}
+  - {t: ESC, h: lower, type: held}
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
-  - raise
+  - {t: BSPC, h: raise}
   - LALT
   raise:
   - ''
@@ -124,10 +124,10 @@ layers:
   - \
   - ''
   - opt
-  - lower
+  - {t: ESC, h: lower}
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
-  - {t: raise, type: held}
+  - {t: BSPC, h: raise, type: held}
   - LALT
   opt:
   - ''
