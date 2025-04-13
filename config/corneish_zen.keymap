@@ -9,9 +9,7 @@
 #define LLTH 3 ESC
 
 #define RTH LMETA RET
-#define RRTH LALT BSPC
-#define LRRTH LALT DEL
-
+#define RRTH LALT SEMI
 #define LPK LSHFT TAB
 
 #define VOL_UP C_VOL_UP
@@ -69,7 +67,7 @@
       label = " ";
       bindings = <
         &none   &kp Q  &kp W  &kp E  &kp R     &kp T                        &kp Y   &kp U  &kp I      &kp O    &kp P     &none
-        &none   &kp A  &kp S  &kp D  &kp F     &kp G                        &kp H   &kp J  &kp K      &kp L    &kp SEMI  &none
+        &none   &kp A  &kp S  &kp D  &kp F     &kp G                        &kp H   &kp J  &kp K      &kp L    &kp BSPC  &none
         &mt LPK &kp Z  &kp X  &kp C  &kp V     &kp B                        &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
                                      &lt LLTH  &mo 1   &mt LTH    &mt RTH   &mo 2   &mt RRTH
       >;
@@ -80,13 +78,13 @@
         &none  &none  &kp N2    &kp PLUS  &kp N4    &kp N6                       &none     &kp COLON  &kp TILDE  &kp PRCNT  &none   &none
         &none  &kp N0 &kp UNDER &kp MINUS &kp EQUAL &kp N8                       &kp PIPE  &kp LPAR   &kp LBKT   &kp LBRC   &kp LT  &none
         &none  &kp N1 &kp N3    &kp N5    &kp N7    &kp N9                       &none     &kp RPAR   &kp RBKT   &kp RBRC   &kp GT  &none
-                                          &lt LLTH  &mo 1   &mt LTH    &mt RTH   &mo 2     &mt LRRTH
+                                          &lt LLTH  &mo 1   &mt LTH    &mt RTH   &mo 2     &mt RRTH
       >;
     };
 
     raise_layer {
       bindings = <
-        &none     &none     &kp AT     &kp HASH &kp DLLR  &none                        &none      &kp AMPS   &kp ASTRK  &kp CARET  &none     &none
+        &none     &none     &kp AT     &kp HASH &kp DLLR  &none                        &none      &kp AMPS   &kp ASTRK  &kp CARET  &kp DEL   &none
         &none     &kp EXCL  &kp GRAVE  &kp DQT  &kp SQT   &none                        &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp QMARK &none
         &none     &none     &none      &none    &none     &none                        &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp BSLH  &none
                                                 &lt LLTH  &mo 1   &mt LTH    &mt RTH   &mo 2      &mt RRTH
@@ -95,7 +93,7 @@
 
     opt_layer {
       bindings = <
-        &none   &kp E_BRI_UP &kp BRI_DN &none    &kp BRI_UP &kp E_BRI_UP                   &none          &mkp MB4        &none        &mkp MB5        &kp LS(LG(N3)) &none
+        &none   &kp E_BRI_DN &kp BRI_DN &none    &kp BRI_UP &kp E_BRI_UP                   &none          &mkp MB4        &none        &mkp MB5        &kp LS(LG(N3)) &none
         &none   &none        &kp VOL_DN &kp MUTE &kp VOL_UP &none                          &mmv MOVE_LEFT &mmv MOVE_DOWN  &mmv MOVE_UP &mmv MOVE_RIGHT &kp LS(LG(N4)) &none
         &none   &kp LCK_SCR  &kp PREV   &kp PLPA &kp NEXT   &none                          &msc SCRL_LEFT &msc SCRL_DOWN  &msc SCRL_UP &msc SCRL_RIGHT &kp LS(LG(N5)) &none
                                                  &lt LLTH   &mo 1   &mt LTH    &mkp LCLK   &mkp MCLK      &mkp RCLK
