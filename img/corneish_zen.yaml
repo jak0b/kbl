@@ -25,7 +25,7 @@ layers:
   - L
   - ;
   - ''
-  - LSHFT
+  - {t: ESC, h: LSHFT}
   - Z
   - X
   - C
@@ -38,10 +38,10 @@ layers:
   - /
   - {t: TAB, h: RSHFT}
   - opt
-  - {t: ESC, h: lower}
+  - lower
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
-  - {t: BSPC, h: raise}
+  - raise
   - LALT
   lower:
   - ''
@@ -81,10 +81,10 @@ layers:
   - '>'
   - ''
   - opt
-  - {t: ESC, h: lower, type: held}
+  - {t: lower, type: held}
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
-  - {t: BSPC, h: raise}
+  - raise
   - LALT
   raise:
   - ''
@@ -97,7 +97,7 @@ layers:
   - '&'
   - '*'
   - ^
-  - DEL
+  - ''
   - ''
   - ''
   - '!'
@@ -109,10 +109,10 @@ layers:
   - DOWN
   - UP
   - RIGHT
+  - BSPC
+  - ''
+  - ''
   - '?'
-  - ''
-  - ''
-  - ''
   - ''
   - ''
   - ''
@@ -122,12 +122,12 @@ layers:
   - PG UP
   - END
   - \
-  - ''
+  - DEL
   - opt
-  - {t: ESC, h: lower}
+  - lower
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
-  - {t: BSPC, h: raise, type: held}
+  - {t: raise, type: held}
   - LALT
   opt:
   - ''
