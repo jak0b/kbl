@@ -6,14 +6,23 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define LTH LCTRL SPACE
+#define LLTH 3 ESC
+
 #define RTH LMETA RET
+#define RRTH LALT BSPC
+#define LRRTH LALT DEL
+
+#define LPK LSHFT ESC
 
 #define VOL_UP C_VOL_UP
 #define VOL_DN C_VOL_DN
 #define MUTE   C_MUTE
 
 #define BRI_UP C_BRI_UP
+#define E_BRI_UP LC(BRI_UP)
 #define BRI_DN C_BRI_DN
+#define E_BRI_DN LC(BRI_DN)
+#define LCK_SCR LC(LG(Q))
 
 #define PLPA   C_PP
 #define NEXT   C_NEXT
@@ -38,9 +47,9 @@
   quick-tap-ms = <150>;
 };
 
-&caps_word {
-  continue-list = <UNDERSCORE MINUS>;
-  mods = <(MOD_LSFT | MOD_LALT)>;
+&lt {
+  tapping-term-ms = <170>;
+  quick-tap-ms = <150>;
 };
 
 / {
@@ -53,107 +62,16 @@
     };
   };
 
-  macros {
-    mac_scrlck: mac_scrlck {
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings =
-        <&macro_press &kp LCTRL>,
-        <&macro_press &kp LMETA>,
-        <&macro_tap &kp Q>,
-        <&macro_release &kp LMETA>,
-        <&macro_release &kp LCTRL>;
-    };
-
-    mac_ext_bri_up: mac_ext_bri_up {
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp BRI_UP>, <&macro_release &kp LCTRL>;
-    };
-
-    mac_ext_bri_dn: mac_ext_bri_dn {
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp BRI_DN>, <&macro_release &kp LCTRL>;
-    };
-  };
-
-  combos {
-    compatible = "zmk,combos";
-
-    combo_esc {
-      timeout-ms = <47>;
-      key-positions = <13 14>;
-      bindings = <&kp ESC>;
-      require-prior-idle-ms = <90>;
-      layers = <0 1 2>;
-    };
-
-    combo_tab {
-      timeout-ms = <47>;
-      key-positions = <15 16>;
-      bindings = <&kp TAB>;
-      require-prior-idle-ms = <90>;
-      layers = <0 1 2>;
-    };
-
-    combo_bspc {
-      timeout-ms = <47>;
-      key-positions = <21 22>;
-      bindings = <&kp BSPC>;
-      require-prior-idle-ms = <90>;
-      layers = <0 1>;
-    };
-
-    combo_del {
-      timeout-ms = <47>;
-      key-positions = <21 22>;
-      bindings = <&kp DEL>;
-      require-prior-idle-ms = <90>;
-      layers = <2>;
-    };
-
-    combo_mac_ext_bri_dn {
-      timeout-ms = <70>;
-      key-positions = <2 3>;
-      bindings = <&mac_ext_bri_dn>;
-      layers = <3>;
-    };
-
-    combo_mac_ext_bri_up {
-      timeout-ms = <70>;
-      key-positions = <3 4>;
-      bindings = <&mac_ext_bri_up>;
-      layers = <3>;
-    };
-  };
-
-  behaviors {
-    lcaps: left_shift_caps_words {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <170>;
-      bindings = <&kp LSHIFT>, <&caps_word>;
-    };
-
-    rcaps: right_shift_caps_words {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <170>;
-      bindings = <&kp RSHIFT>, <&caps_word>;
-    };
-  };
-
   keymap {
     compatible = "zmk,keymap";
 
     default_layer {
       label = " ";
       bindings = <
-        &none   &kp Q  &kp W  &kp E  &kp R   &kp T                        &kp Y   &kp U  &kp I      &kp O    &kp P     &none
-        &none   &kp A  &kp S  &kp D  &kp F   &kp G                        &kp H   &kp J  &kp K      &kp L    &kp SEMI  &none
-        &lcaps  &kp Z  &kp X  &kp C  &kp V   &kp B                        &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH  &rcaps
-                                     &mo 3   &mo 1   &mt LTH    &mt RTH   &mo 2   &kp LALT
+        &none   &kp Q  &kp W  &kp E  &kp R     &kp T                        &kp Y   &kp U  &kp I      &kp O    &kp P     &none
+        &none   &kp A  &kp S  &kp D  &kp F     &kp G                        &kp H   &kp J  &kp K      &kp L    &kp SEMI  &none
+        &mo LPK &kp Z  &kp X  &kp C  &kp V     &kp B                        &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                                     &lt LLTH  &mo 1   &mt LTH    &mt RTH   &mo 2   &mt RRTH
       >;
     };
 
@@ -162,7 +80,7 @@
         &none  &none  &kp N2    &kp PLUS  &kp N4    &kp N6                       &none     &kp COLON  &kp TILDE  &kp PRCNT  &none   &none
         &none  &kp N0 &kp UNDER &kp MINUS &kp EQUAL &kp N8                       &kp PIPE  &kp LPAR   &kp LBKT   &kp LBRC   &kp LT  &none
         &none  &kp N1 &kp N3    &kp N5    &kp N7    &kp N9                       &none     &kp RPAR   &kp RBKT   &kp RBRC   &kp GT  &none
-                                          &mo 3     &mo 1   &mt LTH    &mt RTH   &mo 2     &kp LALT
+                                          &lt LLTH  &mo 1   &mt LTH    &mt RTH   &mo 2     &mt LRRTH
       >;
     };
 
@@ -171,25 +89,25 @@
         &none     &none     &kp AT     &kp HASH &kp DLLR  &none                        &none      &kp AMPS   &kp ASTRK  &kp CARET  &none     &none
         &none     &kp EXCL  &kp GRAVE  &kp DQT  &kp SQT   &none                        &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp QMARK &none
         &none     &none     &none      &none    &none     &none                        &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp BSLH  &none
-                                                &mo 3     &mo 1   &mt LTH    &mt RTH   &mo 2      &kp LALT 
+                                                &lt LLTH  &mo 1   &mt LTH    &mt RTH   &mo 2      &mt RRTH
       >;
     };
 
     opt_layer {
       bindings = <
-        &none   &mac_scrlck &kp BRI_DN &none    &kp BRI_UP &none                          &none          &mkp MB4        &none        &mkp MB5        &none   &none
-        &none   &none       &kp VOL_DN &kp MUTE &kp VOL_UP &none                          &mmv MOVE_LEFT &mmv MOVE_DOWN  &mmv MOVE_UP &mmv MOVE_RIGHT &none   &none
-        &none   &none       &kp PREV   &kp PLPA &kp NEXT   &none                          &msc SCRL_LEFT &msc SCRL_DOWN  &msc SCRL_UP &msc SCRL_RIGHT &none   &none
-                                                &mo 3      &mo 1   &mt LTH    &mkp LCLK   &mkp MCLK      &mkp RCLK
+        &none   &kp E_BRI_UP &kp BRI_DN &none    &kp BRI_UP &kp E_BRI_UP                   &none          &mkp MB4        &none        &mkp MB5        &kp LS(LG(N3)) &none
+        &none   &none        &kp VOL_DN &kp MUTE &kp VOL_UP &none                          &mmv MOVE_LEFT &mmv MOVE_DOWN  &mmv MOVE_UP &mmv MOVE_RIGHT &kp LS(LG(N4)) &none
+        &none   &kp LCK_SCR  &kp PREV   &kp PLPA &kp NEXT   &none                          &msc SCRL_LEFT &msc SCRL_DOWN  &msc SCRL_UP &msc SCRL_RIGHT &kp LS(LG(N5)) &none
+                                                 &lt LLTH   &mo 1   &mt LTH    &mkp LCLK   &mkp MCLK      &mkp RCLK
       >;
     };
 
     function_bluetooth_layer {
       bindings = <
-        &none  &none   &kp F2   &none   &kp F4  &kp F6                       &none        &none   &none   &none   &none   &bt BC
-        &none  &none   &kp F10  &kp F11 &kp F12 &kp F8                       &out OUT_TOG &bt BS0 &bt BS1 &bt BS2 &bt BS3 &none
-        &none  &kp F1  &kp F3   &kp F5  &kp F7  &kp F9                       &none        &bt BD0 &bt BD1 &bt BD2 &bt BD3 &none
-                                         &mo 3   &mo 1   &mt LTH    &mt RTH  &mo 2        &kp LALT
+        &none  &none   &kp F2   &none   &kp F4    &kp F6                       &none        &none   &none   &none   &none   &none
+        &none  &none   &kp F10  &kp F11 &kp F12   &kp F8                       &out OUT_TOG &bt BS0 &bt BS1 &bt BS2 &bt BS3 &none
+        &none  &kp F1  &kp F3   &kp F5  &kp F7    &kp F9                       &none        &bt BD0 &bt BD1 &bt BD2 &bt BD3 &bt BC
+                                        &lt LLTH  &mo 1   &mt LTH    &mt RTH   &mo 2        &mt RRTH
       >;
     };
   };
