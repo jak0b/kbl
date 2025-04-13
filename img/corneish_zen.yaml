@@ -85,7 +85,7 @@ layers:
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - raise
-  - {t: BSPC, h: LALT}
+  - {t: DEL, h: LALT}
   raise:
   - ''
   - ''
@@ -128,7 +128,7 @@ layers:
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - {t: raise, type: held}
-  - {t: DEL, h: LALT}
+  - {t: BSPC, h: LALT}
   opt:
   - ''
   - BRI DN
