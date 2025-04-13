@@ -143,11 +143,11 @@ layers:
   - Sft+Gui+ 3
   - ''
   - ''
-  - ''
+  - Gui+ TAB
   - VOL DN
   - MUTE
   - VOL UP
-  - ''
+  - Ctl+ TAB
   - '&mmv MOVE_LEFT'
   - '&mmv MOVE_DOWN'
   - '&mmv MOVE_UP'
@@ -159,7 +159,7 @@ layers:
   - PREV
   - PP
   - NEXT
-  - ''
+  - Sft+Ctl+ TAB
   - '&msc SCRL_LEFT'
   - '&msc SCRL_DOWN'
   - '&msc SCRL_UP'
