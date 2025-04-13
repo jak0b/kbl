@@ -25,7 +25,7 @@ layers:
   - L
   - ;
   - ''
-  - LSHFT
+  - '&mo LSHFT ESC'
   - Z
   - X
   - C
@@ -36,13 +36,13 @@ layers:
   - ','
   - .
   - /
-  - RSHIFT
-  - opt
+  - RSHFT
+  - {t: ESC, h: opt}
   - lower
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - raise
-  - LALT
+  - {t: BSPC, h: LALT}
   lower:
   - ''
   - ''
@@ -80,12 +80,12 @@ layers:
   - '}'
   - '>'
   - ''
-  - opt
+  - {t: ESC, h: opt}
   - {t: lower, type: held}
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - raise
-  - LALT
+  - {t: DEL, h: LALT}
   raise:
   - ''
   - ''
@@ -123,24 +123,24 @@ layers:
   - END
   - \
   - ''
-  - opt
+  - {t: ESC, h: opt}
   - lower
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - {t: raise, type: held}
-  - LALT
+  - {t: BSPC, h: LALT}
   opt:
   - ''
-  - '&mac_scrlck'
+  - Ctl+ BRI UP
   - BRI DN
   - ''
   - BRI UP
-  - ''
+  - Ctl+ BRI UP
   - ''
   - '&mkp MB4'
   - ''
   - '&mkp MB5'
-  - ''
+  - Sft+Gui+ 3
   - ''
   - ''
   - ''
@@ -152,10 +152,10 @@ layers:
   - '&mmv MOVE_DOWN'
   - '&mmv MOVE_UP'
   - '&mmv MOVE_RIGHT'
+  - Sft+Gui+ 4
   - ''
   - ''
-  - ''
-  - ''
+  - Ctl+Gui+ Q
   - PREV
   - PP
   - NEXT
@@ -164,9 +164,9 @@ layers:
   - '&msc SCRL_DOWN'
   - '&msc SCRL_UP'
   - '&msc SCRL_RIGHT'
+  - Sft+Gui+ 5
   - ''
-  - ''
-  - {t: opt, type: held}
+  - {t: ESC, h: opt, type: held}
   - lower
   - {t: SPACE, h: LCTRL}
   - '&mkp LCLK'
@@ -184,7 +184,7 @@ layers:
   - ''
   - ''
   - ''
-  - BT CLR
+  - ''
   - ''
   - ''
   - F10
@@ -208,29 +208,10 @@ layers:
   - {t: BT DISC, h: '1'}
   - {t: BT DISC, h: '2'}
   - {t: BT DISC, h: '3'}
-  - ''
-  - opt
+  - BT CLR
+  - {t: ESC, h: opt}
   - {t: lower, type: held}
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - {t: raise, type: held}
-  - LALT
-combos:
-- p: [13, 14]
-  k: ESC
-  l: [' ', lower, raise]
-- p: [15, 16]
-  k: TAB
-  l: [' ', lower, raise]
-- p: [21, 22]
-  k: BSPC
-  l: [' ', lower]
-- p: [21, 22]
-  k: DEL
-  l: [raise]
-- p: [2, 3]
-  k: '&mac_ext_bri_dn'
-  l: [opt]
-- p: [3, 4]
-  k: '&mac_ext_bri_up'
-  l: [opt]
+  - {t: BSPC, h: LALT}
