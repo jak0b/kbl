@@ -423,7 +423,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(374, 187)" class="key keypos-29">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
-<text x="0" y="0" class="key tap">NUDER</text>
+<text x="0" y="0" class="key tap">_</text>
 </g>
 <g transform="translate(646, 187)" class="key keypos-30">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
