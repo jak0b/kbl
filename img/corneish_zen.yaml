@@ -137,9 +137,9 @@ layers:
   - Ctl+ BRI UP
   - BRI UP
   - ''
-  - Gui+ [
+  - Ctl+ TAB
   - ''
-  - Gui+ ]
+  - Sft+Ctl+ TAB
   - Sft+Gui+ 3
   - ''
   - ''
@@ -147,7 +147,7 @@ layers:
   - VOL DN
   - MUTE
   - VOL UP
-  - Ctl+ TAB
+  - Gui+ [
   - '&mmv MOVE_LEFT'
   - '&mmv MOVE_DOWN'
   - '&mmv MOVE_UP'
@@ -159,7 +159,7 @@ layers:
   - PREV
   - PP
   - NEXT
-  - Sft+Ctl+ TAB
+  - Gui+ ]
   - '&msc SCRL_LEFT'
   - '&msc SCRL_DOWN'
   - '&msc SCRL_UP'

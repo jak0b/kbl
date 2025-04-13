@@ -688,7 +688,7 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(714, 42)" class="key keypos-7">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">Gui+</tspan><tspan x="0" dy="1.2em">[</tspan>
+<tspan x="0" dy="-0.6em">Ctl+</tspan><tspan x="0" dy="1.2em">TAB</tspan>
 </text>
 </g>
 <g transform="translate(782, 34)" class="key keypos-8">
@@ -697,7 +697,7 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(850, 42)" class="key keypos-9">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">Gui+</tspan><tspan x="0" dy="1.2em">]</tspan>
+<tspan x="0" dy="-1.2em">Sft+Ctl</tspan><tspan x="0" dy="1.2em">+</tspan><tspan x="0" dy="1.2em">TAB</tspan>
 </text>
 </g>
 <g transform="translate(918, 60)" class="key keypos-10">
@@ -737,7 +737,7 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(374, 119)" class="key keypos-17">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">Ctl+</tspan><tspan x="0" dy="1.2em">TAB</tspan>
+<tspan x="0" dy="-0.6em">Gui+</tspan><tspan x="0" dy="1.2em">[</tspan>
 </text>
 </g>
 <g transform="translate(646, 119)" class="key keypos-18">
@@ -797,7 +797,7 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(374, 187)" class="key keypos-29">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em">Sft+Ctl</tspan><tspan x="0" dy="1.2em">+</tspan><tspan x="0" dy="1.2em">TAB</tspan>
+<tspan x="0" dy="-0.6em">Gui+</tspan><tspan x="0" dy="1.2em">]</tspan>
 </text>
 </g>
 <g transform="translate(646, 187)" class="key keypos-30">
