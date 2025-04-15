@@ -16,12 +16,12 @@ layers:
   - ''
   - A
   - S
-  - D
-  - F
+  - {t: D, h: LCTRL}
+  - {t: F, h: LMETA}
   - G
   - H
-  - J
-  - K
+  - {t: J, h: RMETA}
+  - {t: K, h: RCTRL}
   - L
   - BSPC
   - ''
@@ -39,8 +39,8 @@ layers:
   - RSHFT
   - opt
   - lower
-  - {t: SPACE, h: LCTRL}
-  - {t: RET, h: LMETA}
+  - SPACE
+  - RET
   - raise
   - LALT
   lower:
@@ -82,8 +82,8 @@ layers:
   - ''
   - opt
   - {t: lower, type: held}
-  - {t: SPACE, h: LCTRL}
-  - {t: RET, h: LMETA}
+  - SPACE
+  - RET
   - raise
   - LALT
   raise:
@@ -125,8 +125,8 @@ layers:
   - DEL
   - opt
   - lower
-  - {t: SPACE, h: LCTRL}
-  - {t: RET, h: LMETA}
+  - SPACE
+  - RET
   - {t: raise, type: held}
   - LALT
   opt:
@@ -168,7 +168,7 @@ layers:
   - ''
   - {t: opt, type: held}
   - lower
-  - {t: SPACE, h: LCTRL}
+  - SPACE
   - '&mkp LCLK'
   - '&mkp MCLK'
   - '&mkp RCLK'
