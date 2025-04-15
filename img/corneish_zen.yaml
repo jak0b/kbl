@@ -16,8 +16,8 @@ layers:
   - ''
   - A
   - S
-  - {t: D, h: LMETA}
-  - {t: F, h: LCTRL}
+  - {t: D, h: LCTRL}
+  - {t: F, h: LMETA}
   - G
   - H
   - {t: J, h: RMETA}
