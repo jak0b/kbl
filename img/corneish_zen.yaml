@@ -16,12 +16,12 @@ layers:
   - ''
   - A
   - S
-  - D
-  - F
+  - {t: D, h: LMETA}
+  - {t: F, h: LCTRL}
   - G
   - H
-  - J
-  - K
+  - {t: J, h: RMETA}
+  - {t: K, h: RCTRL}
   - L
   - BSPC
   - ''
