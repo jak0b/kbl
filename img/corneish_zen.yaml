@@ -23,9 +23,9 @@ layers:
   - J
   - K
   - L
-  - ;
+  - BSPC
   - ''
-  - {t: TAB, h: LSHFT}
+  - {t: ESC, h: LSHFT}
   - Z
   - X
   - C
@@ -33,16 +33,16 @@ layers:
   - B
   - N
   - M
-  - ','
+  - TAB
   - .
   - /
   - RSHFT
-  - {t: ESC, h: opt}
+  - opt
   - lower
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - raise
-  - {t: BSPC, h: LALT}
+  - LALT
   lower:
   - ''
   - ''
@@ -80,12 +80,12 @@ layers:
   - '}'
   - '>'
   - ''
-  - {t: ESC, h: opt}
+  - opt
   - {t: lower, type: held}
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - raise
-  - {t: DEL, h: LALT}
+  - LALT
   raise:
   - ''
   - ''
@@ -93,7 +93,7 @@ layers:
   - '#'
   - '%'
   - ''
-  - ''
+  - HOME
   - '&'
   - '*'
   - ^
@@ -109,26 +109,26 @@ layers:
   - DOWN
   - UP
   - RIGHT
+  - ;
+  - ''
+  - ''
   - '?'
   - ''
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - HOME
+  - END
   - PG DN
   - PG UP
-  - END
+  - ','
   - \
-  - ''
-  - {t: ESC, h: opt}
+  - DEL
+  - opt
   - lower
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - {t: raise, type: held}
-  - {t: BSPC, h: LALT}
+  - LALT
   opt:
   - ''
   - BRI DN
@@ -166,7 +166,7 @@ layers:
   - '&msc SCRL_RIGHT'
   - Sft+Gui+ 5
   - ''
-  - {t: ESC, h: opt, type: held}
+  - {t: opt, type: held}
   - lower
   - {t: SPACE, h: LCTRL}
   - '&mkp LCLK'
