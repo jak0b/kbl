@@ -23,9 +23,9 @@ layers:
   - J
   - K
   - L
-  - BSPC
+  - '&bsesc'
   - ''
-  - {t: ESC, h: LSHFT}
+  - LSHFT
   - Z
   - X
   - C
