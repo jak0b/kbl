@@ -90,7 +90,7 @@
 
     opt_layer {
       bindings = <
-        &none       &kp BRI_DN  &kp E_BRI_DN &none    &kp E_BRI_UP &kp BRI_UP                   &none          &kp LS(LC(TAB)) &none        &kp LC(TAB)     &kp LS(LG(N3)) &none
+        &none       &kp BRI_DN  &kp E_BRI_DN &none    &kp E_BRI_UP &kp BRI_UP                   &none          &none           &none        &none           &kp LS(LG(N3)) &none
         &none       &none       &kp VOL_DN   &kp MUTE &kp VOL_UP   &kp LG(RBKT)                 &mmv MOVE_LEFT &mmv MOVE_DOWN  &mmv MOVE_UP &mmv MOVE_RIGHT &kp LS(LG(N4)) &none
         &kp LCK_SCR &none       &kp PREV     &kp PLPA &kp NEXT     &kp LG(LBKT)                 &msc SCRL_LEFT &msc SCRL_DOWN  &msc SCRL_UP &msc SCRL_RIGHT &kp LS(LG(N5)) &none
                                                       &mo 3        &mo 1   &mt LTH  &mkp LCLK   &mkp MCLK      &mkp RCLK
