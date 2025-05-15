@@ -25,7 +25,7 @@ layers:
   - L
   - BSPC
   - ''
-  - {t: ESC, h: LSHFT}
+  - LSHIFT
   - Z
   - X
   - C
@@ -37,7 +37,7 @@ layers:
   - .
   - /
   - RSHFT
-  - opt
+  - {t: ESC, h: opt}
   - lower
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
@@ -80,7 +80,7 @@ layers:
   - '}'
   - '>'
   - ''
-  - opt
+  - {t: ESC, h: opt}
   - {t: lower, type: held}
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
@@ -123,7 +123,7 @@ layers:
   - ','
   - \
   - DEL
-  - opt
+  - {t: ESC, h: opt}
   - lower
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
@@ -166,7 +166,7 @@ layers:
   - '&msc SCRL_RIGHT'
   - Sft+Gui+ 5
   - ''
-  - {t: opt, type: held}
+  - {t: ESC, h: opt, type: held}
   - lower
   - {t: SPACE, h: LCTRL}
   - '&mkp LCLK'
