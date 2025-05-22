@@ -37,12 +37,12 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 18
 
 &mt {
-  tapping-term-ms = <160>;
+  tapping-term-ms = <170>;
   quick-tap-ms = <200>;
 };
 
 &lt {
-  tapping-term-ms = <160>;
+  tapping-term-ms = <170>;
   quick-tap-ms = <200>;
 };
 
