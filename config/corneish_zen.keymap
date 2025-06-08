@@ -16,7 +16,6 @@
 #define E_BRI_UP LC(BRI_UP)
 #define BRI_DN C_BRI_DN
 #define E_BRI_DN LC(BRI_DN)
-#define LCK_SCR LC(LG(Q))
 
 #define PLPA   C_PP
 #define NEXT   C_NEXT
@@ -62,19 +61,19 @@
     default_layer {
       label = " ";
       bindings = <
-        &none      &kp Q  &kp W  &kp E  &kp R      &kp T                      &kp Y   &kp U  &kp I    &kp O    &kp P     &none
-        &none      &kp A  &kp S  &kp D  &kp F      &kp G                      &kp H   &kp J  &kp K    &kp L    &kp BSPC  &none
-        &kp LSHIFT &kp Z  &kp X  &kp C  &kp V      &kp B                      &kp N   &kp M  &kp TAB  &kp DOT  &kp FSLH  &kp RSHFT
-                                        &lt 3 ESC  &mo 1  &mt LTH    &mt RTH  &mo 2   &kp LALT
+        &none      &kp Q  &kp W  &kp E  &kp R   &kp T                      &kp Y   &kp U  &kp I    &kp O    &kp P     &none
+        &none      &kp A  &kp S  &kp D  &kp F   &kp G                      &kp H   &kp J  &kp K    &kp L    &kp BSPC  &none
+        &kp LSHIFT &kp Z  &kp X  &kp C  &kp V   &kp B                      &kp N   &kp M  &kp TAB  &kp DOT  &kp FSLH  &kp RSHFT
+                                        &mo 3   &mo 1  &mt LTH    &mt RTH  &mo 2   &kp LALT
       >;
     };
 
     lower_layer {
       bindings = <
-        &none  &none  &kp N2    &kp PLUS  &kp N4    &kp N6                    &none     &kp COLON  &kp TILDE  &kp SEMI  &none   &none
-        &none  &kp N0 &kp UNDER &kp MINUS &kp EQUAL &kp N8                    &kp PIPE  &kp LPAR   &kp LBKT   &kp LBRC  &kp LT  &none
-        &none  &kp N1 &kp N3    &kp N5    &kp N7    &kp N9                    &none     &kp RPAR   &kp RBKT   &kp RBRC  &kp GT  &none
-                                          &lt 3 ESC &mo 1  &mt LTH &mt RTH    &mo 2     &kp LALT
+        &none   &none  &kp N2    &kp PLUS  &kp N4    &kp N6                    &none     &kp COLON  &kp TILDE  &kp SEMI  &none   &none
+        &none   &kp N0 &kp UNDER &kp MINUS &kp EQUAL &kp N8                    &kp PIPE  &kp LPAR   &kp LBKT   &kp LBRC  &kp LT  &none
+        &kp ESC &kp N1 &kp N3    &kp N5    &kp N7    &kp N9                    &none     &kp RPAR   &kp RBKT   &kp RBRC  &kp GT  &none
+                                           &mo 3     &mo 1  &mt LTH &mt RTH    &mo 2     &kp LALT
       >;
     };
 
@@ -83,7 +82,7 @@
         &none     &none     &kp AT    &kp HASH &kp PRCNT &none                     &kp HOME   &kp AMPS   &kp ASTRK  &kp CARET  &none     &none
         &none     &kp EXCL  &kp GRAVE &kp DQT  &kp SQT   &kp DLLR                  &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp SEMI  &none
         &none     &kp QMARK &none     &none    &none     &none                     &kp END    &kp PG_DN  &kp PG_UP  &kp COMMA  &kp BSLH  &kp DEL
-                                               &lt 3 ESC &mo 1  &mt LTH &mt RTH    &mo 2     &kp LALT
+                                               &mo 3     &mo 1  &mt LTH &mt RTH    &mo 2     &kp LALT
       >;
     };
 
@@ -91,8 +90,8 @@
       bindings = <
         &none       &kp BRI_DN  &kp E_BRI_DN &none    &kp E_BRI_UP &kp BRI_UP                   &none          &none           &none        &none           &kp LS(LG(N3)) &none
         &none       &none       &kp VOL_DN   &kp MUTE &kp VOL_UP   &kp LG(RBKT)                 &mmv MOVE_LEFT &mmv MOVE_DOWN  &mmv MOVE_UP &mmv MOVE_RIGHT &kp LS(LG(N4)) &none
-        &kp LCK_SCR &none       &kp PREV     &kp PLPA &kp NEXT     &kp LG(LBKT)                 &msc SCRL_LEFT &msc SCRL_DOWN  &msc SCRL_UP &msc SCRL_RIGHT &kp LS(LG(N5)) &none
-                                                      &lt 3 ESC    &mo 1   &mt LTH  &mkp LCLK   &mkp MCLK      &mkp RCLK
+        &none       &none       &kp PREV     &kp PLPA &kp NEXT     &kp LG(LBKT)                 &msc SCRL_LEFT &msc SCRL_DOWN  &msc SCRL_UP &msc SCRL_RIGHT &kp LS(LG(N5)) &none
+                                                      &mo 3        &mo 1   &mt LTH  &mkp LCLK   &mkp MCLK      &mkp RCLK
       >;
     };
 
@@ -101,7 +100,7 @@
         &none  &none   &kp F2   &none   &kp F4    &kp F6                       &none        &none   &none   &none   &none   &none
         &none  &none   &kp F10  &kp F11 &kp F12   &kp F8                       &out OUT_TOG &bt BS0 &bt BS1 &bt BS2 &bt BS3 &none
         &none  &kp F1  &kp F3   &kp F5  &kp F7    &kp F9                       &none        &bt BD0 &bt BD1 &bt BD2 &bt BD3 &bt BC
-                                        &none     &none   &none    &none   &none        &none
+                                        &none     &none   &none    &none       &none        &none
       >;
     };
   };
