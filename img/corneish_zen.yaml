@@ -68,7 +68,7 @@ layers:
   - '{'
   - <
   - ''
-  - LSHIFT
+  - ''
   - '1'
   - '3'
   - '5'
@@ -79,13 +79,13 @@ layers:
   - ']'
   - '}'
   - '>'
-  - RSHFT
+  - ''
   - opt
   - {t: lower, type: held}
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - raise
-  - RALT
+  - ''
   raise:
   - ''
   - ''
@@ -111,7 +111,7 @@ layers:
   - RIGHT
   - DEL
   - ''
-  - LSHIFT
+  - ''
   - '?'
   - ''
   - ''
@@ -122,13 +122,13 @@ layers:
   - PG UP
   - ','
   - \
-  - RSHFT
+  - ''
   - opt
   - lower
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - {t: raise, type: held}
-  - LALT
+  - ''
   opt:
   - ''
   - BRI DN
