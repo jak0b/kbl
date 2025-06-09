@@ -215,3 +215,6 @@ layers:
   - ''
   - {type: held}
   - ''
+combos:
+- p: [37, 41]
+  k: LALT
