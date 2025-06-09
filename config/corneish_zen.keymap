@@ -56,16 +56,6 @@
     };
   };
 
-  combos {
-    compatible = "zmk,combos";
-    combo_esc {
-      timeout-ms = <50>;
-      key-positions = <37 41>;
-      bindings = <&kp LALT>;
-      layers = <0>;
-    };
-  };
-
   keymap {
     compatible = "zmk,keymap";
 
@@ -84,7 +74,7 @@
         &none  &none  &kp N2    &kp PLUS  &kp N4    &kp N6                   &none     &kp COLON  &kp TILDE  &kp SEMI  &none   &none
         &none  &kp N0 &kp UNDER &kp MINUS &kp EQUAL &kp N8                   &kp PIPE  &kp LPAR   &kp LBKT   &kp LBRC  &kp LT  &none
         &none  &kp N1 &kp N3    &kp N5    &kp N7    &kp N9                   &none     &kp RPAR   &kp RBKT   &kp RBRC  &kp GT  &none
-                                          &mo 3     &mo 1   &mt LTH &mt RTH  &mo 2     &none
+                                          &mo 3     &mo 1   &mt LTH &mt RTH  &mo 2     &kp LALT
       >;
     };
 
@@ -93,7 +83,7 @@
         &none  &none     &kp AT    &kp HASH &kp PRCNT &none                   &kp HOME   &kp AMPS   &kp ASTRK  &kp CARET  &none     &none
         &none  &kp EXCL  &kp GRAVE &kp DQT  &kp SQT   &kp DLLR                &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp DEL   &none
         &none  &kp QMARK &none     &none    &none     &none                   &kp END    &kp PG_DN  &kp PG_UP  &kp COMMA  &kp BSLH  &none
-                                            &mo 3     &mo 1  &mt LTH &mt RTH  &mo 2      &none
+                                            &mo 3     &mo 1  &mt LTH &mt RTH  &mo 2      &kp LALT
       >;
     };
 
