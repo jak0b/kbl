@@ -133,7 +133,7 @@ layers:
   - ''
   - BRI DN
   - Ctl+ BRI DN
-  - ''
+  - OUT TOG
   - Ctl+ BRI UP
   - BRI UP
   - ''
@@ -143,11 +143,11 @@ layers:
   - Sft+Gui+ 3
   - ''
   - ''
-  - BT PRV
+  - {t: BT, h: '0'}
   - VOL DN
   - MUTE
   - VOL UP
-  - BT NXT
+  - {t: BT, h: '2'}
   - '&mmv MOVE_LEFT'
   - '&mmv MOVE_DOWN'
   - '&mmv MOVE_UP'
@@ -155,11 +155,11 @@ layers:
   - Sft+Gui+ 4
   - ''
   - BT CLR
-  - ''
+  - {t: BT, h: '1'}
   - PREV
   - PP
   - NEXT
-  - OUT TOG
+  - {t: BT, h: '3'}
   - '&msc SCRL_LEFT'
   - '&msc SCRL_DOWN'
   - '&msc SCRL_UP'
