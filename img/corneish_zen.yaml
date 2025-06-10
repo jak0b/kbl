@@ -131,11 +131,11 @@ layers:
   - LALT
   opt:
   - ''
-  - BRI DN
   - Ctl+ BRI DN
-  - OUT TOG
-  - Ctl+ BRI UP
+  - BRI DN
+  - MUTE
   - BRI UP
+  - Ctl+ BRI UP
   - ''
   - ''
   - ''
@@ -145,7 +145,7 @@ layers:
   - ''
   - {t: BT, h: '0'}
   - VOL DN
-  - MUTE
+  - OUT TOG
   - VOL UP
   - {t: BT, h: '2'}
   - '&mmv MOVE_LEFT'
