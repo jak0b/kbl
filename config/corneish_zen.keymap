@@ -22,17 +22,6 @@
 #define NEXT   C_NEXT
 #define PREV   C_PREV
 
-#define BC  BT_CLR
-#define BS0 BT_SEL 0
-#define BS1 BT_SEL 1
-#define BS2 BT_SEL 2
-#define BS3 BT_SEL 3
-
-#define BD0 BT_DISC 0
-#define BD1 BT_DISC 1
-#define BD2 BT_DISC 2
-#define BD3 BT_DISC 3
-
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1100
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 18
 
@@ -89,19 +78,19 @@
 
     opt_layer {
       bindings = <
-        &none  &kp BRI_DN  &kp E_BRI_DN &none    &kp E_BRI_UP &kp BRI_UP                   &none          &none           &none        &none           &kp LS(LG(N3)) &none
-        &none  &none       &kp VOL_DN   &kp MUTE &kp VOL_UP   &kp LG(RBKT)                 &mmv MOVE_LEFT &mmv MOVE_DOWN  &mmv MOVE_UP &mmv MOVE_RIGHT &kp LS(LG(N4)) &none
-        &none  &none       &kp PREV     &kp PLPA &kp NEXT     &kp LG(LBKT)                 &msc SCRL_LEFT &msc SCRL_DOWN  &msc SCRL_UP &msc SCRL_RIGHT &kp LS(LG(N5)) &none
-                                                 &mo 3        &mo 1   &mt LTH  &mkp LCLK   &mkp MCLK      &mkp RCLK
+        &none      &kp BRI_DN  &kp E_BRI_DN &none    &kp E_BRI_UP &kp BRI_UP                   &none          &none           &none        &none           &kp LS(LG(N3)) &none
+        &none      &kp BT_PRV  &kp VOL_DN   &kp MUTE &kp VOL_UP   &bt BT_NXT                   &mmv MOVE_LEFT &mmv MOVE_DOWN  &mmv MOVE_UP &mmv MOVE_RIGHT &kp LS(LG(N4)) &none
+        &bt BT_CLR &none       &kp PREV     &kp PLPA &kp NEXT     &out OUT_TOG                 &msc SCRL_LEFT &msc SCRL_DOWN  &msc SCRL_UP &msc SCRL_RIGHT &kp LS(LG(N5)) &none
+                                                     &mo 3        &mo 1   &mt LTH  &mkp LCLK   &mkp MCLK      &mkp RCLK
       >;
     };
 
-    function_bluetooth_layer {
+    f_key_layer {
       bindings = <
-        &none  &none   &kp F2   &none   &kp F4    &kp F6                       &none        &none   &none   &none   &none   &none
-        &none  &none   &kp F10  &kp F11 &kp F12   &kp F8                       &out OUT_TOG &bt BS0 &bt BS1 &bt BS2 &bt BS3 &none
-        &none  &kp F1  &kp F3   &kp F5  &kp F7    &kp F9                       &none        &bt BD0 &bt BD1 &bt BD2 &bt BD3 &bt BC
-                                        &none     &none   &none    &none       &none        &none
+        &none  &none   &kp F2   &none   &kp F4    &kp F6                  &none  &none  &none  &none  &none  &none
+        &none  &none   &kp F10  &kp F11 &kp F12   &kp F8                  &none  &none  &none  &none  &none  &none
+        &none  &kp F1  &kp F3   &kp F5  &kp F7    &kp F9                  &none  &none  &none  &none  &none  &none
+                                        &none     &none   &none    &none  &none  &none
       >;
     };
   };
