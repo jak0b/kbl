@@ -502,7 +502,9 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(646, 51)" class="key keypos-6">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
-<text x="0" y="0" class="key tap">HOME</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">PG</tspan><tspan x="0" dy="1.2em">UP</tspan>
+</text>
 </g>
 <g transform="translate(714, 42)" class="key keypos-7">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
@@ -589,19 +591,17 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(646, 187)" class="key keypos-30">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
-<text x="0" y="0" class="key tap">END</text>
-</g>
-<g transform="translate(714, 178)" class="key keypos-31">
-<rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
 <text x="0" y="0" class="key tap">
 <tspan x="0" dy="-0.6em">PG</tspan><tspan x="0" dy="1.2em">DN</tspan>
 </text>
 </g>
+<g transform="translate(714, 178)" class="key keypos-31">
+<rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
+<text x="0" y="0" class="key tap">END</text>
+</g>
 <g transform="translate(782, 170)" class="key keypos-32">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">PG</tspan><tspan x="0" dy="1.2em">UP</tspan>
-</text>
+<text x="0" y="0" class="key tap">HOME</text>
 </g>
 <g transform="translate(850, 178)" class="key keypos-33">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
@@ -690,6 +690,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(850, 42)" class="key keypos-9">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
+<text x="0" y="0" class="key tap">PSCRN</text>
 </g>
 <g transform="translate(918, 60)" class="key keypos-10">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
