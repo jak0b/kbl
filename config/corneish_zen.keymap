@@ -51,9 +51,9 @@
     default_layer {
       label = " ";
       bindings = <
-        &none    &kp Q  &kp W  &kp E  &kp R   &kp T                      &kp Y   &kp U  &kp I    &kp O    &kp P     &none
-        &none    &kp A  &kp S  &kp D  &kp F   &kp G                      &kp H   &kp J  &kp K    &kp L    &kp BSPC  &none
-        &mt LPK  &kp Z  &kp X  &kp C  &kp V   &kp B                      &kp N   &kp M  &kp TAB  &kp DOT  &kp FSLH  &kp RSHFT
+        &none      &kp Q  &kp W  &kp E  &kp R   &kp T                      &kp Y   &kp U  &kp I    &kp O    &kp P     &none
+        &none      &kp A  &kp S  &kp D  &kp F   &kp G                      &kp H   &kp J  &kp K    &kp L    &kp BSPC  &none
+        &kp LSHIFT &kp Z  &kp X  &kp C  &kp V   &kp B                      &kp N   &kp M  &kp TAB  &kp DOT  &kp FSLH  &kp RSHFT
                                       &mo 3   &mo 1  &mt LTH    &mt RTH  &mo 2   &kp LALT
       >;
     };
@@ -72,7 +72,7 @@
         &none  &none     &kp AT    &kp HASH &kp PRCNT &none                   &kp PG_UP  &kp AMPS   &kp ASTRK &kp CARET  &none     &none
         &none  &kp EXCL  &kp GRAVE &kp DQT  &kp SQT   &kp DLLR                &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT  &kp DEL   &none
         &none  &kp QMARK &none     &none    &none     &none                   &kp PG_DN  &kp END    &kp HOME  &kp COMMA  &kp BSLH  &none
-                                            &mo 3     &mo 1  &mt LTH &mt RTH  &mo 2      &kp LALT
+                                            &kp ESC   &mo 1  &mt LTH &mt RTH  &mo 2      &kp LALT
       >;
     };
 
