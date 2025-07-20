@@ -25,7 +25,7 @@ layers:
   - L
   - BSPC
   - ''
-  - {t: ESC, h: LSHIFT}
+  - LSHIFT
   - Z
   - X
   - C
@@ -123,7 +123,7 @@ layers:
   - ','
   - \
   - ''
-  - opt
+  - ESC
   - lower
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
