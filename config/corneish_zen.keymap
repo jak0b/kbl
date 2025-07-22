@@ -45,15 +45,15 @@
       then-layer = <4>;
     };
   };
+
   combos {
     compatible = "zmk,combos";
     combo_bt_clr {
       layers = <3>;
-      key-positions = <0 4 25>;
+      key-positions = <1 5>;
       bindings = <&bt BT_CLR>;
     };
   };
-
 
   keymap {
     compatible = "zmk,keymap";
