@@ -21,7 +21,7 @@
 #define PLPA   C_PP
 #define NEXT   C_NEXT
 #define PREV   C_PREV
-#define RES    LC(LALT(DEL))
+#define RES    LCTL(LALT(KC_DEL))
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1100
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 18
