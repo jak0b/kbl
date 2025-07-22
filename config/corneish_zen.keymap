@@ -45,7 +45,7 @@
       bindings = <&bt BT_CLR>;
     };
   };
-}
+};
 
 / {
   conditional_layers {
