@@ -38,7 +38,7 @@ layers:
   - /
   - {t: RSHFT, h: sticky}
   - {t: LALT, h: opt}
-  - lower
+  - {t: ESC, h: lower}
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - raise
@@ -57,7 +57,7 @@ layers:
   - ''
   - ''
   - ''
-  - ESC
+  - '0'
   - _
   - '-'
   - '='
@@ -68,7 +68,7 @@ layers:
   - '{'
   - <
   - ''
-  - '0'
+  - ''
   - '1'
   - '3'
   - '5'
@@ -81,7 +81,7 @@ layers:
   - '>'
   - ''
   - {t: LALT, h: opt}
-  - {t: lower, type: held}
+  - {t: ESC, h: lower, type: held}
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - raise
@@ -124,7 +124,7 @@ layers:
   - \
   - ''
   - {t: LALT, h: opt}
-  - lower
+  - {t: ESC, h: lower}
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - {t: raise, type: held}
@@ -167,7 +167,7 @@ layers:
   - Sft+Gui+ 5
   - ''
   - {t: LALT, h: opt, type: held}
-  - lower
+  - {t: ESC, h: lower}
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - raise
@@ -210,7 +210,7 @@ layers:
   - '&mkp RCLK'
   - ''
   - {t: LALT, h: opt}
-  - lower
+  - {t: ESC, h: lower}
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - raise
