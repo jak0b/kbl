@@ -37,12 +37,12 @@ layers:
   - .
   - /
   - RSHFT
-  - opt
+  - {t: LALT, h: opt}
   - lower
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - raise
-  - ''
+  - {t: RALT, h: f_key}
   lower:
   - ''
   - ''
@@ -80,12 +80,12 @@ layers:
   - '}'
   - '>'
   - ''
-  - opt
+  - {t: LALT, h: opt}
   - {t: lower, type: held}
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - raise
-  - ''
+  - {t: RALT, h: f_key}
   raise:
   - ''
   - ''
@@ -123,12 +123,12 @@ layers:
   - ','
   - \
   - ''
-  - ''
+  - {t: LALT, h: opt}
   - lower
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - {t: raise, type: held}
-  - ''
+  - {t: RALT, h: f_key}
   opt:
   - ''
   - Ctl+ BRI DN
@@ -210,16 +210,12 @@ layers:
   - ''
   - ''
   - ''
-  - {type: held}
+  - ''
+  - ''
   - ''
   - ''
   - {type: held}
-  - ''
 combos:
 - p: [1, 5]
   k: BT CLR
   l: [opt]
-- p: [36, 40]
-  k: LALT
-- p: [37, 41]
-  k: RALT
