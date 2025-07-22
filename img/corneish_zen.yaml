@@ -42,7 +42,7 @@ layers:
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - raise
-  - LALT
+  - ''
   lower:
   - ''
   - ''
@@ -85,7 +85,7 @@ layers:
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - raise
-  - {t: RALT, h: sticky}
+  - ''
   raise:
   - ''
   - ''
@@ -123,7 +123,7 @@ layers:
   - ','
   - \
   - ''
-  - {t: LALT, h: sticky}
+  - ''
   - lower
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
@@ -219,3 +219,7 @@ combos:
 - p: [1, 5]
   k: BT CLR
   l: [opt]
+- p: [36, 40]
+  k: LALT
+- p: [37, 41]
+  k: RALT
