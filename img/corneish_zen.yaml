@@ -37,12 +37,12 @@ layers:
   - .
   - /
   - RSHFT
-  - {t: LALT, h: opt}
+  - '&lts 3 LALT'
   - lower
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - raise
-  - {t: RALT, h: f_key}
+  - '&lts 4 RALT'
   lower:
   - ''
   - ''
@@ -80,12 +80,12 @@ layers:
   - '}'
   - '>'
   - ''
-  - {t: LALT, h: opt}
+  - '&lts 3 LALT'
   - {t: lower, type: held}
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - raise
-  - {t: RALT, h: f_key}
+  - '&lts 4 RALT'
   raise:
   - ''
   - ''
@@ -123,12 +123,12 @@ layers:
   - ','
   - \
   - ''
-  - {t: LALT, h: opt}
+  - '&lts 3 LALT'
   - lower
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - {t: raise, type: held}
-  - {t: RALT, h: f_key}
+  - '&lts 4 RALT'
   opt:
   - ''
   - Ctl+ BRI DN
@@ -166,55 +166,14 @@ layers:
   - '&msc SCRL_RIGHT'
   - Sft+Gui+ 5
   - ''
-  - {t: opt, type: held}
+  - opt
   - lower
   - {t: SPACE, h: LCTRL}
   - '&mkp LCLK'
   - '&mkp MCLK'
   - '&mkp RCLK'
-  f_key:
-  - ''
-  - ''
-  - F2
-  - ''
-  - F4
-  - F6
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - F10
-  - F11
-  - F12
-  - F8
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - F1
-  - F3
-  - F5
-  - F7
-  - F9
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {type: held}
+  f_key: ['', '', F2, '', F4, F6, '', '', '', '', '', '', '', '', F10, F11, F12, F8, '', '', '', '', '', '', '', F1, F3, F5, F7, F9, '', '', '', '', '', '', '', '',
+    '', '', '', '']
 combos:
 - p: [1, 5]
   k: BT CLR

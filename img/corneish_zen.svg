@@ -278,10 +278,10 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(272, 249)" class="key keypos-36">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
-<text x="0" y="0" class="key tap">LALT</text>
-<a href="#opt">
-<text x="0" y="30" class="key hold layer-activator">opt</text>
-</a></g>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-1.2em">&amp;lts</tspan><tspan x="0" dy="1.2em">3</tspan><tspan x="0" dy="1.2em">LALT</tspan>
+</text>
+</g>
 <g transform="translate(347, 259) rotate(15.0)" class="key keypos-37">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
 <a href="#lower">
@@ -304,10 +304,10 @@ path.combo { stroke: #7f7f7f; }
 </a></g>
 <g transform="translate(748, 249)" class="key keypos-41">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
-<text x="0" y="0" class="key tap">RALT</text>
-<a href="#f_key">
-<text x="0" y="30" class="key hold layer-activator">f_key</text>
-</a></g>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-1.2em">&amp;lts</tspan><tspan x="0" dy="1.2em">4</tspan><tspan x="0" dy="1.2em">RALT</tspan>
+</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 390)" class="layer-lower">
@@ -449,10 +449,10 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(272, 249)" class="key keypos-36">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
-<text x="0" y="0" class="key tap">LALT</text>
-<a href="#opt">
-<text x="0" y="30" class="key hold layer-activator">opt</text>
-</a></g>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-1.2em">&amp;lts</tspan><tspan x="0" dy="1.2em">3</tspan><tspan x="0" dy="1.2em">LALT</tspan>
+</text>
+</g>
 <g transform="translate(347, 259) rotate(15.0)" class="key held keypos-37">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key held"/>
 <a href="#lower">
@@ -475,10 +475,10 @@ path.combo { stroke: #7f7f7f; }
 </a></g>
 <g transform="translate(748, 249)" class="key keypos-41">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
-<text x="0" y="0" class="key tap">RALT</text>
-<a href="#f_key">
-<text x="0" y="30" class="key hold layer-activator">f_key</text>
-</a></g>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-1.2em">&amp;lts</tspan><tspan x="0" dy="1.2em">4</tspan><tspan x="0" dy="1.2em">RALT</tspan>
+</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 779)" class="layer-raise">
@@ -622,10 +622,10 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(272, 249)" class="key keypos-36">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
-<text x="0" y="0" class="key tap">LALT</text>
-<a href="#opt">
-<text x="0" y="30" class="key hold layer-activator">opt</text>
-</a></g>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-1.2em">&amp;lts</tspan><tspan x="0" dy="1.2em">3</tspan><tspan x="0" dy="1.2em">LALT</tspan>
+</text>
+</g>
 <g transform="translate(347, 259) rotate(15.0)" class="key keypos-37">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
 <a href="#lower">
@@ -648,10 +648,10 @@ path.combo { stroke: #7f7f7f; }
 </a></g>
 <g transform="translate(748, 249)" class="key keypos-41">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
-<text x="0" y="0" class="key tap">RALT</text>
-<a href="#f_key">
-<text x="0" y="30" class="key hold layer-activator">f_key</text>
-</a></g>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-1.2em">&amp;lts</tspan><tspan x="0" dy="1.2em">4</tspan><tspan x="0" dy="1.2em">RALT</tspan>
+</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1169)" class="layer-opt">
@@ -835,10 +835,10 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(986, 196)" class="key keypos-35">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
 </g>
-<g transform="translate(272, 249)" class="key held keypos-36">
-<rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key held"/>
+<g transform="translate(272, 249)" class="key keypos-36">
+<rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
 <a href="#opt">
-<text x="0" y="0" class="key held tap layer-activator">opt</text>
+<text x="0" y="0" class="key tap layer-activator">opt</text>
 </a></g>
 <g transform="translate(347, 259) rotate(15.0)" class="key keypos-37">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
@@ -1008,8 +1008,8 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(673, 259) rotate(-15.0)" class="key keypos-40">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
 </g>
-<g transform="translate(748, 249)" class="key held keypos-41">
-<rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key held"/>
+<g transform="translate(748, 249)" class="key keypos-41">
+<rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
 </g>
 </g>
 </g>
