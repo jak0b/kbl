@@ -85,7 +85,7 @@ layers:
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - raise
-  - LALT
+  - {t: RALT, h: sticky}
   raise:
   - ''
   - ''
@@ -97,7 +97,7 @@ layers:
   - '&'
   - '*'
   - ^
-  - ''
+  - DEL
   - ''
   - ''
   - '!'
@@ -109,7 +109,7 @@ layers:
   - DOWN
   - UP
   - RIGHT
-  - DEL
+  - ESC
   - ''
   - ''
   - '?'
@@ -123,12 +123,12 @@ layers:
   - ','
   - \
   - ''
-  - ESC
+  - {t: LALT, h: sticky}
   - lower
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - {t: raise, type: held}
-  - LALT
+  - ''
   opt:
   - ''
   - Ctl+ BRI DN
@@ -154,7 +154,7 @@ layers:
   - '&mmv MOVE_RIGHT'
   - Sft+Gui+ 4
   - ''
-  - BT CLR
+  - Ctl+ LALT(DEL)
   - {t: BT, h: '1'}
   - PREV
   - PP
@@ -215,3 +215,7 @@ layers:
   - ''
   - {type: held}
   - ''
+combos:
+- p: [0, 4, 25]
+  k: BT CLR
+  l: [opt]
