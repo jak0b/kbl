@@ -768,7 +768,7 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(34, 196)" class="key keypos-24">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em">LCTL(</tspan><tspan x="0" dy="1.2em">LALT(KC</tspan><tspan x="0" dy="1.2em">DEL))</tspan>
+<tspan x="0" dy="-1.2em">Ctl+Alt</tspan><tspan x="0" dy="1.2em">+</tspan><tspan x="0" dy="1.2em">DEL</tspan>
 </text>
 </g>
 <g transform="translate(102, 196)" class="key keypos-25">
