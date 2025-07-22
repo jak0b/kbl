@@ -216,6 +216,6 @@ layers:
   - {type: held}
   - ''
 combos:
-- p: [0, 4, 25]
+- p: [1, 5]
   k: BT CLR
   l: [opt]
