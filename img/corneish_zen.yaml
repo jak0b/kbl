@@ -154,7 +154,7 @@ layers:
   - '&mmv MOVE_RIGHT'
   - Sft+Gui+ 4
   - ''
-  - Ctl+ LALT(DEL)
+  - LCTL(LALT(KC DEL))
   - {t: BT, h: '1'}
   - PREV
   - PP
