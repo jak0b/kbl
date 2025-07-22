@@ -25,7 +25,7 @@ layers:
   - L
   - BSPC
   - ''
-  - LSHIFT
+  - {t: LSHIFT, h: sticky}
   - Z
   - X
   - C
@@ -36,13 +36,13 @@ layers:
   - TAB
   - .
   - /
-  - RSHFT
+  - {t: RSHFT, h: sticky}
   - {t: LALT, h: opt}
   - lower
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - raise
-  - {t: RALT, h: f_key}
+  - {t: RALT, h: mouse}
   lower:
   - ''
   - ''
@@ -85,7 +85,7 @@ layers:
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - raise
-  - {t: RALT, h: f_key}
+  - {t: RALT, h: mouse}
   raise:
   - ''
   - ''
@@ -128,7 +128,7 @@ layers:
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - {t: raise, type: held}
-  - {t: RALT, h: f_key}
+  - {t: RALT, h: mouse}
   opt:
   - ''
   - Ctl+ BRI DN
@@ -138,7 +138,7 @@ layers:
   - Ctl+ BRI UP
   - ''
   - ''
-  - PSCRN
+  - ''
   - ''
   - Sft+Gui+ 3
   - ''
@@ -148,10 +148,10 @@ layers:
   - OUT TOG
   - VOL UP
   - {t: BT, h: '2'}
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_DOWN'
-  - '&mmv MOVE_UP'
-  - '&mmv MOVE_RIGHT'
+  - ''
+  - ''
+  - ''
+  - ''
   - Sft+Gui+ 4
   - ''
   - Ctl+Alt+ DEL
@@ -160,19 +160,19 @@ layers:
   - PP
   - NEXT
   - {t: BT, h: '3'}
-  - '&msc SCRL_LEFT'
-  - '&msc SCRL_DOWN'
-  - '&msc SCRL_UP'
-  - '&msc SCRL_RIGHT'
+  - ''
+  - ''
+  - ''
+  - ''
   - Sft+Gui+ 5
   - ''
-  - {t: opt, type: held}
+  - {t: LALT, h: opt, type: held}
   - lower
   - {t: SPACE, h: LCTRL}
-  - '&mkp LCLK'
-  - '&mkp MCLK'
-  - '&mkp RCLK'
-  f_key:
+  - {t: RET, h: LMETA}
+  - raise
+  - {t: RALT, h: mouse}
+  mouse:
   - ''
   - ''
   - F2
@@ -181,7 +181,7 @@ layers:
   - F6
   - ''
   - ''
-  - ''
+  - '&mkp MCLK'
   - ''
   - ''
   - ''
@@ -191,11 +191,11 @@ layers:
   - F11
   - F12
   - F8
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_UP'
+  - '&mmv MOVE_RIGHT'
+  - '&mkp LCLK'
   - ''
   - ''
   - F1
@@ -203,18 +203,18 @@ layers:
   - F5
   - F7
   - F9
+  - '&msc SCRL_LEFT'
+  - '&msc SCRL_DOWN'
+  - '&msc SCRL_UP'
+  - '&msc SCRL_RIGHT'
+  - '&mkp RCLK'
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {type: held}
+  - {t: LALT, h: opt}
+  - lower
+  - {t: SPACE, h: LCTRL}
+  - {t: RET, h: LMETA}
+  - raise
+  - {t: RALT, h: mouse, type: held}
 combos:
 - p: [1, 5]
   k: BT CLR
