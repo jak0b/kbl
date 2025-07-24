@@ -25,7 +25,7 @@ layers:
   - L
   - BSPC
   - ''
-  - {t: LSHIFT, h: sticky}
+  - {t: LSHIFT, h: LSHIFT}
   - Z
   - X
   - C
@@ -36,7 +36,7 @@ layers:
   - TAB
   - .
   - /
-  - {t: RSHFT, h: sticky}
+  - {t: RSHFT, h: RSHFT}
   - {t: LALT, h: opt}
   - lower
   - {t: SPACE, h: LCTRL}
