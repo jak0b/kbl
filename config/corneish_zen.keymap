@@ -39,7 +39,6 @@
 
 &caps_word {
   continue-list = <UNDERSCORE MINUS>;
-  mods = <(MOD_LSFT | MOD_RSFT | MOD_RALT)>;
 };
 
 / {
