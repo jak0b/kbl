@@ -1,0 +1,46 @@
+#!/usr/bin/env bash
+
+set -eu
+set -o pipefail
+
+function eprintf() { >/dev/stderr printf "$@"; }
+
+function wait() { sleep 1; }
+
+if [[ "$(uname)" != 'Darwin' ]]
+then eprintf 'Only Darwin is supported now\n'
+fi
+
+keyboard_mount='/Volumes/CORNEISHZEN/'
+
+for fw_file in "$@"
+do
+  if [[ ! -f $fw_file ]]
+  then eprintf "%s is not a valid path to a file\n" "$fw_file"
+  fi
+
+  printf 'Flashing: %s...\n' "$fw_file"
+
+  counter=0
+
+  while true
+  do
+    if [[ $counter -gt 120 ]]
+    then exit 1
+    fi
+
+    if [[ -d $keyboard_mount ]]
+    then wait && break
+    fi
+
+    eprintf 'Keyboard is not in flashing mode\n'
+    wait
+    (( counter+=1 ))
+  done
+
+  cp "$fw_file" "$keyboard_mount" || true
+
+  wait
+done
+
+printf 'Flashing is finished :)\n'
