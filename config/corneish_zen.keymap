@@ -102,9 +102,9 @@
 
     opt_layer {
       bindings = <
-        &none   &kp E_BRI_DN &kp BRI_DN  &kp MUTE      &kp BRI_UP   &kp E_BRI_UP               &none  &none  &none  &none  &kp LS(LG(N3)) &none
-        &none   &bt BT_SEL 0 &kp VOL_DN  &out OUT_TOG  &kp VOL_UP   &bt BT_SEL 2               &none  &none  &none  &none  &kp LS(LG(N4)) &none
-        &kp RES &bt BT_SEL 1 &kp PREV    &kp PLPA      &kp NEXT     &bt BT_SEL 3               &none  &none  &none  &none  &kp LS(LG(N5)) &none
+        &none      &kp E_BRI_DN &kp BRI_DN  &kp MUTE      &kp BRI_UP   &kp E_BRI_UP               &none  &none  &none  &none  &kp LS(LG(N3)) &none
+        &none      &bt BT_SEL 0 &kp VOL_DN  &out OUT_TOG  &kp VOL_UP   &bt BT_SEL 2               &none  &none  &none  &none  &kp LS(LG(N4)) &none
+        &caps_word &bt BT_SEL 1 &kp PREV    &kp PLPA      &kp NEXT     &bt BT_SEL 3               &none  &none  &none  &none  &kp LS(LG(N5)) &kp RES
                                         &lts 3 LALT  &mo 1  &mt LTH    &mt RTH  &mo 2   &lts 4 RALT
       >;
     };
