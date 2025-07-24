@@ -54,7 +54,7 @@
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       flavor = "tap-preferred";
-      tapping-term-ms = <180>;
+      tapping-term-ms = <160>;
       bindings = <&mo>, <&sk>;
       display-name = "Layer-Tap-Sticky";
     };
@@ -63,7 +63,7 @@
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       flavor = "tap-preferred";
-      tapping-term-ms = <180>;
+      tapping-term-ms = <160>;
       bindings = <&kp>, <&sk>;
       display-name = "Mod-Tap-Sticky";
     };
