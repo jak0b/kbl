@@ -24,8 +24,8 @@
 #define PREV   C_PREV
 #define RES    LC(LA(DEL))
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 900
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 20
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 850
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 15
 
 &mt {
   tapping-term-ms = <170>;
