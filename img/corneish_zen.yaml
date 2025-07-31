@@ -154,7 +154,7 @@ layers:
   - ''
   - Sft+Gui+ 4
   - ''
-  - '&caps_word'
+  - Ctl+Alt+ DEL
   - {t: BT, h: '1'}
   - PREV
   - PP
@@ -165,7 +165,7 @@ layers:
   - ''
   - ''
   - Sft+Gui+ 5
-  - Ctl+Alt+ DEL
+  - ''
   - {t: LALT, h: opt, type: held}
   - lower
   - {t: SPACE, h: LCTRL}
