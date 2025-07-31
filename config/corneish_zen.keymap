@@ -30,6 +30,12 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 850
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 15
 
+&sk {
+    release-after-ms = <3000>;
+    quick-release;
+    /delete-property/ ignore-modifiers;
+};
+
 &mt {
   tapping-term-ms = <170>;
   quick-tap-ms = <200>;
