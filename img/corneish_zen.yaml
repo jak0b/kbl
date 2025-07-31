@@ -36,7 +36,7 @@ layers:
   - TAB
   - .
   - /
-  - {t: RSHFT, h: RSHFT}
+  - {t: RSHIFT, h: RSHIFT}
   - {t: LALT, h: opt}
   - lower
   - {t: SPACE, h: LCTRL}
@@ -133,7 +133,7 @@ layers:
   - ''
   - Ctl+ BRI DN
   - BRI DN
-  - MUTE
+  - OUT TOG
   - BRI UP
   - Ctl+ BRI UP
   - ''
@@ -145,7 +145,7 @@ layers:
   - ''
   - {t: BT, h: '0'}
   - VOL DN
-  - OUT TOG
+  - MUTE
   - VOL UP
   - {t: BT, h: '2'}
   - ''
