@@ -71,7 +71,6 @@
       #binding-cells = <2>;
       flavor = "tap-preferred";
       tapping-term-ms = <170>;
-      quick-tap-ms = <200>;
       bindings = <&sk>, <&kp>;
       display-name = "Mod-Tap-Sticky";
     };
