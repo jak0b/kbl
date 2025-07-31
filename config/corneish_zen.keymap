@@ -33,7 +33,6 @@
 &sk {
     release-after-ms = <3000>;
     quick-release;
-    /delete-property/ ignore-modifiers;
 };
 
 &mt {
