@@ -50,8 +50,8 @@
   combos {
     compatible = "zmk,combos";
     combo_bt_clr {
-      layers = <3>;
-      key-positions = <1 5>;
+      layers = <4>;
+      key-positions = <6 10>;
       bindings = <&bt BT_CLR>;
     };
   };
@@ -120,9 +120,9 @@
 
     function_layer {
       bindings = <
-        &none  &none   &kp F2   &none   &kp F4       &kp F6                     &none          &none           &mkp MCLK    &none            &none      &none
-        &none  &none   &kp F10  &kp F11 &kp F12      &kp F8                     &mmv MOVE_LEFT &mmv MOVE_DOWN  &mmv MOVE_UP &mmv MOVE_RIGHT  &mkp LCLK  &none
-        &none  &kp F1  &kp F3   &kp F5  &kp F7       &kp F9                     &msc SCRL_LEFT &msc SCRL_DOWN  &msc SCRL_UP &msc SCRL_RIGHT  &mkp RCLK  &none
+        &none  &none   &kp F2   &none   &kp F4       &kp F6                     &none          &none         &out OUT_USB  &out OUT_BLE  &none          &none
+        &none  &none   &kp F10  &kp F11 &kp F12      &kp F8                     &bt BT_SEL  0  &bt BT_SEL  1 &bt BT_SEL  2 &bt BT_SEL  3 &bt BT_SEL  4  &none
+        &none  &kp F1  &kp F3   &kp F5  &kp F7       &kp F9                     &bt BT_DISC 0  &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4  &none
                                         &lts 3 LALT  &mo 1  &mt LTH    &mt RTH  &mo 2          &lts 4 RALT
       >;
     };
