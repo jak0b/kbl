@@ -120,10 +120,10 @@
 
     function_layer {
       bindings = <
-        &none  &none   &kp F2   &none   &kp F4       &kp F6                     &none          &none         &out OUT_USB  &out OUT_BLE  &none          &none
-        &none  &none   &kp F10  &kp F11 &kp F12      &kp F8                     &bt BT_SEL  0  &bt BT_SEL  1 &bt BT_SEL  2 &bt BT_SEL  3 &bt BT_SEL  4  &none
-        &none  &kp F1  &kp F3   &kp F5  &kp F7       &kp F9                     &bt BT_DISC 0  &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4  &none
-                                        &lts 3 LALT  &mo 1  &mt LTH    &mt RTH  &mo 2          &lts 4 RALT
+        &none  &none   &kp F2   &none   &kp F4       &kp F6                     &none  &out OUT_USB  &none         &out OUT_BLE  &none          &none
+        &none  &none   &kp F10  &kp F11 &kp F12      &kp F8                     &none  &bt BT_SEL  0 &bt BT_SEL  1 &bt BT_SEL  2 &bt BT_SEL  3  &none
+        &none  &kp F1  &kp F3   &kp F5  &kp F7       &kp F9                     &none  &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3  &none
+                                        &lts 3 LALT  &mo 1  &mt LTH    &mt RTH  &mo 2  &lts 4 RALT
       >;
     };
   };
