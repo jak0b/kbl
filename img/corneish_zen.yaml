@@ -93,7 +93,7 @@ layers:
   - '#'
   - '%'
   - ''
-  - PG UP
+  - ''
   - '&'
   - '*'
   - ^
@@ -117,9 +117,9 @@ layers:
   - ''
   - ''
   - ''
-  - PG DN
-  - END
-  - HOME
+  - ''
+  - ''
+  - ''
   - ','
   - \
   - ''
@@ -143,11 +143,11 @@ layers:
   - Sft+Gui+ 3
   - ''
   - ''
-  - ''
+  - PG UP
   - VOL DN
   - MUTE
   - VOL UP
-  - ''
+  - HOME
   - '&mmv MOVE_LEFT'
   - '&mmv MOVE_DOWN'
   - '&mmv MOVE_UP'
@@ -155,11 +155,11 @@ layers:
   - Sft+Gui+ 4
   - ''
   - Ctl+Alt+ DEL
-  - ''
+  - PG DN
   - PREV
   - PP
   - NEXT
-  - ''
+  - END
   - '&msc SCRL_LEFT'
   - '&msc SCRL_DOWN'
   - '&msc SCRL_UP'
@@ -180,8 +180,8 @@ layers:
   - F4
   - F6
   - ''
-  - ''
   - OUT USB
+  - ''
   - OUT BLE
   - ''
   - ''
@@ -191,11 +191,11 @@ layers:
   - F11
   - F12
   - F8
+  - ''
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
   - ''
   - ''
   - F1
@@ -203,11 +203,11 @@ layers:
   - F5
   - F7
   - F9
+  - ''
   - {t: BT DISC, h: '0'}
   - {t: BT DISC, h: '1'}
   - {t: BT DISC, h: '2'}
   - {t: BT DISC, h: '3'}
-  - {t: BT DISC, h: '4'}
   - ''
   - {t: LALT, h: opt}
   - lower
