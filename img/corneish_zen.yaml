@@ -131,15 +131,15 @@ layers:
   - {t: RALT, h: function}
   opt:
   - ''
+  - ''
+  - '&mkp MB4'
+  - ''
+  - '&mkp MB5'
+  - ''
   - Ctl+ BRI DN
   - BRI DN
-  - ''
   - BRI UP
   - Ctl+ BRI UP
-  - ''
-  - ''
-  - ''
-  - ''
   - Sft+Gui+ 3
   - ''
   - ''
