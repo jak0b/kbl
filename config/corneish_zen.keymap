@@ -59,12 +59,12 @@
     };
     combo_ext_bri_up {
       layers = <3>;
-      key-positions = <23 1>;
+      key-positions = <24 1>;
       bindings = <&kp EXT_BRI_UP>;
     };
     combo_ext_bri_dn {
       layers = <3>;
-      key-positions = <23 3>;
+      key-positions = <24 3>;
       bindings = <&kp EXT_BRI_DN>;
     };
   };
