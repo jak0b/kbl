@@ -107,7 +107,7 @@
       bindings = <
         &none  &none     &kp AT    &kp HASH &kp PRCNT    &none                     &none     &kp AMPS   &kp ASTRK &kp CARET  &none    &none
         &none  &kp EXCL  &kp GRAVE &kp DQT  &kp SQT      &kp DLLR                  &kp LEFT  &kp DOWN   &kp UP    &kp RIGHT  &kp DEL  &none
-        &none  &kp QMARK &none     &none    &none        &none                     &none     &none      &none     &kp COMMA  &kp BSLH &none
+        &none  &kp QMARK GO_BACK   &none    GO_FRWD      &none                     &none     &none      &none     &kp COMMA  &kp BSLH &none
                                             &lts 3 LALT  &mo 1  &mt LTH   &mt RTH  &mo 2     &lts 4 RALT
       >;
     };
