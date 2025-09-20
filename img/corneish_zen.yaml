@@ -113,9 +113,9 @@ layers:
   - ''
   - ''
   - '?'
+  - '&mkp MB4'
   - ''
-  - ''
-  - ''
+  - '&mkp MB5'
   - ''
   - ''
   - ''
@@ -131,16 +131,16 @@ layers:
   - {t: RALT, h: function}
   opt:
   - ''
-  - ''
-  - '&mkp MB4'
-  - ''
-  - '&mkp MB5'
-  - ''
   - Ctl+ BRI DN
   - BRI DN
   - ''
   - BRI UP
   - Ctl+ BRI UP
+  - ''
+  - ''
+  - ''
+  - ''
+  - Sft+Gui+ 3
   - ''
   - ''
   - PG UP
@@ -165,7 +165,7 @@ layers:
   - '&msc SCRL_UP'
   - '&msc SCRL_RIGHT'
   - Sft+Gui+ 5
-  - Sft+Gui+ 3
+  - ''
   - {t: LALT, h: opt, type: held}
   - lower
   - {t: SPACE, h: LCTRL}
