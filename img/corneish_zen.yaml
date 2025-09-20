@@ -113,9 +113,9 @@ layers:
   - ''
   - ''
   - '?'
-  - '&mkp MB4'
   - ''
-  - '&mkp MB5'
+  - ''
+  - ''
   - ''
   - ''
   - ''
@@ -131,11 +131,11 @@ layers:
   - {t: RALT, h: function}
   opt:
   - ''
-  - Ctl+ BRI DN
-  - BRI DN
-  - ''
   - BRI UP
-  - Ctl+ BRI UP
+  - '&mkp MB4'
+  - BRI DN
+  - '&mkp MB5'
+  - ''
   - ''
   - ''
   - ''
@@ -154,7 +154,7 @@ layers:
   - '&mmv MOVE_RIGHT'
   - Sft+Gui+ 4
   - ''
-  - Ctl+Alt+ DEL
+  - ''
   - PG DN
   - PREV
   - PP
@@ -208,7 +208,7 @@ layers:
   - {t: BT DISC, h: '1'}
   - {t: BT DISC, h: '2'}
   - {t: BT DISC, h: '3'}
-  - ''
+  - Ctl+Alt+ DEL
   - {t: LALT, h: opt}
   - lower
   - {t: SPACE, h: LCTRL}
@@ -219,3 +219,9 @@ combos:
 - p: [6, 10]
   k: BT CLR
   l: [function]
+- p: [23, 1]
+  k: Ctl+ BRI UP
+  l: [opt]
+- p: [23, 3]
+  k: Ctl+ BRI DN
+  l: [opt]
