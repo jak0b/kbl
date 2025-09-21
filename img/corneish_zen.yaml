@@ -154,7 +154,7 @@ layers:
   - '&mmv MOVE_RIGHT'
   - Sft+Gui+ 4
   - ''
-  - LSHIFT
+  - {t: LSHIFT, h: LSHIFT}
   - PG DN
   - PREV
   - PP
@@ -165,7 +165,7 @@ layers:
   - '&msc SCRL_UP'
   - '&msc SCRL_RIGHT'
   - Sft+Gui+ 5
-  - RSHIFT
+  - {t: RSHIFT, h: RSHIFT}
   - {t: LALT, h: opt, type: held}
   - lower
   - {t: SPACE, h: LCTRL}
