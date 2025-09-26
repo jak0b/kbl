@@ -41,12 +41,12 @@
 };
 
 &mt {
-  tapping-term-ms = <170>;
+  tapping-term-ms = <160>;
   quick-tap-ms = <200>;
 };
 
 &lt {
-  tapping-term-ms = <170>;
+  tapping-term-ms = <160>;
   quick-tap-ms = <200>;
 };
 
@@ -75,7 +75,7 @@
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       flavor = "tap-preferred";
-      tapping-term-ms = <170>;
+      tapping-term-ms = <160>;
       bindings = <&mo>, <&sk>;
       display-name = "Layer-Tap-Sticky";
     };
@@ -84,7 +84,7 @@
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       flavor = "tap-preferred";
-      tapping-term-ms = <170>;
+      tapping-term-ms = <160>;
       bindings = <&sk>, <&kp>;
       display-name = "Mod-Tap-Sticky";
     };
