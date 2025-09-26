@@ -25,7 +25,7 @@ layers:
   - L
   - BSPC
   - ''
-  - {t: LSHIFT, h: LSHIFT}
+  - LSHIFT
   - Z
   - X
   - C
@@ -36,7 +36,7 @@ layers:
   - TAB
   - .
   - /
-  - {t: RSHIFT, h: RSHIFT}
+  - RSHIFT
   - {t: LALT, h: opt}
   - lower
   - {t: SPACE, h: LCTRL}
@@ -154,7 +154,7 @@ layers:
   - '&mmv MOVE_RIGHT'
   - Sft+Gui+ 4
   - ''
-  - {t: LSHIFT, h: LSHIFT}
+  - LSHIFT
   - PG DN
   - PREV
   - PP
@@ -165,7 +165,7 @@ layers:
   - '&msc SCRL_UP'
   - '&msc SCRL_RIGHT'
   - Sft+Gui+ 5
-  - {t: RSHIFT, h: RSHIFT}
+  - RSHIFT
   - {t: LALT, h: opt, type: held}
   - lower
   - {t: SPACE, h: LCTRL}
