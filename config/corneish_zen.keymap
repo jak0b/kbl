@@ -27,8 +27,10 @@
 #define GO_BACK &mkp MB4
 #define GO_FRWD &mkp MB5
 
-#define LTSHFT &mts LSHIFT LSHIFT
-#define RTSHFT &mts RSHIFT RSHIFT
+/* #define LTSHFT &mts LSHIFT LSHIFT */
+/* #define RTSHFT &mts RSHIFT RSHIFT */
+#define LTSHFT &kp LSHIFT
+#define RTSHFT &kp RSHIFT
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 850
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 15
