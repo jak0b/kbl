@@ -24,9 +24,6 @@
 #define PREV   C_PREV
 #define RES    LC(LA(DEL))
 
-#define GO_BACK &mkp MB4
-#define GO_FRWD &mkp MB5
-
 /* #define LTSHFT &mts LSHIFT LSHIFT */
 /* #define RTSHFT &mts RSHIFT RSHIFT */
 #define LTSHFT &kp LSHIFT
@@ -95,6 +92,13 @@
       bindings = <&kp BRI_UP>, <&kp EXT_BRI_UP>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
     };
+
+    prev_next: prev_and_next {
+      compatible = "zmk,behavior-mod-morph";
+      #binding-cells = <0>;
+      bindings = <&mkp MB4>, <&mkp MB5>;
+      mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
   };
 
   keymap {
@@ -130,10 +134,10 @@
 
     opt_layer {
       bindings = <
-        &none   &br_dn     GO_BACK     &none      GO_FRWD     &br_up                              &none          &none           &none        &none            &kp LS(LG(N3))  &none
-        &none   &kp PG_UP  &kp VOL_DN  &kp MUTE   &kp VOL_UP  &kp HOME                            &mmv MOVE_LEFT &mmv MOVE_DOWN  &mmv MOVE_UP &mmv MOVE_RIGHT  &kp LS(LG(N4))  &none
-        LTSHFT  &kp PG_DN  &kp PREV    &kp PLPA   &kp NEXT    &kp END                             &msc SCRL_LEFT &msc SCRL_DOWN  &msc SCRL_UP &msc SCRL_RIGHT  &kp LS(LG(N5))  RTSHFT
-                                                  &lts 3 LALT &mo 1   &mt LTH          &mkp LCLK  &mkp MCLK      &mkp RCLK
+        &none   &none      &br_dn      &prev_next   &br_up      &none                               &none          &none           &none        &none            &kp LS(LG(N3))  &none
+        &none   &kp PG_UP  &kp VOL_DN  &kp MUTE     &kp VOL_UP  &kp HOME                            &mmv MOVE_LEFT &mmv MOVE_DOWN  &mmv MOVE_UP &mmv MOVE_RIGHT  &kp LS(LG(N4))  &none
+        LTSHFT  &kp PG_DN  &kp PREV    &kp PLPA     &kp NEXT    &kp END                             &msc SCRL_LEFT &msc SCRL_DOWN  &msc SCRL_UP &msc SCRL_RIGHT  &kp LS(LG(N5))  RTSHFT
+                                                    &lts 3 LALT &mo 1   &mt LTH          &mkp LCLK  &mkp MCLK      &mkp RCLK
       >;
     };
 
