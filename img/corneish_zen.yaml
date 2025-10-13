@@ -42,7 +42,7 @@ layers:
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - raise
-  - {t: RALT, h: function}
+  - RALT
   lower:
   - ''
   - ''
@@ -85,7 +85,7 @@ layers:
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - raise
-  - {t: RALT, h: function}
+  - RALT
   raise:
   - ''
   - ''
@@ -93,11 +93,11 @@ layers:
   - '#'
   - '%'
   - ''
-  - ''
+  - OUT USB
   - '&'
   - '*'
   - ^
-  - ''
+  - OUT BLE
   - ''
   - ''
   - '!'
@@ -111,24 +111,24 @@ layers:
   - RIGHT
   - DEL
   - ''
-  - ''
+  - LSHIFT
   - '?'
   - ''
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
+  - {t: BT, h: '0', s: BT DISC}
+  - {t: BT, h: '1', s: BT DISC}
+  - {t: BT, h: '2', s: BT DISC}
   - ','
   - \
-  - ''
+  - LSHIFT
   - {t: LALT, h: opt}
   - lower
   - {t: SPACE, h: LCTRL}
   - {t: RET, h: LMETA}
   - {t: raise, type: held}
-  - {t: RALT, h: function}
+  - RALT
   opt:
   - ''
   - ''
@@ -180,9 +180,9 @@ layers:
   - F4
   - F6
   - ''
-  - OUT USB
   - ''
-  - OUT BLE
+  - ''
+  - ''
   - ''
   - ''
   - ''
@@ -192,10 +192,10 @@ layers:
   - F12
   - F8
   - ''
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
+  - Ctl+Alt+ DEL
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   - F1
@@ -204,18 +204,18 @@ layers:
   - F7
   - F9
   - ''
-  - {t: BT DISC, h: '0'}
-  - {t: BT DISC, h: '1'}
-  - {t: BT DISC, h: '2'}
-  - {t: BT DISC, h: '3'}
-  - Ctl+Alt+ DEL
-  - {t: LALT, h: opt}
-  - lower
-  - {t: SPACE, h: LCTRL}
-  - {t: RET, h: LMETA}
-  - raise
-  - {t: RALT, h: function, type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - {type: held}
+  - ''
 combos:
-- p: [6, 10]
+- p: [7, 8, 9]
   k: BT CLR
-  l: [function]
+  l: [opt]
