@@ -52,8 +52,8 @@
   combos {
     compatible = "zmk,combos";
     combo_bt_clr {
-      layers = <4>;
-      key-positions = <6 10>;
+      layers = <3>;
+      key-positions = <7 8 9>;
       bindings = <&bt BT_CLR>;
     };
   };
@@ -119,6 +119,14 @@
       #binding-cells = <0>;
       bindings = <&bt BT_SEL 2>, <&bt BT_DISC 2>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+  };
+
+  conditional_layers {
+    compatible = "zmk,conditional-layers";
+    tri_layer {
+      if-layers = <1 2>;
+      then-layer = <4>;
     };
   };
 
