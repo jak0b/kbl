@@ -19,9 +19,9 @@
 #define BRI_DN C_BRI_DN
 #define EXT_BRI_DN LC(BRI_DN)
 
-#define PLPA   C_PP
-#define NEXT   C_NEXT
-#define PREV   C_PREV
+#define PLPA   K_PP
+#define NEXT   K_NEXT
+#define PREV   K_PREV
 #define RES    LC(LA(DEL))
 
 /* #define LTSHFT &mts LSHIFT LSHIFT */
