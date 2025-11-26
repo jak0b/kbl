@@ -31,8 +31,8 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 15
 
 &sk {
-    release-after-ms = <3000>;
-    quick-release;
+  release-after-ms = <3000>;
+  quick-release;
 };
 
 &mt {
