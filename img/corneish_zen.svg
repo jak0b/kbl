@@ -1138,11 +1138,11 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(986, 196)" class="key keypos-35">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
 </g>
-<g transform="translate(272, 249)" class="key keypos-36">
-<rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
+<g transform="translate(272, 249)" class="key held keypos-36">
+<rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key held"/>
 </g>
-<g transform="translate(347, 259) rotate(15.0)" class="key keypos-37">
-<rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
+<g transform="translate(347, 259) rotate(15.0)" class="key held keypos-37">
+<rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key held"/>
 </g>
 <g transform="translate(426, 272) rotate(30.0)" class="key keypos-38">
 <rect rx="6" ry="6" x="-32" y="-49" width="64" height="98" class="key"/>
