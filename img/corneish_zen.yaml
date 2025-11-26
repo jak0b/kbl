@@ -131,11 +131,11 @@ layers:
   - RALT
   opt:
   - ''
-  - ''
+  - {s: OUT BLE}
   - {t: BRI DN, s: Ctl+ BRI DN}
   - {t: '&mkp MB4', s: '&mkp MB5'}
   - {t: BRI UP, s: Ctl+ BRI UP}
-  - ''
+  - {s: OUT USB}
   - ''
   - ''
   - ''
@@ -144,9 +144,9 @@ layers:
   - ''
   - ''
   - PG UP
-  - VOL DN
-  - MUTE
-  - VOL UP
+  - {t: VOL DN, s: BT}
+  - {t: MUTE, s: BT}
+  - {t: VOL UP, s: BT}
   - HOME
   - '&mmv MOVE_LEFT'
   - '&mmv MOVE_DOWN'
@@ -156,9 +156,9 @@ layers:
   - ''
   - LSHIFT
   - PG DN
-  - PREV
-  - PP
-  - NEXT
+  - {t: PREV, s: BT DISC}
+  - {t: PP, s: BT DISC}
+  - {t: NEXT, s: BT DISC}
   - END
   - '&msc SCRL_LEFT'
   - '&msc SCRL_DOWN'
@@ -168,7 +168,7 @@ layers:
   - RSHIFT
   - {t: LALT, h: opt, type: held}
   - lower
-  - {t: SPACE, h: LCTRL}
+  - {s: BT CLR}
   - '&mkp LCLK'
   - '&mkp MCLK'
   - '&mkp RCLK'
@@ -214,47 +214,4 @@ layers:
   - ''
   - ''
   - {type: held}
-  - ''
-  output_control:
-  - ''
-  - ''
-  - OUT BLE
-  - ''
-  - OUT USB
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - BT CLR
-  - ''
-  - {t: BT DISC, h: '0'}
-  - {t: BT DISC, h: '1'}
-  - {t: BT DISC, h: '2'}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {type: held}
-  - {type: held}
-  - ''
-  - ''
-  - ''
   - ''
