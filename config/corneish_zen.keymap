@@ -83,7 +83,70 @@
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
       bindings = <&mkp MB4>, <&mkp MB5>;
-      mods = <(MOD_LSFT|MOD_RSFT)>;
+      mods = <(MOD_LSFT)>;
+    };
+
+    vol_dn_bt: volume_down_bluetooth_0 {
+      compatible = "zmk,behavior-mod-morph";
+      #binding-cells = <0>;
+      bindings = <&kp VOL_DN>, <&bt BT_SEL 0>;
+      mods = <(MOD_LSFT)>;
+    };
+
+    prev_bt: media_previous_bluetooth_0 {
+      compatible = "zmk,behavior-mod-morph";
+      #binding-cells = <0>;
+      bindings = <&kp PREV>, <&bt BT_DISC 0>;
+      mods = <(MOD_LSFT)>;
+    };
+
+    vol_mute_bt: volume_mute_bluetooth_1 {
+      compatible = "zmk,behavior-mod-morph";
+      #binding-cells = <0>;
+      bindings = <&kp MUTE>, <&bt BT_SEL 1>;
+      mods = <(MOD_LSFT)>;
+    };
+
+    plpa_bt: play_stop_bluetooth_1 {
+      compatible = "zmk,behavior-mod-morph";
+      #binding-cells = <0>;
+      bindings = <&kp PLPA>, <&bt BT_DISC 1>;
+      mods = <(MOD_LSFT)>;
+    };
+
+    vol_up_bt: volume_up_bluetooth_2 {
+      compatible = "zmk,behavior-mod-morph";
+      #binding-cells = <0>;
+      bindings = <&kp VOL_UP>, <&bt BT_SEL 2>;
+      mods = <(MOD_LSFT)>;
+    };
+
+    next_bt: next_bluetooth_2 {
+      compatible = "zmk,behavior-mod-morph";
+      #binding-cells = <0>;
+      bindings = <&kp NEXT>, <&bt BT_DISC 2>;
+      mods = <(MOD_LSFT)>;
+    };
+
+    out_usb: keyboard_output_usb {
+      compatible = "zmk,behavior-mod-morph";
+      #binding-cells = <0>;
+      bindings = <&none>, <&out OUT_USB>;
+      mods = <(MOD_LSFT)>;
+    };
+
+    out_bt: keyboard_output_bluetooth {
+      compatible = "zmk,behavior-mod-morph";
+      #binding-cells = <0>;
+      bindings = <&none>, <&out OUT_BLE>;
+      mods = <(MOD_LSFT)>;
+    };
+
+    clear_bt: bluetooth_clear {
+      compatible = "zmk,behavior-mod-morph";
+      #binding-cells = <0>;
+      bindings = <&none>, <&out BT_CLR>;
+      mods = <(MOD_LSFT)>;
     };
   };
 
