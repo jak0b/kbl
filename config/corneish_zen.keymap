@@ -85,6 +85,7 @@
       bindings = <&mkp MB4>, <&mkp MB5>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
     };
+  };
 
   conditional_layers {
     compatible = "zmk,conditional-layers";
