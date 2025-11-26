@@ -24,8 +24,6 @@
 #define PREV   K_PREV
 #define RES    LC(LA(DEL))
 
-/* #define LTSHFT &mts LSHIFT LSHIFT */
-/* #define RTSHFT &mts RSHIFT RSHIFT */
 #define LTSHFT &kp LSHIFT
 #define RTSHFT &kp RSHIFT
 
