@@ -47,13 +47,6 @@
 
 / {
   behaviors {
-    br_dn: brightness_down {
-      compatible = "zmk,behavior-mod-morph";
-      #binding-cells = <0>;
-      bindings = <&kp BRI_DN>, <&kp EXT_BRI_DN>;
-      mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-
     lts: layer_tap_sticky {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
@@ -70,13 +63,6 @@
       tapping-term-ms = <160>;
       bindings = <&sk>, <&kp>;
       display-name = "Mod-Tap-Sticky";
-    };
-
-    br_up: brightness_up {
-      compatible = "zmk,behavior-mod-morph";
-      #binding-cells = <0>;
-      bindings = <&kp BRI_UP>, <&kp EXT_BRI_UP>;
-      mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
     prev_next: prev_and_next {
@@ -192,7 +178,7 @@
 
     opt_layer {
       bindings = <
-        &none   &out_bt      &br_dn      &prev_next   &br_up      &out_usb                            &none          &none           &none        &none            &kp LS(LG(N3))  &none
+        &none   &out_bt      &kp BRI_DN  &prev_next   &kp BRI_UP  &out_usb                            &none          &none           &none        &none            &kp LS(LG(N3))  &none
         &none   &kp PG_UP    &vol_dn_bt  &vol_mute_bt &vol_up_bt  &kp HOME                            &mmv MOVE_LEFT &mmv MOVE_DOWN  &mmv MOVE_UP &mmv MOVE_RIGHT  &kp LS(LG(N4))  &none
         LTSHFT  &kp PG_DN    &prev_bt    &plpa_bt     &next_bt    &kp END                             &msc SCRL_LEFT &msc SCRL_DOWN  &msc SCRL_UP &msc SCRL_RIGHT  &kp LS(LG(N5))  RTSHFT
                                                       &lts 3 LALT &mo 1   &clear_bt        &mkp LCLK  &mkp MCLK      &mkp RCLK
