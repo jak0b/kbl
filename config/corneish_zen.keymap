@@ -152,8 +152,8 @@
       label = " ";
       bindings = <
         &none    &kp Q  &kp W  &kp E  &kp R       &kp T                   &kp Y   &kp U  &kp I    &kp O    &kp P     &none
-        &none    &kp A  &kp S  &kp D  &kp F       &kp G                   &kp H   &kp J  &kp K    &kp L    &kp BSPC  &none
-        LTSHFT   &kp Z  &kp X  &kp C  &kp V       &kp B                   &kp N   &kp M  &kp TAB  &kp DOT  &kp FSLH  RTSHFT
+        &none    &kp A  &kp S  &kp D  &kp F       &kp G                   &kp H   &kp J  &kp K    &kp L    &kp TAB   &none
+        LTSHFT   &kp Z  &kp X  &kp C  &kp V       &kp B                   &kp N   &kp M  &kp BSPC &kp DOT  &kp FSLH  RTSHFT
                                       &lts 3 LALT &mo 1 &mt LTH   &mt RTH &mo 2   &kp RALT
       >;
     };
