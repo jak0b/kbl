@@ -45,7 +45,7 @@ layers:
   - RALT
   lower:
   - ''
-  - ESC
+  - ''
   - '2'
   - +
   - '4'
@@ -109,7 +109,7 @@ layers:
   - DOWN
   - UP
   - RIGHT
-  - ''
+  - ESC
   - ''
   - LSHIFT
   - '?'
