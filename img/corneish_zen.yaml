@@ -23,7 +23,7 @@ layers:
   - J
   - K
   - L
-  - BSPC
+  - TAB
   - ''
   - LSHIFT
   - Z
@@ -33,7 +33,7 @@ layers:
   - B
   - N
   - M
-  - TAB
+  - BSPC
   - .
   - /
   - RSHIFT
@@ -45,7 +45,7 @@ layers:
   - RALT
   lower:
   - ''
-  - ''
+  - ESC
   - '2'
   - +
   - '4'
@@ -68,7 +68,7 @@ layers:
   - '{'
   - <
   - ''
-  - ESC
+  - ''
   - '1'
   - '3'
   - '5'
@@ -109,7 +109,7 @@ layers:
   - DOWN
   - UP
   - RIGHT
-  - DEL
+  - ''
   - ''
   - LSHIFT
   - '?'
@@ -118,8 +118,8 @@ layers:
   - ''
   - ''
   - ''
-  - '&mkp MB4'
-  - '&mkp MB5'
+  - ''
+  - DEL
   - ','
   - \
   - LSHIFT
