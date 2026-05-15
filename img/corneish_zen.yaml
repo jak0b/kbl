@@ -15,14 +15,14 @@ layers:
   - ''
   - ''
   - A
-  - S
-  - D
-  - F
+  - {t: S, h: LSHIFT}
+  - {t: D, h: LCTRL}
+  - {t: F, h: LMETA}
   - G
   - H
-  - J
-  - K
-  - L
+  - {t: J, h: LMETA}
+  - {t: K, h: LCTRL}
+  - {t: L, h: LSHIFT}
   - TAB
   - ''
   - LSHIFT

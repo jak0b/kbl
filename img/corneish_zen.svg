@@ -68,25 +68,25 @@ text.footer {
 }
 
 /* styling for combo tap, and key non-tap label text */
-text.combo, text.hold, text.shifted, text.left, text.right {
+text.combo, text.hold, text.shifted, text.left, text.right, text.tl, text.tr, text.bl, text.br {
     font-size: 11px;
 }
 
-text.hold {
+text.hold, text.bl, text.br {
     text-anchor: middle;
     dominant-baseline: auto;
 }
 
-text.shifted {
+text.shifted, text.tl, text.tr {
     text-anchor: middle;
     dominant-baseline: hanging;
 }
 
-text.left {
+text.left, text.tl, text.bl {
     text-anchor: start;
 }
 
-text.right {
+text.right, text.tr, text.br {
     text-anchor: end;
 }
 
@@ -192,14 +192,17 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(170, 110)" class="key keypos-14">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
 <text x="0" y="0" class="key tap">S</text>
+<text x="0" y="30" class="key hold">LSHIFT</text>
 </g>
 <g transform="translate(238, 102)" class="key keypos-15">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
 <text x="0" y="0" class="key tap">D</text>
+<text x="0" y="30" class="key hold">LCTRL</text>
 </g>
 <g transform="translate(306, 110)" class="key keypos-16">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
 <text x="0" y="0" class="key tap">F</text>
+<text x="0" y="30" class="key hold">LMETA</text>
 </g>
 <g transform="translate(374, 119)" class="key keypos-17">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
@@ -212,14 +215,17 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(714, 110)" class="key keypos-19">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
 <text x="0" y="0" class="key tap">J</text>
+<text x="0" y="30" class="key hold">LMETA</text>
 </g>
 <g transform="translate(782, 102)" class="key keypos-20">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
 <text x="0" y="0" class="key tap">K</text>
+<text x="0" y="30" class="key hold">LCTRL</text>
 </g>
 <g transform="translate(850, 110)" class="key keypos-21">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
 <text x="0" y="0" class="key tap">L</text>
+<text x="0" y="30" class="key hold">LSHIFT</text>
 </g>
 <g transform="translate(918, 128)" class="key keypos-22">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
@@ -661,7 +667,7 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(238, 34)" class="key keypos-3">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.0em">&amp;mkp</tspan><tspan x="0" dy="1.2em">MB4</tspan>
+<tspan x="0" dy="-0.3em">&amp;mkp</tspan><tspan x="0" dy="1.2em">MB4</tspan>
 </text>
 <text x="0" y="-30" class="key shifted"><tspan style="font-size: 88%">&amp;mkp MB5</tspan></text>
 </g>
@@ -708,7 +714,7 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(170, 110)" class="key keypos-14">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.0em">VOL</tspan><tspan x="0" dy="1.2em">DN</tspan>
+<tspan x="0" dy="-0.3em">VOL</tspan><tspan x="0" dy="1.2em">DN</tspan>
 </text>
 <text x="0" y="-30" class="key shifted">BT</text>
 </g>
@@ -720,7 +726,7 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(306, 110)" class="key keypos-16">
 <rect rx="6" ry="6" x="-32" y="-32" width="64" height="64" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.0em">VOL</tspan><tspan x="0" dy="1.2em">UP</tspan>
+<tspan x="0" dy="-0.3em">VOL</tspan><tspan x="0" dy="1.2em">UP</tspan>
 </text>
 <text x="0" y="-30" class="key shifted">BT</text>
 </g>
