@@ -146,7 +146,7 @@
     hml: home_row_mod_left {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
-      flavor = "balanced";
+      flavor = "tap-preferred";
       tapping-term-ms = <180>;
       quick-tap-ms = <200>;
       bindings = <&kp>, <&kp>;
@@ -157,7 +157,7 @@
     hmr: home_row_mod_right {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
-      flavor = "balanced";
+      flavor = "tap-preferred";
       tapping-term-ms = <180>;
       quick-tap-ms = <200>;
       bindings = <&kp>, <&kp>;
