@@ -132,9 +132,9 @@ layers:
   opt:
   - ''
   - {s: OUT BLE}
-  - BRI DN
+  - {t: BRI DN, s: Ctl+ BRI DN}
   - {t: '&mkp MB4', s: '&mkp MB5'}
-  - BRI UP
+  - {t: BRI UP, s: Ctl+ BRI UP}
   - {s: OUT USB}
   - ''
   - ''
