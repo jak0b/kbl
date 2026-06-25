@@ -11,7 +11,13 @@ if [[ "$(uname)" != 'Darwin' ]]
 then eprintf 'Only Darwin is supported now\n'
 fi
 
-keyboard_mount='/Volumes/CORNEISHZEN/'
+case $1 in
+  totem) keyboard_mount='/Volumes/XIAO-SENSE/' ;;
+  cornezenish) keyboard_mount='/Volumes/CORNEISHZEN/' ;;
+  *) eprintf 'keyboard type is not supported\n' && exit 1 ;;
+esac && shift
+
+echo "Firmware files will be copied to ${keyboard_mount}"
 
 for fw_file in "$@"
 do
